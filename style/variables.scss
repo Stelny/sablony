@@ -1,6 +1,6 @@
 :root {
     --blue: #1ea2e9;
-    --red: #cd071e;
+    --red: #fe0000;
     --purple: #731e80;
     --green: #7eb61c;
     --yellow: #fab700;
@@ -10,9 +10,5 @@
     --bgYellow: #fcf6e6;
 
 
-    --primary: var(--blue);
-    --primaryBg: var(--bgBlue);
-
-    --roboto: "Roboto", sans-serif;;
-    --inter: 'Inter', sans-serif;
+    --primary: var(--red);
 }
