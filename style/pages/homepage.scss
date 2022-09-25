@@ -246,3 +246,48 @@
         }
     }
 }
+.brands {
+    background: #f3f1f1;
+    padding: 1.5rem 0;
+    &-content {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    &-slider {
+        max-width: 80%;
+        width: 100%;
+        
+    }
+    &-left {
+        width: 100%;
+        max-width: 10%;
+        transform: rotate(180deg);
+        display: flex;
+        justify-content: flex-end;
+    }
+    &-right {
+        width: 100%;
+        max-width: 10%;
+        justify-content: flex-end;
+    }
+    button {
+        background: none;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        cursor: pointer;
+    }
+    &-item {
+        height: 50px;
+        img {
+            filter: grayscale(1);
+            object-fit: contain;
+            object-position: center;
+            height: 100%;
+            &:hover {
+                filter: grayscale(0);
+            }
+        }
+    }
+}
