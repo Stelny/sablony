@@ -1,0 +1,51 @@
+.contact {
+    padding: 6rem 0;
+    iframe {
+        width: 100%;
+    }
+    &-content {
+        display: flex;
+        flex-wrap: wrap;
+        &-left {
+            width: 100%;
+            max-width: 50%;
+        }
+        &-right {
+            width: 100%;
+            max-width: 50%;
+        }
+    }
+    &-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+    &-item {
+        padding-left: 3rem;
+        display: flex;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 27px;
+            height: 27px;
+        }
+        &.location::before {
+
+            background: url(./../icons/location.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }   
+        &.hours {
+            &::before {
+                background: url(./../icons/clock.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+
+}

@@ -9,6 +9,9 @@
         font-size: 15px;
         cursor: pointer;
         border: 1px solid var(--primary);
+        display: block;
+        max-width: fit-content;
+        max-width: -moz-fit-content;
         @media screen and (max-width: 1400px) { 
             font-size: 14px;
             padding: 0.75rem 1rem;
