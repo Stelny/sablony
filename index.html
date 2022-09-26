@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-	<title>AUTOBAZAREXTRA</title>
+	<title>Chaukiss</title>
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,56 +16,51 @@
 	
 	<!-- Owl Carousel -->
 	<link rel="stylesheet" type="text/css" href="owlcarousel/dist/assets/owl.carousel.css">
-	<link rel="stylesheet" type="text/css" href="owlcarousel/dist/assets/owl.theme.default.min.css"> </head>
+	<link rel="stylesheet" type="text/css" href="owlcarousel/dist/assets/owl.theme.default.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
 
 	<!-- Style -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link  rel="stylesheet/less" href="style/main.scss" />
 	<script src="https://cdn.jsdelivr.net/npm/less@4"></script>
-	<script src="js/script.js" async defer type="text/javascript"></script>
 </head>
 <body>
 	<div class="header">
 		<div class="container">
 			<div class="header-content">
-				<a href="" class="header-content-logo">
-					<img src="./icons/logo.svg" alt="Logo" />
+				<a href="#home" class="header-content-logo">
+					<img src="./icons/logo.png" alt="Logo" />
 				</a>
 				<div class="header-content-menu" id="headerMenu">
 					<ul>
 						<li>
-							<a href="">
-								Nabídka
+							<a href="#home" class="active" id="home-it">
+								Home
 							</a>
 						</li>
 						<li>
-							<a href="">
-								Nabídka
+							<a href="#our-story" id="our-story-it">
+								Our story
 							</a>
 						</li>
 						<li>
-							<a href="">
-								Nabídka
+							<a href="#products" id="products-it">
+								Products
 							</a>
 						</li>
 						<li>
-							<a href="">
-								Nabídka
-							</a>
-						</li>
-						<li>
-							<a href="">
-								Nabídka
+							<a href="#contact" id="contact-it">
+								Contact
 							</a>
 						</li>
 					</ul>
+					<div class="header-content-menu-cta">
+						 <a href="#contact" class="btn-black">GET IN TOUCH</a>
+					</div>
 				</div>
 				<div class="header-content-cta">
-					<a href="" class="btn-header">VÝKUP VOZIDEL</a>
-				</div>
-				<div class="header-content-contact">
-					<span>(+420) 603 849 471</span>
-					<span>info@autobazarextra.cz</span>
+					<a href="#contact" class="btn-header">GET IN TOUCH</a>
 				</div>
 				<button class="header-content-toggle" id="headerMenuToggle">
 					<span></span>
@@ -75,148 +70,231 @@
 			</div>
 		</div>
 	</div>
-	<div class="owl-carousel owl-theme homepage-slider">
-		<div class="homepage-slider-item">
-			<div class="container">
-				<div class="homepage-slider-text">
-					<h1>AUTO EXTRA</h1>
-					<p>AUTOBAZAR S PROVĚŘENÝMI VOZY</p>
-					<a href="" class="btn-banner">více o nás</a>
-				</div>
-			</div>
+	<div class="hero" id="home">
+		<div class="hero-image">
+			<video width="1920" height="1080" autoplay loop muted>
+				<source  src="./video/hero.mp4" type="video/mp4">
+			  Your browser does not support the video tag.
+			  </video> 
 		</div>
-		<div class="homepage-slider-item">
+		<div class="hero-text">
 			<div class="container">
-				<div class="homepage-slider-text">
-					<h1>AUTO EXTRA</h1>
-					<p>AUTOBAZAR S PROVĚŘENÝMI VOZY</p>
-					<a href="" class="btn-banner">více o nás</a>
-				</div>
+				<h1>Designers &<br> Manufacturers <br>
+					Of Stationary Products</h1>
 			</div>
 		</div>
 	</div>
-	<div class="brands">
+	<div class="about" id="our-story">
 		<div class="container">
-			<div class="brands-content">
-				<div class="owl-carousel owl-theme brands-slider">
-					<div class="brands-item">
-						<img src="./images/brands/ford.png" alt="Ford" />
+			<div class="about-content">
+				<div class="about-content-left">
+					<h2>OUR STORY</h2>
+					<div class="about-content-image mobile">
+						<img src="./images/notes.jpg" alt="notes" />
 					</div>
-					<div class="brands-item">
-						<img src="./images/brands/ford.png" alt="Ford" />
+					<div class="about-content-text">
+						<p>Chaukiss LLC is a family-owned European subsidiary out of a small town in Czech Republic. Founded in 2017 by Filip, Chaukiss is the new modern designer and manufacturer of greeting cards and stationery items made from sustainable materials.</p>
+						<p>In 2022, we are expanding our distribution to America. Get in touch to learn more.</p>
+						<p>By Filip and Lucie</p>
 					</div>
-					<div class="brands-item">
-						<img src="./images/brands/ford.png" alt="Ford" />
-					</div>
-					<div class="brands-item">
-						<img src="./images/brands/ford.png" alt="Ford" />
-					</div>
-					<div class="brands-item">
-						<img src="./images/brands/ford.png" alt="Ford" />
+					<a href="#contact" class="btn-black"> GET IN TOUCH</a>
+				</div>
+				<div class="about-content-right">
+					<div class="about-content-image">
+						<img src="./images/notes.jpg" alt="notes" />
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="catalog">
-		<div class="catalog-heading">
-			<h2>AKTUÁLNÍ NABÍDKA AUTOMOBILŮ</h2>
-		</div>
-		<div class="catalog-filters">
-			<a href="" class="catalog-filters-item">
-				SKLADOVE
-			</a>
-			<a href="" class="catalog-filters-item">
-				SKLADOVE
-			</a>
-			<a href="" class="catalog-filters-item">
-				SKLADOVE
-			</a>
-
-		</div>
-		<div class="catalog-grid">
-			<div class="product-card">
-				<div class="product-label">
-					<span>-20%</span>
+	<div class="products" id="products">
+		<div class="container">
+			<div class="products-content">
+				<h2>PRODUCTS</h2>
+				<div class="products-grid active">
+					<a href="" class="products-item" id="gallery">
+						<img src="./images/card.jpg" alt="Card" />
+						<div class="products-item-text">
+							<h3>GREETING CARDS</h3>
+							<span>Show details</span>
+						</div>
+					</a>
+					<a href="" class="products-item" id="text">
+						<img src="./images/card.jpg" alt="Card" />
+						<div class="products-item-text">
+							<h3>COMPOSTABLE<br> PACKAGING</h3>
+							<span>Show details</span>
+						</div>
+					</a>
 				</div>
-				<a href="" class="product-image">
-					<img src="./images/auto.png" alt="auto" />
-				</a>	
-				<div class="product-content">
-					<h3><a href=''>BMW Řada 3 3,0 l</a></h3>
-					<p>BMW Řada 3 3,0 i, navi,kůže,serviska, 2008 - 200 KW Benzín - šedá metalíza</p>
-					<span class="product-price">269000,-</span>
+				<div class="products-section" id="text-it">
+					<a href="" class="products-section-link">
+						COMPOSTABLE PACKAGING
+					</a>
+					<div class="products-card">
+						<h4>Lorem Ipsum</h4>
+						<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean vel massa quis mauris vehicula lacinia. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Pellentesque ipsum. Nunc auctor. Fusce tellus. Praesent in mauris eu tortor porttitor accumsan. Nam quis nulla. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Duis condimentum augue id magna semper rutrum. Sed ac dolor sit amet purus malesuada congue. Fusce wisi. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quisque porta. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+						</p>
+						<p>
+							Praesent vitae arcu tempor neque lacinia pretium. Vivamus porttitor turpis ac leo. Aliquam ante. Fusce nibh. Suspendisse sagittis ultrices augue. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Fusce aliquam vestibulum ipsum. Nunc auctor. Nulla pulvinar eleifend sem. Nullam eget nisl. Aliquam erat volutpat. In enim a arcu imperdiet malesuada. Quisque tincidunt scelerisque libero. Nulla non arcu lacinia neque faucibus fringilla.
+						</p>
+						<p>
+							Aenean vel massa quis mauris vehicula lacinia. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Etiam bibendum elit eget erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Proin in tellus sit amet nibh dignissim sagittis. Fusce consectetuer risus a nunc. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Aliquam erat volutpat. Nam quis nulla. Aliquam erat volutpat. Nulla pulvinar eleifend sem. Aliquam erat volutpat. </p>
+						</p>
+					</div>
 				</div>
-				<a href="" class="product-link">
-
-				</a>
+				<div class="products-section" id="gallery-it">
+					<a href="" class="products-section-link">
+						GREETING CARDS
+					</a>
+					<div class="products-gallery">
+						<a href="" class="products-gallery-item fancybox" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox inactive" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox inactive" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox inactive" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox inactive" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox inactive" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox inactive" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox inactive" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox inactive" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox inactive" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox inactive" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox inactive" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+						<a href="" class="products-gallery-item fancybox inactive" data-fancybox="mygallery">
+							<img src="./images/note.png" alt="Note" />
+						</a>
+					</div>
+					<div class="products-button">
+						<button class="btn-black" data-id="12" id="show-more">Show More</button>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="catalog-more">
-			<a href="btn-default">
-				ZOBRAZIT VŠECHNY NABÍDKY
-			</a>
+	</div>
+	<div class="contact" id="contact">
+		<div class="container">
+			<h2>CONTACT</h2>
+			<div class="contact-content">
+				<div class="contact-content-left">
+					<form>
+						<div class="input-div">
+							<input type="" placeholder="Name" />
+						</div>
+						<div class="input-div">
+							<input type="" placeholder="E-mail" />
+						</div>
+						<div class="input-div">
+							<textarea placeholder="Text" rows="10"></textarea>
+						</div>
+						<div class="input-div">
+							<button class="btn-black">Send</button>
+						</div>
+					</form>
+				</div>
+				<div class="contact-content-right">
+					<div class="contact-card">
+						<div class="contact-card-image">
+							<img src="./images/person.jpg" title="Adam Prskavec" />
+						</div>
+						<div class="contact-card-heading">
+							<h3>Adam Prskavec</h3>
+							<span>General Manager for Americas</span>
+							<span>Chaukiss LLC</span>
+						</div>
+						<div class="contact-card-info">
+							<a href="tel:+1 5551-655-5181" class="phone">+1 5551-655-5181</a>
+							<a href="mailto:adam@chaukiss.com" class="mail">adam@chaukiss.com</a>
+						</div>
+						<div class="contact-card-socials">
+							<a href="https://www.instagram.com/chaukiss/">
+								<img src="./icons/instagram.svg" alt=""/>
+							</a>
+							<a href="https://cz.pinterest.com/chaukiss/">
+								<img src="./icons/pinterest.svg" alt=""/>
+							</a>
+							<a href="https://www.youtube.com/channel/UC_Cwnsx_DZX-oAIZmMGH8sQ">
+								<img src="./icons/youtube.svg" alt=""/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="footer">
 		<div class="container">
-			<div class="footer-content">
-				<div class="footer-item contact">
-					<ul>
-						<li class="mail">
-							<a href="">info@autobazarextra.cz</a>
-						</li>
-						<li class="phone">
-							<a href="">(+420) 603 849 471</a>
-						</li>
-					</ul>
-				</div>
-				<div class="footer-item location">
-					<p>
-						<b>AUTO EXTRA</b>
-						<br>
-						ul.Palackého 526
-						<br>
-						Holešov - Všetuly 769 01
-						<br>
-						E-mail: info@autobazarextra.cz
-					</p>
-				</div>
-				<div class="footer-item hours">
-					<p>
-						Po-Pá: 9:00 - 18:00 hod
-						<br>
-						So: 9:00 - 12:00
-					</p>
-				</div>
-				<div class="footer-item">
-					<div class="socials">
-						<a href="">
-							<img src="./icons/fb.svg" alt="fb" />
-						</a>
-						<a href="">
-							<img src="./icons/yt.svg" alt="yt" />
-						</a>
-						<a href="">
-							<img src="./icons/ig.svg" alt="ig" />
-						</a>
-					</div>
-					<p>Copyright © autobazarextra.cz
-						 
-						Tvorba www stránek MACHIN.cz</p>
-				</div>
-			</div>
+			<p>All rights reserved chaukiss.com  © 2022</p>
 		</div>
 	</div>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script
+			  src="https://code.jquery.com/jquery-3.6.1.js"
+			  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+			  crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type="text/javascript" src="owlcarousel/dist/owl.carousel.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-<script src="js/script.js" type="text/javascript"></script>
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="js/script.js" async defer type="text/javascript"></script>
+
 </html>
 
 
