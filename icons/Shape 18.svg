@@ -1,0 +1,16 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27" width="27" height="27">
+	<title>Artboard 1</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m-845-467h1920v1080h-1920z"/>
+		</clipPath>
+	</defs>
+	<style>
+		.s0 { fill: #ff999e } 
+	</style>
+	<g id="Artboard 1" clip-path="url(#cp1)">
+		<g id="Home-1">
+			<path id="-e- Shape 18" fill-rule="evenodd" class="s0" d="m25 13c0 6.6-5.4 12-12 12-6.6 0-12-5.4-12-12 0-6.6 5.4-12 12-12 6.6 0 12 5.4 12 12zm-2.1-1h-2.8c-0.2-3-1-5.7-2.2-7.7 2.8 1.6 4.7 4.4 5 7.7zm-10.9-8.8v8.8h-4.1c0.3-4.3 2-7.9 4.1-8.8zm0 10.8v8.8c-2.1-0.9-3.8-4.5-4.1-8.8zm2 8.8v-8.8h4.1c-0.2 4.3-1.9 7.9-4.1 8.8zm0-10.8v-8.8c2.2 0.9 3.9 4.5 4.1 8.8zm-5.9-7.7c-1.2 2-2 4.7-2.2 7.7h-2.8c0.3-3.3 2.2-6.1 5-7.7zm-5 9.7h2.8c0.2 3 1 5.7 2.2 7.7-2.8-1.6-4.7-4.4-5-7.7zm14.8 7.7c1.2-2 2-4.7 2.2-7.7h2.8c-0.3 3.3-2.2 6.1-5 7.7z"/>
+		</g>
+	</g>
+</svg>
