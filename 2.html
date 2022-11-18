@@ -41,8 +41,8 @@
 					<a href="">
 						<img src="./icons/logo.png" alt=""/>
 					</a>
-					<h1>AZUB&nbsp;<span>Bike Configurator</span></h1>
 				</div>
+				<h1>AZUB&nbsp;<span>Bike Configurator</span></h1>
 				<div class="header-content-languages">
 					<a href="" class="header-content-languages-item active">
 						EUR
@@ -77,8 +77,29 @@
 						  <option value="3">Australia</option>
 						</select>
 					</div>
-					
+					  <h2>IMPORTANT NOTE</h2>
+					<p>Prices for customers from European Union incl. VAT and shipping. </p>
+					<div class="custom-checkbox mt-4">
+						<input type="checkbox" id="accept" />
+						<label for="accept">Remember my choice</label>
+					</div>
+					<!-- Remove disable to display red btn -->
+					<button disabled class="btn-confirm mt-3">
+						Confirm
+					</button>
 				</div>
+			</div>
+		</div>
+	</div>
+	<div id="modal" class="modal-container">
+		<div class="modal-pop">
+			<div class="modal-close" onclick="closeModal()">
+				<img src="./icons/close.svg"/>
+			</div>	
+			<div class="modal-text">
+				<h3>Customers from European Union</h3>
+				<p>Prices for customers from European Union incl. VAT and shipping. </p>
+				<button class="btn-confirm mt-3" onclick="closeModal()">Confirm</button>
 			</div>
 		</div>
 	</div>
