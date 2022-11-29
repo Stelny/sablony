@@ -1,0 +1,17 @@
+.btn {
+    &-default {
+        display: block;
+        background: var(--purple);
+        color: white;
+        padding: .75rem 2.5rem;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 700;
+        border: 2px solid var(--purple);
+        &:hover {
+            color: var(--purple);
+            background: white;
+            text-decoration: none;
+        }
+    }
+}
