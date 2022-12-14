@@ -17,6 +17,12 @@ img, iframe {
 a,a:hover {
     color: black;
 }
+body {
+    margin-top: 143px;
+    @media screen and (max-width: 991px) { 
+        margin-top: 127px;
+    }
+}
 .header {
     border-bottom: 1px solid #DCDCDC;
     background: white;
@@ -54,10 +60,41 @@ a,a:hover {
         align-items: center;
         justify-content: space-between;
         padding: 1.25rem 0;
+        @media screen and (max-width: 991px) {  
+            padding: 0.75rem 0;
+        }
         &-logo {
             max-width: 250px;
         }
         &-menu {
+            @media screen and (max-width: 991px) { 
+                display: none;
+                &.active {
+                    display: block;
+                    position: fixed;
+                    top: 127px;
+                    left: 0;
+                    width: 100%;
+                    background: white;
+                    ul {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        list-style: none;
+                        li {
+                            padding: 1rem;
+                            a {
+    
+                            }
+                        }
+                    }
+                }
+                -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.14);
+                -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.14);
+                box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.14);
+            }
+            
             ul {
                 list-style: none;
                 display: flex;
@@ -76,6 +113,26 @@ a,a:hover {
             }
         }
         &-toggle {
+            height: 40px;
+            width: 30px;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            background: none;
+            border: none;
+            align-items: center;
+            justify-content: center;
+            outline: none!important;
+            span {
+                width: 30px;
+                height: 3px;
+                border-radius: 50px;
+                background: black;
+                margin-bottom: 0.5rem;
+                &:last-child {
+                    margin: 0;
+                }
+            }
             @media screen and (min-width: 991px) {
                 display: none;   
             }
@@ -84,7 +141,7 @@ a,a:hover {
 }
 .homepage {
     &-banner {
-        padding-top: 108px;
+
         height: 100vh;
         position: relative;
         video {
@@ -135,6 +192,9 @@ a,a:hover {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 2rem;
+            @media screen and (max-width: 991px) {  
+                grid-template-columns: 1fr;
+            }
         }
         &-item {
             border-radius: 18px;
@@ -187,6 +247,12 @@ a,a:hover {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
+        @media screen and (max-width: 991px) {  
+            grid-template-columns: repeat(2,1fr);
+        }
+        @media screen and (max-width: 776px) {  
+            grid-template-columns: 1fr;
+        }
     }
     &-item {
         max-width: 100%;
@@ -279,28 +345,48 @@ a,a:hover {
         &-left {
             max-width: 60%;
             width: 100%;
+            @media screen and (max-width: 991px) {
+                max-width: 100%;
+            }
         }
         &-right {
             max-width: 40%;
             width: 100%;
             text-align: right;
+            
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
         }
     }
 }
 .contact {
     display: flex;
     width: 100%;
+    @media screen and (max-width: 991px) { 
+        flex-direction: column;
+    }
     &-left {
         background: #FAFAFA;
         padding: 4rem;
         max-width: 50%;
         width: 100%;
+        @media screen and (max-width: 991px) { 
+            padding: 4rem;
+            order: 2;
+            max-width: 100%;
+        }
     }   
     &-right {
         background: var(--purple);
         padding: 4rem;
         max-width: 50%;
         width: 100%;
+        @media screen and (max-width: 991px) { 
+            padding: 4rem;
+            order: 1;
+            max-width: 100%;
+        }
     }
     &-form {
 
@@ -323,6 +409,9 @@ a,a:hover {
         width: 100%;
         max-width: 500px;
         margin: auto;
+        @media screen and (max-width: 991px) {  
+            max-width: unset;
+        }
     }
     &-heading {
         margin-bottom: 4rem;
@@ -351,6 +440,9 @@ a,a:hover {
         &-item {
             display: flex;
             margin-bottom: 1rem;
+            @media screen and (max-width: 991px) {  
+                margin-bottom: 2rem;
+            }
             &-number {
                 max-width: 75px;
                 height: 75px;
@@ -416,6 +508,57 @@ a,a:hover {
     &-socials {
         a {
 
+        }
+    }
+}
+.subpage {
+    padding: 4rem 0;
+    &-header {
+        padding: 3rem 0;
+        border-bottom: 1px solid #DCDCDC;
+        @media screen and (max-width: 576px) { 
+            padding: 2rem 0;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: black;
+            font-weight: 700;
+            @media screen and (max-width: 576px) {
+                text-align: center;
+            }
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            @media screen and (max-width: 576px) { 
+                display: none;
+            }
+            li {
+                display: flex;
+                align-items: center;
+                
+                &::after {
+                    content: "|";
+                    display: block;
+                    margin: 0 0.5rem;
+                    color: #959595;
+                }
+                &:last-child::after {
+                    display: none;
+                }
+                a {
+                    color: #959595;
+                }
+                &:last-child {
+                    
+                    a {
+                        color: black;
+                    }
+                }
+            }
         }
     }
 }
