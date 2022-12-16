@@ -363,9 +363,41 @@ body {
 .contact {
     display: flex;
     width: 100%;
+    
+    &-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+    }
+    &-card {
+        width: 100%;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+        padding: 1.5rem 2rem; 
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        } 
+        p {
+            font-size: 1rem;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li {
+                a {
+
+                }
+            }
+        }
+    }
+    
     @media screen and (max-width: 991px) { 
         flex-direction: column;
     }
+
     &-left {
         background: #FAFAFA;
         padding: 4rem;
