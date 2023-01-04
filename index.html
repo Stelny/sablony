@@ -12,56 +12,73 @@
 	<script src="https://cdn.jsdelivr.net/npm/less@4"></script>
 </head>
 <body>
+
 	<div class="header">
-		<div class="header-content">
-			<a href="" class="header-logo">
-				<img src="./icons/logo.svg" alt="logo"/>
-			</a>
-			<div class="header-menu">
-				<ul>
-					<li>
-						<a href="" title="O produktu">
-							O produktu
-						</a>
-					</li>
-					<li>
-						<a href="" title="Ceník">
-							Ceník
-						</a>
-					</li>
-					<li>
-						<a href="" title="Ceník">
-							Faq
-						</a>
-					</li>
-					<li>
-						<a href="" title="Reference">
-							Reference
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="header-cta">
-				<button class="btn-pink">Rezervovat</button>
+		<div class="container-fluid">
+			<div class="header-content">
+				<a href="" class="header-logo">
+					<div class="d-none d-lg-block w-100">
+						<img src="./icons/logo.svg" alt="logo" id="changeLogo" class="active"/>
+						<img src="./icons/logo-gold.svg" alt="logo" id="changeLogoGold"/>
+					</div>
+					<div class="d-block d-lg-none w-100">
+						<img src="./icons/favicon-pink.svg" alt="logo" id="changeLogoMobile" class="active"/>
+						<img src="./icons/favicon-gold.svg" alt="logo" id="changeLogoMobileGold"/>
+					</div>
+				</a>
+				<div class="header-menu">
+					<ul id="headerMenu">
+						<li>
+							<a href="#o-produktu" title="O produktu">
+								O produktu
+							</a>
+						</li>
+						<li>
+							<a href="#cenik" title="Ceník">
+								Ceník
+							</a>
+						</li>
+						<li>
+							<a href="#faq" title="Ceník">
+								Faq
+							</a>
+						</li>
+						<li>
+							<a href="#reference" title="Reference">
+								Reference
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header-cta">
+					<button class="btn-pink" id="changeBtn">Rezervovat</button>
+				</div>
+				<div class="header-toggle" id="openHeader">
+					<button>
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="hero">
 		<video width="1920" height="1080" autoplay loop muted>
 			<source  src="./video/memories.mp4" type="video/mp4">
-		  Your browser does not support the video tag.
-		  </video> 
-		<a href="" class="hero-left">
-			<h2>PÁRTY</h2>
-		</a>
-		<a href="" class="hero-right">
-			<h2>SVATBY</h2>
-		</a>
-		<a href="" class="btn-hero">
-			Objednat
-		</a>
+		  		Your browser does not support the video tag.
+		  	</video> 
+			<a href="" class="hero-left">
+				<h2>PÁRTY</h2>
+			</a>
+			<a href="" class="hero-right">
+				<h2>SVATBY</h2>
+			</a>
+			<a href="" class="btn-hero">
+				Objednat
+			</a>
 	</div>
-	<div class="section">
+	<div class="section" id="o-produktu">
 		<div class="container">
 			<div class="section-heading">
 				<div class="section-heading-left">
@@ -77,13 +94,13 @@
 	<div class="about">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-5">
+				<div class="col-lg-5 order-2 order-lg-1">
 					<div class="about-text">
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Sed vel lectus. </p>
 						<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Integer pellentesque quam vel velit. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Duis pulvinar. Praesent dapibus. Maecenas lorem. Integer lacinia. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam id dolor. Praesent in mauris eu tortor porttitor accumsan.</p>
 					</div>
 				</div>
-				<div class="col-lg-6 offset-lg-1">
+				<div class="col-lg-6 offset-lg-1 mb-5 mb-lg-0 p-0 order-1 order-lg-2">
 					<div class="about-image">
 						<img src="./images/about.png" alt="about" />
 					</div>
@@ -91,7 +108,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="section">
+	<div class="section" id="cenik">
 		<div class="container">
 			<div class="section-heading">
 				<div class="section-heading-left">
@@ -192,7 +209,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="section">
+	<div class="section" id="faq">
 		<div class="container">
 			<div class="section-heading">
 				<div class="section-heading-left">
@@ -299,7 +316,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="section">
+	<div class="section" id="reference">
 		<div class="container">
 			<div class="section-heading">
 				<div class="section-heading-left">
@@ -345,11 +362,61 @@
 	<div class="footer">
 		<div class="container">
 			<div class="footer-content">
-				
+				<div class="footer-item d-xl-flex d-none align-items-center justify-content-center">
+					<img src="./icons/logo-white.svg" alt="Logo"/>
+				</div>
+				<div class="footer-item">
+					<h3>INFORMACE</h3>
+					<p>
+						360 memories s.r.o,
+						<br/>
+						Jeremiašova 15
+						<br/>
+						550 22
+						<br>
+						<br>
+						+420721187539
+						<br>
+						info@360memories.cz
+					</p>
+				</div>
+				<div class="footer-item">
+					<h3>ODKAZY</h3>
+					<ul>
+						<li>
+							<a href="">
+								Faq
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Časté dotazy
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Obchodní podmínky
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-item">
+					<h3>PŘIDEJ SE K NÁM</h3>
+					<p>Chceš se přidat do našeho týmu ? Neváhej nás kontaktovat</p>
+					<form>
+						<div class="help-div">
+							<input type="text" placeholder="E-mail"/>
+							<button>
+								 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 42.67"><defs><style>.cls-1{fill:#35353d;}</style></defs><title>Asset 47</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M63.22,19.57,44.5.78a2.67,2.67,0,0,0-3.78,3.77L54.79,18.67H2.67a2.67,2.67,0,1,0,0,5.33H55L40.73,38.11a2.67,2.67,0,1,0,3.76,3.78L63.21,23.35a2.67,2.67,0,0,0,0-3.78Z"/></g></g></svg>
+							</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
 </body>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="js/script.js"></script>
 
 </html>
