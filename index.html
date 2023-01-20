@@ -22,7 +22,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link  rel="stylesheet/less" href="style/main.scss" />
 	<script src="https://cdn.jsdelivr.net/npm/less@4"></script>
-	<script src="js/script.js" async defer type="text/javascript"></script>
 </head>
 <body>
 	<div class="header">
@@ -34,7 +33,7 @@
 				<div class="header-content-menu" id="headerMenu">
 					<ul>
 						<li>
-							<a href="">
+							<a href="" class="active">
 								Nabídka
 							</a>
 						</li>
@@ -61,14 +60,14 @@
 					</ul>
 				</div>
 				<div class="header-content-contact">
-					<span>+420 123 456 789</span>
+					<a href="">123 456 789</a>
 				</div>
 				<div class="header-content-socials">
 					<a href="">
-
+						<img src="./icons/fb.svg" alt="fb"/>
 					</a>
 					<a href="">
-						
+						<img src="./icons/yt.svg" alt="yt" />
 					</a>
 				</div>
 				<button class="header-content-toggle" id="headerMenuToggle">
@@ -81,12 +80,12 @@
 	</div>
 	<div class="owl-carousel owl-theme homepage-slider">
 		<div class="homepage-slider-item">
+			<img src="./images/banner.png" alt="Banner" />
 			<div class="container">
 				<div class="homepage-slider-text">
 					<h1>Použití dronů pro monitorování vegetace </h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
 						ut labore et dolore magna aliqua. </p>
-						
 					<a href="" class="btn-default">Naše služby</a>
 				</div>
 			</div>
@@ -154,48 +153,80 @@
 				
 			</div>
 		</div>
-		<div class="about">
-			<div class="container">
-				<div class="about-content">
-					<div class="about-image">
-
-					</div>
-					<div class="about-text">
-						<h2></h2>
-						<p></p>
-						<div>
-							<a href="" class="btn-default">Více o nás</a>
-						</div>
-					</div>
-
+	</div>
+	<div class="about">
+		<div class="container">
+			<div class="about-content">
+				<div class="about-image">
+					<img src="./images/about.png" alt="about" />
 				</div>
+				<div class="about-text">
+					<h2>Chytrevinarstvi.cz</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+					<div>
+						<a href="" class="btn-default">Více o nás</a>
+					</div>
+				</div>
+
 			</div>
 		</div>
-		<div class="reference">
-			<div class="container">
-				<div class="reference-heading">
-
+	</div>
+	<div class="reference">
+		<div class="container">
+			<div class="reference-heading">
+				<h2>Naše realizace</h2>
+			</div>
+			<div class="reference-content">
+				<button class="reference-arrow prev"></button>
+				<a href="" class="reference-item">
+					<img src="" alt="" />
+				</a>
+				<button class="reference-arrow next"></button>
+			</div>
+			<div class="reference-cta">
+				<a href="" class="btn-default">Další realizace</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-item">
+					<img src="./icons/logo.svg" />
 				</div>
-				<div class="reference-content">
-					<button class="reference-arrow prev"></button>
-					<a href="" class="reference-item">
-						<img src="" alt="" />
-					</a>
-					<button class="reference-arrow next"></button>
+				<div class="footer-item pin">
+					 <p>Testik</p>
 				</div>
-				<div class="reference-cta">
-					<a href="" class="btn-default">Další realizace</a>
+				<div class="footer-item">
+					<ul>
+						<li>
+							<a href="">Domů</a>
+						</li>
+						<li>
+							<a href="">Domů</a>
+						</li>
+						<li>
+							<a href="">Domů</a>
+						</li>
+						<li>
+							<a href="">Domů</a>
+						</li>
+						<li>
+							<a href="">Domů</a>
+						</li>
+					</ul> 
 				</div>
 			</div>
 		</div>
 	</div>
+
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type="text/javascript" src="owlcarousel/dist/owl.carousel.js"></script>
 <script src="js/script.js" type="text/javascript"></script>
-</script>
 </html>
 
 
