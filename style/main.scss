@@ -134,11 +134,15 @@ a:hover, a {
                 display: none;
             }
             &::before {
-                content: url(./../icons/phone-white.svg);
+                content: '';
+                background: url(./../icons/phone-white.svg);
+                background-repeat: no-repeat;
+                
+                background-position: center center;
                 width: 100%;
                 max-width: 45px;
                 height: 45px;
-                background: var(--primary);
+                background-color: var(--primary);
                 border-radius: 50px;
                 display: flex;
                 align-items: center;
@@ -637,6 +641,19 @@ a:hover, a {
         font-weight: 700;
         margin-bottom: 2rem;
     }
+    &-contact {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        a {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: black;
+            &:last-child {
+                color: var(--primary);
+            }
+        }
+    }
     &-banner {
         padding: 3rem 0;
         display: flex;
@@ -723,6 +740,9 @@ a:hover, a {
             }
         }
     }
+    iframe {
+        width: 100%;
+    }
 }
 .contact {
     &-form {
@@ -775,4 +795,18 @@ a:hover, a {
         }
     }
 
+}
+
+#dots {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    span {
+        margin-right: 0.5rem;
+        width: 8px;
+        height: 8px;
+        display: block;
+        background: var(--primary);
+        border-radius: 50px;
+    }
 }
