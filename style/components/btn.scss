@@ -1,0 +1,106 @@
+.btn {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    
+    &-white {
+        background: white;
+        color: var(--black);
+        font-weight: 600;
+        box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.03);
+        border-radius: 50px;
+        padding: 0.75rem 2rem;
+        transition: 0.5s all ease-in-out;
+        text-decoration: none;
+        display: flex;
+        max-width: fit-content;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    
+        &:hover {
+            transform: translateY(-3px);
+            text-decoration: none;
+            color: var(--black);
+        }
+        
+    }
+    &-grey {
+        background: var(--grey);
+        color: var(--black);
+        font-weight: 600;
+        border-radius: 50px;
+        padding: 0.75rem 2rem;
+        transition: 0.5s all ease-in-out;
+        text-decoration: none;
+        display: flex;
+        max-width: fit-content;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            text-decoration: none;
+            color: var(--black);
+        }
+    }
+    &-default {
+        background: var(--primary);
+        color: white;
+        font-weight: 600;
+        box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.03);
+        border-radius: 50px;
+        padding: 0.75rem 2rem;
+        transition: 0.5s all ease-in-out;
+        text-decoration: none;
+        display: flex;
+        max-width: fit-content;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    
+        &:hover {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    &-filter {
+        background: var(--grey);
+        padding: 0.75rem 2rem;
+        color: var(--black);
+        font-weight: 500;
+        font-size: 1rem;
+        border-radius: 50px;
+        padding: 0.75rem 2rem;
+        transition: 0.5s all ease-in-out;
+        text-decoration: none;
+        display: flex;
+        max-width: fit-content;
+        outline: none!important;
+        border: none;
+        cursor: pointer;
+        align-items: center;
+    
+        &::before {
+            content: '';
+            width: 15px;
+            height: 14px;
+            margin-right: 1rem;
+            background: url(./../icons/filter.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &:hover {
+            background: var(--primary);
+            color: white;
+            
+        }
+        &:hover::before {
+            background: url(./../icons/filter-white.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
