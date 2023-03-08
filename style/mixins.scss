@@ -3,6 +3,11 @@
         max-width: 540px;
     }
 }
+@media (min-width: 650px) {
+    .container {
+        max-width: 680px;
+    }
+}
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
@@ -31,10 +36,5 @@
 @media (min-width: 1500px) {
     .container {
         max-width: 1440px;
-    }
-}
-@media (min-width: 1600px) {
-    .container {
-        max-width: 1540px;
     }
 }

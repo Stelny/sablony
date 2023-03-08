@@ -1,0 +1,218 @@
+.products {
+    padding: 4rem 0;
+    &-heading {
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--black);
+            
+        }
+    }
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+        @media screen and (max-width: 1500px) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 4rem;
+        }
+        @media screen and (max-width: 1300px) { 
+            grid-gap: 2rem;
+        }
+        @media screen and (max-width: 1200px) { 
+            grid-gap: 1rem;
+        }
+        @media screen and (max-width: 991px) { 
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (max-width: 567px) { 
+            grid-template-columns: 1fr;
+        }
+    }
+    &-item {
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0px 0px 30px 10px #00000013;
+        position: relative;
+
+        &.fast {
+            border: 3px solid var(--primary);
+            &::after {
+                content: "Urgentně hledáme";
+                background: var(--primary);
+                color: white;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 0.5rem 2rem;
+                border-bottom-left-radius: 18px;
+                border-bottom-right-radius: 18px;
+                display: flex;
+                white-space: nowrap;
+                font-weight: 600;
+            }
+        }
+
+        &.star {
+            border: 3px solid var(--yellow);
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: var(--yellow) url(./../icons/star.svg) no-repeat 15px 15px;
+                height: 55px;
+                width: 55px;
+                z-index: 5;
+                display: block;
+                border-bottom-right-radius: 18px;
+                border-top-left-radius: 0px;
+            }
+        }
+        &-image {
+            display: block;
+            height: 220px;
+            width: 100%;
+            position: relative;
+            @media screen and (max-width: 1200px) {  
+                height: 180px;
+            }
+            img {
+                object-fit: cover;
+                object-position: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-tags {
+            position: absolute;
+            bottom: .5rem;
+            left: .5rem;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            &-item {
+                background: white;
+                padding: 3px 1rem;
+                color: var(--black);
+                border-radius: 50px;
+                font-size: 0.815rem;
+                font-weight: 500;
+                margin: 5px 2px;
+            }
+        }
+        &-content {
+            padding: .5rem 1rem;
+        }
+        &-details {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            &-location {
+                font-size: 0.875rem;
+                color: var(--primary);
+                display: flex;
+                align-items: center;
+    
+                &::before {
+                    content: '';
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: url(./../icons/location.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    width: 16px;
+                    height: 15px;
+                    margin-right: .35rem;
+                }
+            }
+            &-date {
+                display: flex;
+                align-items: center;
+                color: var(--greyText);
+                font-size: 0.875rem;
+                margin-left: 1rem;
+                &::before {
+                    content: '';
+                    width: 11px;
+                    height: 11px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: url(./../icons/calendar.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    margin-right: .35rem;
+                }
+            }
+        }
+        &-title {
+            font-size: 1.375rem;
+            color: var(--black);
+            font-weight: 600;
+            line-height: 1.25;
+            display: block;
+            margin-bottom: .75rem;
+            height: 55px;
+            @media screen and (max-width: 1200px) {  
+                font-size: 1.25rem;
+                height: 50px;
+            }
+            @media screen and (max-width: 650px) {  
+                font-size: 1rem;
+                height: 40px;
+            }
+            @media screen and (max-width: 567px) {  
+                font-size: 1.25rem;
+                height: unset;
+            }
+            &:hover {
+                color: var(--primary);
+                text-decoration: none;
+            }
+        }
+        p {
+            font-size: 1rem;
+            color: var(--greyText);
+            height: 48px;
+            margin-bottom: 1rem;
+            @media screen and (max-width: 1200px) {  
+                font-size: 0.875rem;
+                height: 42px;
+            }
+            @media screen and (max-width: 650px) {  
+                font-size: 0.7rem;
+                height: 34px;
+            }
+            @media screen and (max-width: 567px) {  
+                font-size: 0.875rem;
+                height: unset;
+            }
+        }
+        &-company {
+            text-decoration: underline;
+            font-size: 0.875rem;
+            color: var(--primary);
+            font-weight: 500;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        &-price {
+            font-size: 1rem;
+            color: var(--black);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        &-cta {
+            margin-bottom: 0.5rem;
+        }
+
+    }
+}

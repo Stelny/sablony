@@ -9,6 +9,9 @@
     background: #FFFFFF;
     box-shadow: 0px 4px 40px 10px rgba(0, 0, 0, 0.05);
     padding: 1.5rem 2rem;
+    @media screen and (max-width: 576px) { 
+        padding: 1rem 1rem;
+    }
     &-logo {
         margin-right: 2rem;
         width: 100%;
@@ -20,8 +23,87 @@
     &-cta {
 
     }
+    &-mobile-actions {
+        @media screen and (min-width: 1300px) {
+           display: none;
+        }
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        a {
+            margin: 0 0.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            background: var(--grey);
+            border-radius: 50px;
+            img {
+                height: 20px;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+    }
+    &-toggle {
+        display: none;
+        @media screen and (max-width: 991px) {
+            display: block;
+            margin-left: 1rem;
+        }
+
+        button {
+            width: 23px;
+            height: 18px;
+            background: none;
+            display: flex;
+            flex-direction: column;
+            border: none;
+            padding: 0;
+            margin: 0;
+            outline: none;
+            cursor: pointer;
+            justify-content: flex-end;
+            align-items: flex-end;
+            span {
+                width: 18px;
+                background: var(--black);
+                height: 2px;
+                border-radius: 50px;
+                display: block;
+                margin-bottom: 5px;
+                transition: 0.25s ease-in-out all;
+                &:first-child {
+                    width: 23px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                    width: 11px;
+                }
+            }
+            &:hover {
+                span {
+                    width: 18px;
+                    &:first-child {
+                        width: 11px;
+                    }
+                    &:last-child {
+                        width: 23px;
+                    }
+                }
+            }
+        }
+    }
+    &-cta {
+        @media screen and (max-width: 1300px) {
+            display: none;
+        }
+    }
     &-menu {
         margin: auto;
+    
+
         ul {
             display: flex;
             align-items: center;
@@ -70,10 +152,52 @@
                 }
             }
         }
+        @media screen and (max-width: 991px) {
+            
+            margin: 0;
+            position: fixed;
+            left: 0;
+            top: 83px;
+            width: 100%;
+            background: white;
+            padding: 2rem;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid var(--grey);
+            box-shadow: 0px 20px 10px 5px rgba(0, 0, 0, 0.05);
+            top: -300px;
+            transition: 0.25s ease-in-out top;
+            z-index: -1;
+            ul {
+                flex-direction: column;
+                li {
+                    margin-bottom: 1rem;
+                    display: block;
+                    a {
+                        
+                    }
+                }
+            }
+            &.active {
+                top: 83px;
+                @media screen and (max-width: 576px) {  
+                    top: 67px;
+                }
+            }
+        }
+        &.active {
+            @media screen and (max-width: 576px) {  
+                top: 67px;
+            }
+        }
     }
     &-auth {
+        
         display: flex;
         align-items: center;
+        @media screen and (max-width: 1300px) {
+            display: none;
+        }
         a, button {
             margin: 0 0.5rem;
             &:hover {
