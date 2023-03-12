@@ -73,12 +73,13 @@
                 justify-content: center;
                 flex-direction: column;
                 border-radius: 18px;
-                margin: .25rem;
+                margin: 1rem;
                 padding: 1rem;
                 position: relative;
                 transition: 0.25s all ease-in-out;
                 @media screen and (max-width: 567px) {    
                     height: 150px;  
+                    margin: 0.5;
                 }
                 &:hover {
                     transform: translateY(-4px);
