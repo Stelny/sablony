@@ -1,9 +1,10 @@
 .input {
     &-div {
+        width: 100%;
         margin-bottom: 1rem;
         input, textarea {
             background: white;
-            padding: 1.25rem 2rem;
+            padding: 1rem 2rem;
             border: none;
             outline: none;
             font-size: 1rem;

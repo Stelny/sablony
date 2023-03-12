@@ -4,6 +4,10 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    @media screen and (max-width: 567px) {     
+        height: unset;
+        padding: 4rem 0;
+    } 
     &::after {
         content: '';
         width: 150px;
@@ -16,6 +20,9 @@
         left: 0;
         top: 50%;
         transform: translateY(-50%);
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
     }
     &::before {
         content: '';
@@ -29,7 +36,11 @@
         right: 0;
         top: 50%;
         transform: translateY(-50%);
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
     }
+
 
     &-content {
         text-align: center;
@@ -39,6 +50,9 @@
                 font-weight: bold;
                 color: var(--black);
                 margin-bottom: 1rem;
+                @media screen and (max-width: 776px) {   
+                    font-size: 2rem;
+                }
             }
             span {
                 color: var(--greyText);
@@ -59,16 +73,22 @@
                 justify-content: center;
                 flex-direction: column;
                 border-radius: 18px;
-                margin: 1rem;
+                margin: .25rem;
                 padding: 1rem;
                 position: relative;
                 transition: 0.25s all ease-in-out;
+                @media screen and (max-width: 567px) {    
+                    height: 150px;  
+                }
                 &:hover {
                     transform: translateY(-4px);
                 }
                 &-icon {
                     width: 65px;
                     margin-bottom: 1rem;
+                    @media screen and (max-width: 567px) {     
+                        width: 31px;
+                    }
                     img {
                         height: 100%;
                         width: 100%;
@@ -83,6 +103,9 @@
                     color: var(--black);
                     font-size: 1.25rem;
                     font-weight: 500;
+                    @media screen and (max-width: 567px) {     
+                        font-size: 0.875rem;
+                    }
                 }
             }
 
@@ -99,11 +122,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-right: 30px;
             position: relative;
             max-width: fit-content;
             margin: auto;
             margin-top: 2rem;
+            @media screen and (max-width: 991px) { 
+                font-size: 1rem;
+                
+            }
             
             &::before {
 
@@ -113,17 +139,24 @@
                 font-weight: 700;
                 position: relative;
                 padding-right: 2rem;
+                @media screen and (max-width: 991px) {  
+                    padding-right: 1.5rem;
+                }
                 &::after {
                     content: '';
                     position: absolute;
                     right: 0;
-                    top: 10px;
+                    top: 5px;
                     width: 20px;
                     height: 20px;
                     background: #67DB1B;
                     border-radius: 50px;
                     border: 3px solid #34CC58;
                     animation: online 5s infinite;
+                    @media screen and (max-width: 991px) {  
+                        width: 15px;
+                        height: 15px;
+                    }
                 }   
             }
         }

@@ -12,5 +12,35 @@ headerToggle.addEventListener("click", function(){
 
 })
 
+const companiesSlider = $('.companies-slider');
+
+companiesSlider.owlCarousel({
+    loop:true,
+    margin: 10,
+    responsiveClass:true,
+    nav: false,
+    dots: false,
+    responsive:{
+        0:{
+            items:2,
+        },
+        600:{
+            items:3,
+        },
+        1000:{
+            items:5
+        },
+        1500: {
+            items: 6
+        }
+    }
+})
+
+$('.companiesNext').click(function() {
+    companiesSlider.trigger('next.owl.carousel');
+})
+$('.companiesPrev').click(function() {
+    companiesSlider.trigger('prev.owl.carousel');
+})
 
 headerToggle.removeEventListener("click");
