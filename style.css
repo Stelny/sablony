@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+.table-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+.table-item {
+    display: flex;
+    padding: 0.5rem;
+    
+}
+.table-item:nth-child(odd) {
+    background: #f2f2f2;
+    
+}
+.table-item:nth-child(odd) {
+    margin-right: 120px;
+}
+.table-item:nth-child(even) .table-item-qr-code {
+    order: 2;
+}
+.table-item:nth-child(even) {
+    margin-left: 120px;
+    justify-content: space-between;
+}
+.table-item-qr-code {
+    width: 100%;
+    max-width: 100px;
+    margin-right: 1rem;
+}
+.table-item-qr-code img {
+
+}
+.table-item-content {
+
+}
+.table-item-text {
+    display: flex;
+    flex-direction: column;
+}
+.table-item-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+.table-item-text p {
+    line-height: 1;
+    margin: 0;
+    font-size: 13px;
+}
+.table-item-children {
+    display: flex;
+    margin-top: 5px;
+}
+.table-item-kid {
+    font-size: 15px;
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.table-item-kid.bulb::before {
+    content: "";
+    width: 15px;
+    display: flex;
+    height: 15px;
+    background: url(./bulb.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 0.5rem;
+}
+.table-item-kid.clock::before {
+    content: "";
+    width: 15px;
+    display: flex;
+    height: 15px;
+    background: url(./clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 0.5rem;
+}
+.table-item-kid.list::before {
+    content: "";
+    width: 15px;
+    display: flex;
+    height: 15px;
+    background: url(./list.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 0.5rem;
+}
+.table-item-bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.table-item-bottom span:first-child {
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    margin-right: 3rem;
+}
+.table-item-bottom span:last-child {
+    display: flex;
+
+}
+
+.table-item-action {
+
+}
