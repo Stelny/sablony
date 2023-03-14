@@ -42,11 +42,21 @@ img {
 
 }
 .table-item-content {
-
+    display: flex;
+    width: 100%;
 }
 .table-item-text {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 50%;
+}
+.table-item-action {
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .table-item-title {
     font-size: 16px;
@@ -113,9 +123,69 @@ img {
 }
 .table-item-bottom span:last-child {
     display: flex;
-
+    align-items: center;
 }
 
-.table-item-action {
+.table-item-bottom span:last-child::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: url(./survey.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    margin-right: 0.25rem;
+}
+
+.table-item-action ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-images {
+    display: flex;
+    
+}
+.table-images img {
+    height: 35px;
+    object-fit: contain;
+    object-position: center;
+}
+.table-images-item {
+    margin: 5px;
+}
+.number-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 0px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    max-width: 350px;
+}
+.number-line span {
+    display: block;
+    width: 2px;
+    height: 30px;
+    background-color: black;
+    position: relative;
+}
+.number-line span.highlighted-step::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50px;
+    display: block;
 
 }
