@@ -1,0 +1,34 @@
+.navigation {
+    margin-bottom: 3rem;
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            a {
+                color: var(--greyText);
+                display: flex;
+                align-items: center;
+                &::after {
+                    content: "";
+                    width: 10px;
+                    height: 1px;
+                    background: var(--greyText);
+                    display: flex;
+                    align-items: center;
+                    margin: 0 0.5rem;
+                }
+            }
+            &:last-child {
+                a {
+                    color: var(--black);
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

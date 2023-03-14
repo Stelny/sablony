@@ -213,6 +213,34 @@
         &-cta {
             margin-bottom: 0.5rem;
         }
-
+    }
+    &-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 40px;
+            height: 40px;
+            margin: 0.25rem;
+            background: var(--grey);
+            color: black;
+            border-radius: 50px;
+            &:first-child, &:last-child {
+                background: var(--primary);
+                border-radius: 50px;
+                border: 1px solid var(--primary);
+                &:hover {
+                    background: none;
+                    svg path {
+                        stroke: var(--primary);
+                    }
+                }
+            }
+        }
     }
 }

@@ -57,13 +57,15 @@
         text-decoration: none;
         display: flex;
         max-width: fit-content;
-        outline: none;
+        outline: none!important;
         border: none;
         cursor: pointer;
-    
+        border: 2px solid var(--primary);
         &:hover {
             text-decoration: none;
             color: white;
+            background: none;
+            color: var(--primary);
         }
     }
     &-filter {
