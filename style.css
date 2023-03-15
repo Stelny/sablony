@@ -12,7 +12,15 @@ img {
     width: 100%;
     max-width: 1000px;
     margin: auto;
-    
+}
+.logo {
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.logo img {
+    max-width: 200px;
 }
 .table-item {
     display: flex;
@@ -49,10 +57,10 @@ img {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 50%;
+    max-width: 70%;
 }
 .table-item-action {
-    max-width: 50%;
+    max-width: 30%;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -77,65 +85,17 @@ img {
     display: flex;
     align-items: center;
 }
-.table-item-kid.bulb::before {
+.table-item-kid img {
     content: "";
     width: 15px;
     display: flex;
     height: 15px;
-    background: url(./bulb.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    margin-right: 0.5rem;
-}
-.table-item-kid.clock::before {
-    content: "";
-    width: 15px;
-    display: flex;
-    height: 15px;
-    background: url(./clock.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    margin-right: 0.5rem;
-}
-.table-item-kid.list::before {
-    content: "";
-    width: 15px;
-    display: flex;
-    height: 15px;
-    background: url(./list.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     margin-right: 0.5rem;
 }
 .table-item-bottom {
     display: flex;
     align-items: center;
     margin-top: 5px;
-}
-.table-item-bottom span:first-child {
-    font-size: 16px;
-    font-weight: 700;
-    display: flex;
-    margin-right: 3rem;
-}
-.table-item-bottom span:last-child {
-    display: flex;
-    align-items: center;
-}
-
-.table-item-bottom span:last-child::before {
-    content: "";
-    width: 15px;
-    height: 15px;
-    background: url(./survey.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    margin-right: 0.25rem;
 }
 
 .table-item-action ul {
@@ -146,7 +106,9 @@ img {
     flex-direction: column;
     align-items: center;
 }
-
+.table-item-action ul li {
+    font-size: 13px;
+}
 .table-images {
     display: flex;
     
@@ -188,4 +150,20 @@ img {
     border-radius: 50px;
     display: block;
 
+}
+.code {
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    margin-right: 3rem;
+}
+.code-div {
+    display: flex;
+    align-items: center;
+}
+.code-div img {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    margin-right: 0.25rem;
 }
