@@ -35,6 +35,28 @@ $(document).ready(function(){
         heroSlider.trigger("next.owl.carousel");
     })
 
+    $("#configurator li").mouseenter(function() {
+        const id = $(this).attr("data-id");
+        const elem = $(`.configurator-number[data-id="${id}"]`);
+        elem.addClass("active");
+    })
+    .mouseleave(function() {
+        const id = $(this).attr("data-id");
+        const elem = $(`.configurator-number[data-id="${id}"]`);
+        elem.removeClass("active");
+    });
+
+    $(".configurator-number").mouseenter(function() {
+        const id = $(this).attr("data-id");
+        const elem = $(`#configurator li[data-id="${id}"]`);
+        elem.addClass("active");
+    })
+    .mouseleave(function() {
+        const id = $(this).attr("data-id");
+        const elem = $(`#configurator li[data-id="${id}"]`);
+        elem.removeClass("active");
+    });
+
 
     removeEventListener("click", headerMenuClose);
     removeEventListener("click", headerMenuOpen)
