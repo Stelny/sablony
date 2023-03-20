@@ -15,6 +15,43 @@ $(document).ready(function(){
         
     })
 
+    $(".prevHero").click(function(){
+        heroSlider.trigger("prev.owl.carousel");
+    })
+    $(".nextHero").click(function(){
+        heroSlider.trigger("next.owl.carousel");
+    })
+
+
+    const gallerySlider = $('.product-images')
+    gallerySlider.owlCarousel({
+        loop:true,
+        margin: 20,
+        nav: false,
+        dots: true,
+        items: 3,
+        dotsContainer: "#banner-dots",
+        responsive: {
+            0: {
+                items: 1
+            },
+            450: {
+                items: 2
+            },
+            567: {
+                items: 3
+            }
+        }
+        
+    })
+
+    $(".prevGallery").click(function(){
+        gallerySlider.trigger("prev.owl.carousel");
+    })
+    $(".nextGallery").click(function(){
+        gallerySlider.trigger("next.owl.carousel");
+    })
+
 
     const headerMenu = document.getElementById("headerMenu");
     const headerMenuOpen = document.getElementById("headerMenuOpen"); 
@@ -27,13 +64,6 @@ $(document).ready(function(){
     headerMenuClose.addEventListener("click", function() { 
         headerMenu.classList.remove('active');
     });
-
-    $(".prevHero").click(function(){
-        heroSlider.trigger("prev.owl.carousel");
-    })
-    $(".nextHero").click(function(){
-        heroSlider.trigger("next.owl.carousel");
-    })
 
     $("#configurator li").mouseenter(function() {
         const id = $(this).attr("data-id");
