@@ -148,6 +148,9 @@ img {
                         color: black;
                         text-transform: uppercase;
                         font-weight: 700;
+                        @media screen and (max-width: 991px) {
+                            font-size: 2rem;
+                        }
                         &.active, &:hover {
                             color: var(--primary);
                             text-decoration: none;
