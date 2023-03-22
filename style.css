@@ -32,22 +32,26 @@ img {
     
 }
 .table-item:nth-child(odd) {
-    margin-right: 120px;
+    padding-right: 125px;
 }
 .table-item:nth-child(even) .table-item-qr-code {
     order: 2;
 }
 .table-item:nth-child(even) {
-    margin-left: 120px;
+    padding-left: 125px;
     justify-content: space-between;
+    background: #e0e0e0;
+
 }
 .table-item-qr-code {
     width: 100%;
     max-width: 100px;
     margin-right: 1rem;
+    display: flex;
+    align-items: center;
 }
 .table-item-qr-code img {
-
+   padding: 3px;
 }
 .table-item-content {
     display: flex;
@@ -57,17 +61,17 @@ img {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 70%;
+    max-width: 50%;
 }
 .table-item-action {
-    max-width: 30%;
+    max-width: 50%;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 .table-item-title {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 .table-item-text p {
@@ -86,7 +90,6 @@ img {
     align-items: center;
 }
 .table-item-kid img {
-    content: "";
     width: 15px;
     display: flex;
     height: 15px;
@@ -111,12 +114,20 @@ img {
 }
 .table-images {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
 .table-images img {
-    height: 35px;
+    height: 50px;
     object-fit: contain;
     object-position: center;
+}
+.table-images.column {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 .table-images-item {
     margin: 5px;
@@ -166,4 +177,13 @@ img {
     height: 15px;
     display: flex;
     margin-right: 0.25rem;
+}
+.n {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    background: #08008b;
+    padding: 0 5px;
+    max-width: fit-content;
+    margin-left: 0.5rem;
 }
