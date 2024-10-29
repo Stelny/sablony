@@ -1,0 +1,113 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    position: relative;
+    &-menu {
+      position: relative;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        li {
+          a {
+            font-size: 1.25rem;
+            position: relative;
+            &:after {
+              content: "";
+              top: 105%;
+              left: 0;
+              position: absolute;
+              width: 0;
+              height: 2px;
+              border-radius: 8px;
+              background: #FF7A00;
+              transition: 0.25s ease-in-out all;
+            }
+            &:hover, &.active {
+              &:after {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 991px) {
+        display: flex;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        width: 100%;
+        top: -100%;
+        justify-content: center;
+        border-top: 1px solid #d1d1d1;
+        padding: 2rem 1rem;
+        box-shadow: 0px 20px 40px 10px rgba(0, 0, 0, 0.03);
+        transition: 0.25s ease-in-out all;
+        ul {
+          flex-direction: column;
+          gap: 1rem;
+          li {
+            a {
+              font-size: 1rem;
+              &.active, &:hover {
+                color: #FF7A00;
+                &:after {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 991px) {
+        &.active {
+          top: 72px;
+        }
+      }
+    }
+    &-logo {
+      width: 100%;
+      max-width: 180px;
+    }
+    &-cta {
+      width: 100%;
+      max-width: 180px;
+      @media screen and (max-width: 991px) {
+        display: none;
+      }
+    }
+    &-toggle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      gap: 0.3rem;
+        span {
+        display: block;
+        width: 100%;
+        background: black;
+        height: 3px;
+        border-radius: 50px;
+      }
+    }
+    &-mobile {
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      display: none;
+      @media screen and (max-width: 991px) {
+        display: flex;
+      }
+    }
+  }
+}
