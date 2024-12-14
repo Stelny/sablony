@@ -26,119 +26,30 @@
   }
 
   &-primary {
-    background: $blue;
+    backdrop-filter: blur(12px);
+    background: rgba($primary500, 0.14);
+    border: 2px solid $primary500;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
     color: white;
     border-radius: 50px;
-    font-size: 0.976rem;
-    box-shadow: 0 8px 25px $blueOpacity;
+    font-size: 0.875rem;
+    transition: 0.25s ease-in-out all;
     &:hover {
-      box-shadow: 0 8px 25px $blue;
+      transform: translateY(-2px);
+    }
+    &.external:after {
+      content: "";
+      width: 17px;
+      height: 17px;
+      background: url(./../icons/link/external-long.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
     }
     @media screen and (max-width: $xl) {
       font-size: 0.825rem;
     }
-  }
-  &-whatsapp {
-    background: $green;
-    color: white;
-    border-radius: 50px;
-    font-size: 0.976rem;
-    box-shadow: 0 8px 25px $greenOpacity;
-    &:hover {
-      box-shadow: 0 8px 25px $green;
-    }
-    svg {
-      width: 20px;
-    }
-    @media screen and (max-width: $xl) {
-      font-size: 0.825rem;
-    }
-  }
-  &-primary-borderer {
-    background: none;
-    color: white;
-    border-radius: 50px;
-    font-size: 0.976rem;
-    border: 1px solid $blue;
-    box-shadow: 0 8px 25px $blueOpacity;
-    &.no-shadow {
-      box-shadow: none;
-    }
-    &.black {
-      color: black;
-    }
-    &:hover {
-      box-shadow: 0 8px 25px $blue;
-    }
-    path {
-      fill: $blue;
-    }
-    @media screen and (max-width: $xl) {
-      font-size: 0.825rem;
-    }
-  }
-  &-whatsapp-borderer {
-    background: none;
-    color: white;
-    border-radius: 50px;
-    font-size: 0.976rem;
-    border: 1px solid $green;
-    box-shadow: 0 8px 25px $greenOpacity;
-    &:hover {
-      box-shadow: 0 8px 25px $green;
-    }
-    path {
-      fill: $green;
-    }
-    @media screen and (max-width: $xl) {
-      font-size: 0.825rem;
-    }
-  }
-  &-clear-arrow {
-    color: $blue;
-    svg {
-      path {
-        fill: $blue;
-      }
-      width: 14px;
-      transition: 0.25s ease-in-out all;
-
-    }
-    &:hover {
-      svg {
-        transform: translateX(10px);
-      }
-    }
-  }
-}
-
-.tag {
-  padding: 0.5rem 1rem;
-  font-size: 10px;
-  border: 2px solid rgba(1, 135, 255, 0.5);
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  span {
-    &:first-child {
-      font-size: 12px;
-    }
-    &.tag-count {
-      font-size: 10px;
-      background: $text;
-      display: flex;
-      padding: 2px 6px;
-      color: white;
-      border-radius: 50px;
-    }
-  }
-  &:hover {
-    background: $blueOpacity;
-  }
-  &.active {
-    background: $blue;
-    color: white;
-    border-color: $blue;
   }
 }

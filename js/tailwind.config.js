@@ -1,49 +1,26 @@
-
 tailwind.config = {
     theme: {
-    extend: {
-    colors: {
-    green: '#da373d',
-    blue: '#0187FF',
-    orange: "#F0953F",
-    lightBackground: "#9EA6B3",
-    tag: '#B3BAC6',
-    text: "#B3BAC6",
-    blueBackground: "#304352",
-    borderGray: "#E8EAEE",
-    backgroundGrayLight: "#F1F2F4",
-    backgroundGray: "#E5EAF2",
-    grayBlue: "#636973",
-    textOpacity: "rgba(179,186,198,0.3)",
-    background: "#1D1F22",
-},
-    backgroundImage: {
-    gradientText: "linear-gradient(90deg, #ff8f20 0%, #ff3232 100%)",
-    gradientBox: "linear-gradient(199deg, #8DA1C3 0%, #B3CEFA 100%)",
-    gradientBlack: "linear-gradient(183deg, #333942 0%, #3B424D 100%)",
-    gradientActive: "linear-gradient(199deg, #8DA1C3 0%, #B3CEFA 100%)",
-    radialMarker: "radial-gradient(closest-side at 50% 50%, #4B93FF30 0%, #1D1F2230 100%)",
-    heroMobile: "url('./images/hero/hero.webp')",
-    heroService: "url('./icons/services-detail/wireframe.svg')",
-    peopleJaroslav: "url('./images/people/jaroslav.webp')",
-    peopleJana: "url('./images/people/jana.webp')",
-        check: "url('./icons/check.svg')",
+        extend: {
+            colors: {
+                gray: '#4F4F4F',
+                primary: {
+                    100: '#B1E4E9',
+                    300: '#3AB7C2',
+                    500: '#009FAD',
+                    600: '#0D7D87',
+                    800: '#1A4F54',
+                    900: '#0C3437',
+                    950: '#0E2022',
+                },
+                shadowWhite: '#E4E4E4',
+                blackDark: '#1A1A1A',
+                black: '#121212',
+            },
+            backgroundImage: {
+                heroBike: "url('./images/hero/hero.webp')",
+                darkGradient: "linear-gradient(180deg, rgba(14, 32, 34, 0.00) 0%, #0E2022 100%)",
+            },
 
+        },
     },
-    boxShadow: {
-        primaryButton: '0px 8px 25px #0187FF30',
-        card: "0px 12px 50px #1D1F221A;"
-    },
-    keyframes: {
-    bounceSlow: {
-    '0%, 100%': { transform: 'translateY(-10px)' },
-    '50%': { transform: 'translateY(20px)' },
-},
-},
-    animation: {
-    'bounce-slow': 'bounceSlow 2s ease-in-out infinite',
-
-},
-}
-}
-}
+};

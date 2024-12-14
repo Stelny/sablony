@@ -1,11 +1,14 @@
 .header {
-  padding: 2rem 0;
+  padding: 1rem 1.5rem;
   width: 100%;
   position: sticky;
   top: 0;
   left: 0;
   z-index: 999;
-  background: $background;
+  background: rgba($black, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   &.scrolling {
     box-shadow: 0 0 40px 5px rgba(0,0,0,0.05);
   }
@@ -13,7 +16,7 @@
     box-shadow: 0 0 40px 5px rgba(0,0,0,0.05);
   }
 
-    &-toggle {
+  &-toggle {
     width: 40px;
     height: 40px;
     display: flex;
@@ -76,7 +79,7 @@
         width: 100%;
         left: 0;
         padding-bottom: 2rem;
-        background: $background;
+        background: $primary500;
         top: -100%;
         transition: 0.25s ease-in-out top;
         z-index: 5;
@@ -101,22 +104,29 @@
           position: relative;
           a {
             color: white;
-            font-size: 1.063rem;
+            font-size: 0.875rem;
             position: relative;
+            text-transform: uppercase;
+            font-weight: bold;
             display: flex;
-            @media screen and (max-width: $xl) {
-              font-size: 0.75rem;
-              text-align: center;
+            align-items: center;
+            gap: 0.5rem;
+            &.external {
+              &:after {
+                content: "";
+                width: 9px;
+                height: 9px;
+                background: url(./../icons/link/external.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+              }
             }
-            @media screen and (max-width: $lg) {
-              font-size: 1rem;
-              text-align: center;
-            }
-            &:after {
+            &:before {
               content: "";
               width: 0;
               height: 1px;
-              background: linear-gradient(90deg, #ff8f20 0%, #ff3232 100%);
+              background: linear-gradient(90deg,$primary500 0%, $primary600 100%);
               border-radius: 50px;
               position: absolute;
               bottom: 0;
@@ -124,24 +134,10 @@
               transition: 0.25s ease-in all;
             }
             &.active, &:hover {
-              &:after {
+              &:before {
                 width: 100%;
                 right: 0;
               }
-            }
-          }
-          &:last-child {
-            @media screen and (min-width: $lg) {
-              &:before {
-                content: "|";
-                position: absolute;
-                left: 0;
-                transform: translateY(-50%);
-                top: 50%;
-                color: $text;
-                opacity: 0.7;
-              }
-              padding-left: 3rem;
             }
           }
 

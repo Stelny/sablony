@@ -4,51 +4,27 @@
 @import './animations.scss';
 
 //Fonts
-@import "./font/brockman";
+@import "./font/redhat";
 
 //Components
-@import "./components/_services.scss";
 @import "./components/_header.scss";
 @import "./components/_button.scss";
 @import "./components/_form.scss";
 @import "./components/_swiper.scss";
-@import "./components/_table.scss";
-@import "./components/_pagination.scss";
-@import "./components/_breadcrumb.scss";
-@import "./components/_reference.scss";
-@import "./components/_blog.scss";
-
 
 
 
 //Basic
 body {
-  font-family: 'Brockman', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+  background: $primary950;
+}
+.font-inter {
+  font-family: "Inter", serif;
 }
 html {
   scroll-behavior: smooth;
 }
-
-.pointer-arrow::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background: white;
-  z-index: 20;
-  position: absolute;
-  bottom: -10px;
-  display: block;
-  transform: rotate(45deg);
-}
-
-.pointer-arrow-black::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background: linear-gradient(183deg, #333942 0%, #3B424D 100%);
-  z-index: 20;
-  position: absolute;
-  bottom: -10px;
-  display: block;
-  transform: rotate(45deg);
+.filter-primary {
+  filter: brightness(0) saturate(100%) invert(67%) sepia(26%) saturate(923%) hue-rotate(136deg) brightness(88%) contrast(80%);
 }

@@ -20,36 +20,41 @@
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 	/>
 	<script src="https://cdn.tailwindcss.com"></script>
-	<script src="./js/tailwind.config.js"></script>
+	<script type="module" src="./js/tailwind.config.js"></script>
 	<link  rel="stylesheet" href="style/main.css" />
 </head>
 <body>
 <header class="header">
-	<div class="container">
+		<div class="header-top">
+			<img src="./icons/logo/logo-gray.svg" />
+		</div>
 		<div class="header-content">
 			<a href="" class="header-content-logo">
-				<img src="./icons/logo/logo.png" />
+				<img src="./icons/logo/logo.svg" />
 			</a>
 			<div class="header-content-menu" id="menu-header">
 				<ul>
 					<li>
-						<a href="">Naše služby</a>
+						<a href="">Domů</a>
 					</li>
 					<li>
-						<a href="">Reference</a>
+						<a href="">Značky</a>
+					</li>
+					<li>
+						<a href="">Stavby</a>
+					</li>
+					<li>
+						<a href="">Gravel</a>
+					</li>
+					<li>
+						<a href="" class="external" target="_blank">Kola skladem</a>
 					</li>
 					<li>
 						<a href="">O nás</a>
 					</li>
-					<li>
-						<a href="">Kontakt</a>
-					</li>
-					<li>
-						<a href="">Blog</a>
-					</li>
 				</ul>
 				<div>
-					<a href="" class="btn btn-primary shadow-primaryButton">Navázat spolupráci</a>
+					<a href="" class="btn btn-primary">Chci své kolo</a>
 				</div>
 			</div>
 			<button class="header-toggle" id="toggle-header">
@@ -58,560 +63,227 @@
 				<span></span>
 			</button>
 		</div>
-	</div>
 </header>
-<div class="bg-background relative lg:overflow-visible overflow-hidden">
-	<div class=" relative md:bg-heroMobile bg-no-repeat bg-contain bg-right relative z-10">
-		<div class="container relative lg:py-40 md:py-24 py-24 flex flex-col gap-12 items-start justify-start">
-			<div class="flex flex-col gap-6">
-				<h1 class="flex flex-col max-w-[1200px]">
-					<span class="inline-block max-w-fit text-white font-semibold lg:text-8xl sm:text-6xl text-4xl after:content-[''] lg:after:w-32 sm:after:w-24 after:w-8 after:flex after:h-1 lg:after:h-2 after:bg-white after:absolute after:left-full after:top-1/2 sm:after:translate-x-8 after:translate-x-4 after:-translate-y-1/2 relative">Jsme vývojáři</span>
-					<span class="bg-gradientText text-transparent bg-clip-text lg:text-8xl sm:text-6xl text-4xl  font-medium">mobilních & webových aplikací.</span>
-				</h1>
-				<p class="text-text max-w-[450px]">Jsme silný developerský tým, který má přesah do UX a designu. Naší doménou je dodávat projektově zvládnuté řešení. Komunikujeme a programujeme.</p>
-			</div>
-			<a href="#sluzby" class="max-w-fit lg:absolute items-center justify-center gap-6 lg:bottom-20 bottom-0 cursor-pointer left-0 lg:left-1/2 lg:translate-x-1/2 flex flex-col">
-				<span class="text-white -rotate-90">scroll</span>
-				<div class="relative translate-x-0.5">
-					<div class=" w-0.5 bg-white h-12 opacity-70"></div>
-					<div class=" animate-bounce-slow absolute bg-background w-6 h-6 rounded-full top-2 -left-2.5 flex  flex items-center justify-center ">
-						<div class="w-4 h-4 bg-background border-white border-[3px] flex rounded-full"></div>
-					</div>
-				</div>
-			</a>
+<div class="bg-heroBike bg-cover bg-center relative py-32">
+	<div class="container">
+		<div class="max-w-[800px] mx-auto flex flex-col gap-12">
+			<h1 class="text-[119px] text-white font-black italic flex flex-col leading-[140px]">
+				<span>Tvůj bike,</span>
+				<span class="ml-[95px]">Tvoje volba</span>
+			</h1>
+			<p class="text-center italic font-black text-xl text-white uppercase elevation-[32px] tracking-[8px]">Tvůj bike, Stavíme a prodáváme kola prémiových značek, kterým sami věříme</p>
 		</div>
 	</div>
-	<!--<div class="absolute -left-1/2 translate-x-1/2 opacity-30 bg-radialMarker w-[1000px] h-[2000px] top-1/2 z-1 block"></div>-->
-	<div class="container lg:py-40 md:py-24 py-24 relative z-10" id="sluzby">
-		<div class="flex lg:gap-32 md:gap-4 gap-24 md:flex-row flex-col">
-			<div class="flex flex-col gap-4 w-full max-w-[450px]">
-				<h2 class="text-white font-bold text-2xl">Naše služby</h2>
-				<div class="flex flex-col gap-4 w-full text-left">
-					<button class="service-card active" data-id="1">
-						<div class="w-[28px] flex items-center justify-center ">
-							<img src="./icons/services/programovani.svg" alt="Programování" />
-						</div>
-						<span>Programování nové aplikace</span>
-						<svg xmlns="http://www.w3.org/2000/svg" width="6.687" height="11.375" viewBox="0 0 6.687 11.375">
-							<path id="arrow" d="M2,17.671l4.273,4.273,4.273-4.273" transform="translate(-16.257 11.961) rotate(-90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-						</svg>
-					</button>
-					<button class="service-card" data-id="2">
-						<div class="w-[28px] flex items-center justify-center">
-							<img src="./icons/services/prevzeti.svg" alt="Programování" />
-						</div>						<span>Programování existující aplikace</span>
-						<svg xmlns="http://www.w3.org/2000/svg" width="6.687" height="11.375" viewBox="0 0 6.687 11.375">
-							<path id="arrow" d="M2,17.671l4.273,4.273,4.273-4.273" transform="translate(-16.257 11.961) rotate(-90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-						</svg>
-					</button>
-					<button class="service-card" data-id="3">
-						<div class="w-[28px] flex items-center justify-center ">
-							<img src="./icons/services/rozvoj.svg" alt="Programování" />
-						</div>						<span>Optimalizace a údržba</span>
-						<svg xmlns="http://www.w3.org/2000/svg" width="6.687" height="11.375" viewBox="0 0 6.687 11.375">
-							<path id="arrow" d="M2,17.671l4.273,4.273,4.273-4.273" transform="translate(-16.257 11.961) rotate(-90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-						</svg>
-					</button>
-					<button class="service-card" data-id="4">
-						<div class="w-[28px] flex items-center justify-center ">
-							<img src="./icons/services/send.svg" alt="Programování" />
-						</div>						<span>Optimalizace a údržba</span>
-						<svg xmlns="http://www.w3.org/2000/svg" width="6.687" height="11.375" viewBox="0 0 6.687 11.375">
-							<path id="arrow" d="M2,17.671l4.273,4.273,4.273-4.273" transform="translate(-16.257 11.961) rotate(-90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-						</svg>
-					</button>
-				</div>
+	<div class="h-[142px] w-full absolute bg-darkGradient bottom-0 left-0"></div>
+</div>
+<div class="bg-primary950 py-12">
+	<div class="max-w-[1000px] mx-auto">
+		<div class="swiper swiper-logos">
+			<div class="swiper-wrapper flex items-center">
+				<a href="" class="swiper-slide duration-300 hover:-translate-y-1 flex items-center justify-center">
+					 <img src="./images/brand/1.svg" alt="1" class="filter-primary" />
+				</a>
+				<a href="" class="swiper-slide duration-300 hover:-translate-y-1 flex items-center justify-center">
+					<img src="./images/brand/2.svg" alt="1" class="filter-primary"/>
+				</a>
+				<a href="" class="swiper-slide duration-300 hover:-translate-y-1 flex items-center justify-center">
+					<img src="./images/brand/3.svg" alt="1" class="filter-primary"/>
+				</a>
+				<a href="" class="swiper-slide duration-300 hover:-translate-y-1 flex items-center justify-center">
+					<img src="./images/brand/4.svg" alt="1" class="filter-primary"/>
+				</a>
+				<a href="" class="swiper-slide duration-300 hover:-translate-y-1 flex items-center justify-center">
+					<img src="./images/brand/5.svg" alt="1" class="filter-primary"/>
+				</a>
+				<a href="" class="swiper-slide duration-300 hover:-translate-y-1 flex items-center justify-center">
+					<img src="./images/brand/6.svg" alt="1" class="filter-primary"/>
+				</a>
+				<a href="" class="swiper-slide duration-300 hover:-translate-y-1 flex items-center justify-center">
+					<img src="./images/brand/7.svg" alt="1" class="filter-primary"/>
+				</a>
+				<a href="" class="swiper-slide duration-300 hover:-translate-y-1 flex items-center justify-center">
+					<img src="./images/brand/6.svg" alt="1" class="filter-primary"/>
+				</a>
+				<a href="" class="swiper-slide duration-300 hover:-translate-y-1 flex items-center justify-center">
+					<img src="./images/brand/7.svg" alt="1" class="filter-primary"/>
+				</a>
+
 			</div>
-			<div class="flex-1">
-				<div class="content" data-id="1">
-					<div class="border relative rounded-[20px] border-2 border-textOpacity lg:p-12 md:p-6 p-12 lg:pt-20 md:pt-12 pt-16  flex flex-col text-white md:gap-4 gap-6">
-						<div class="bg-gradientBlack absolute lg:-top-[58px] md:-top-[28px] -top-[40px] opacity-background rounded-2xl overflow-hidden lg:w-[116px] lg:h-[116px] md:w-[56px] md:h-[56px] w-[80px] h-[80px] flex items-center justify-center">
-							<img src="icons/services/programovani.svg" height="51" width="42" class="lg:w-[42px] md:w-[20px] w-[40px]"/>
-						</div>
-						<p class="lg:text-2xl md:text-lg text-xl">Umíme přebrat strádající projekt a dotáhnout ho do úspěšného konce. Nastavíme projektový plán a metodiku. Programuje a výstupy s vámi konzultujeme na pravidelné bázi.</p>
-						<div class="flex">
-							<a href="#" class="btn btn-primary whitespace-nowrap shadow-primaryButton">Vše o službě</a>
-						</div>
-					</div>
-				</div>
-				<div class="content hidden" data-id="2">
-					<div class="border relative rounded-[20px] border-2 border-textOpacity lg:p-12 md:p-6 p-12 lg:pt-20 md:pt-12 pt-16  flex flex-col text-white md:gap-4 gap-6">
-						<div class="bg-gradientBlack absolute lg:-top-[58px] md:-top-[28px] -top-[40px] opacity-background rounded-2xl overflow-hidden lg:w-[116px] lg:h-[116px] md:w-[56px] md:h-[56px] w-[80px] h-[80px] flex items-center justify-center">
-							<img src="icons/services/prevzeti.svg" height="51" width="42" class="lg:w-[42px] md:w-[20px] w-[40px]"/>
-						</div>
-						<p class="lg:text-2xl md:text-lg text-xl">Umíme přebrat strádající projekt a dotáhnout ho do úspěšného konce. Nastavíme projektový plán a metodiku. Programuje a výstupy s vámi konzultujeme na pravidelné bázi.</p>
-						<div class="flex">
-							<a href="#" class="btn btn-primary whitespace-nowrap shadow-primaryButton">Vše o službě</a>
-						</div>
-					</div>
-				</div>
-				<div class="content hidden" data-id="3">
-					<div class="border relative rounded-[20px] border-2 border-textOpacity lg:p-12 md:p-6 p-12 lg:pt-20 md:pt-12 pt-16  flex flex-col text-white md:gap-4 gap-6">
-						<div class="bg-gradientBlack absolute lg:-top-[58px] md:-top-[28px] -top-[40px] opacity-background rounded-2xl overflow-hidden lg:w-[116px] lg:h-[116px] md:w-[56px] md:h-[56px] w-[80px] h-[80px] flex items-center justify-center">
-							<img src="icons/services/rozvoj.svg" height="51" width="42" class="lg:w-[42px] md:w-[20px] w-[40px]"/>
-						</div>
-						<p class="lg:text-2xl md:text-lg text-xl">Umíme přebrat strádající projekt a dotáhnout ho do úspěšného konce. Nastavíme projektový plán a metodiku. Programuje a výstupy s vámi konzultujeme na pravidelné bázi.</p>
-						<div class="flex">
-							<a href="#" class="btn btn-primary whitespace-nowrap shadow-primaryButton">Vše o službě</a>
-						</div>
-					</div>
-				</div>
-				<div class="content hidden" data-id="4">
-					<div class="border relative rounded-[20px] border-2 border-textOpacity lg:p-12 md:p-6 p-12 lg:pt-20 md:pt-12 pt-16  flex flex-col text-white md:gap-4 gap-6">
-						<div class="bg-gradientBlack absolute lg:-top-[58px] md:-top-[28px] -top-[40px] opacity-background rounded-2xl overflow-hidden lg:w-[116px] lg:h-[116px] md:w-[56px] md:h-[56px] w-[80px] h-[80px] flex items-center justify-center">
-							<img src="icons/services/send.svg" height="51" width="42" class="lg:w-[42px] md:w-[20px] w-[40px]"/>
-						</div>
-						<p class="lg:text-2xl md:text-lg text-xl">Umíme přebrat strádající projekt a dotáhnout ho do úspěšného konce. Nastavíme projektový plán a metodiku. Programuje a výstupy s vámi konzultujeme na pravidelné bázi.</p>
-						<div class="flex">
-							<a href="#" class="btn btn-primary whitespace-nowrap shadow-primaryButton">Vše o službě</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="relative pb-32 pt-24">
-		<div class="container">
-			<div class="flex flex-col 2xl:max-w-[800px]  lg:max-w-[550px] max-w-[400px] xl:gap-12 gap-8">
-				<div class="flex items-center justify-center bg-white p-8 rounded-xl xl:w-[240px] w-[180px] relative pointer-arrow">
-					<img src="images/reference/9.png" alt="" class="xl:max-w-[100px] max-w-[75px]"/>
-				</div>
-				<p class="xl:text-4xl text-2xl text-white font-medium xl:leading-[50px]">
-					Jsme technologický garant a autor řešení aplikace Škoda Media Services pro našeho partnera agenturu LHMS
-				</p>
-				<a href="" class="btn btn-primary-borderer">Více o službě</a>
-				<div class="xl:hidden flex items-start max-w-[350px] md:hidden">
-					<img src="images/hero/mobile-solo.png" alt="mobile"/>
-				</div>
-			</div>
-		</div>
-		<!-- absolute right-0 -bottom-32 2xl:max-w-[600px] xl:max-w-[500px] xl:block max-w-[350px]  -->
-		<div class="absolute right-0 -bottom-48 xl:max-w-[700px] xl:max-w-[500px] xl:block hidden">
-			<img src="images/hero/mobile.webp" alt="mobile"/>
-		</div>
-		<div class="absolute lg:-right-0 -right-32 xl:-bottom-48 lg:-bottom-32 bottom-0 max-w-[350px] xl:hidden md:block hidden">
-			<img src="images/hero/mobile-solo.png" alt="mobile"/>
 		</div>
 	</div>
 </div>
-<div class="overflow-hidden">
-	<div class="container xl:pb-24 xl:pt-48 pt-24 pb-24">
-		<div class="max-w-[600px] mx-auto flex flex-col gap-12">
-			<h2 class="font-bold text-4xl text-center">Spolupracujte s námi a přidejte se do dobré společnosti</h2>
-			<div class="grid md:grid-cols-2 gap-4 items-center justify-center">
-				<a href="tel:777 123 456" title="" class="btn btn-primary w-full items-center justify-center">
-					<svg xmlns="http://www.w3.org/2000/svg" width="20.24" height="20.241" viewBox="0 0 20.24 20.241">
-						<path id="phone" d="M19.96,16.831l-2.854,2.831a2.065,2.065,0,0,1-1.523.579,13.2,13.2,0,0,1-6.544-2.466A25.242,25.242,0,0,1,1.4,9.443,10.781,10.781,0,0,1,.005,4.693,2.078,2.078,0,0,1,.584,3.149L3.438.3A.944.944,0,0,1,4.983.554l2.3,4.354a1.264,1.264,0,0,1-.258,1.437L5.97,7.4a.518.518,0,0,0-.107.3,8.963,8.963,0,0,0,2.7,3.989c1.079.99,2.239,2.331,3.744,2.649a.593.593,0,0,0,.547-.053l1.223-1.244a1.4,1.4,0,0,1,1.48-.214h.021l4.141,2.445a1,1,0,0,1,.236,1.565Z" transform="translate(0 0)" fill="#fff"/>
-					</svg>
-					<span>777 123 456</span>
+<div class="flex flex-col gap-4 p-4">
+	<div class="flex flex-col gap-4 relative min-h-[750px]">
+		<div class="absolute w-full h-full after:bg-black after:w-full after:h-full after:z-20 z-10 after:opacity-10 after:absolute after:top-0 after:left-0">
+			<img src="./images/sections/1.webp" alt="" class="w-full h-full object-cover rounded-2xl" />
+		</div>
+		<div class="container relative z-20 py-36">
+			<div class="flex flex-col gap-12">
+				<svg width="111" height="49" viewBox="0 0 111 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M40.7921 23.3054L57.0992 23.2957L54.9077 31.3074H38.6075L40.7921 23.3054ZM43.947 11.7718H57.4843L55.379 19.6644L41.7851 19.6727L43.947 11.7718ZM63.4679 0.0193819L61.2174 8.22626L44.9098 8.23733L47.1553 0.0193819H63.4679ZM85.6534 11.7718L80.3625 31.3074H67.7985L73.0463 11.7718H85.6534ZM96.4985 0.0193819L94.3047 8.23733H63.69L65.9313 0.0193819H96.4985ZM102.288 31.3226L90.6324 31.3296L99.1969 0.0249198L110.74 0.0193819L102.288 31.3226ZM36.9993 31.2894L27.9346 31.2949L36.376 0.0193819H45.5176L36.9993 31.2894ZM24.3232 0.00415298L34.5273 0L19.826 19.2878L16.74 9.31857L24.3232 0.00415298ZM18.9517 21.9694L16.4386 31.3074L4.00802 31.3157L7.23116 19.2975L1.40625 0.0193819L12.1511 0.0110753L18.9517 21.9694Z" fill="#E4E4E4"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M4.08876 46.2795L4.45113 44.9214H1.17938L2.26832 40.8442H5.53392L5.89813 39.4736H1.80937L0 46.2795H4.08876Z" fill="#E4E4E4"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M22.9218 46.2795L24.7305 39.4736H23.9147L22.4684 44.9213H20.0124L21.4582 39.4736H20.6418L18.833 46.2795H20.4732L19.7466 48.9999H20.563L21.289 46.2795H22.9218Z" fill="#E4E4E4"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M41.7528 46.2795L42.1164 44.9214H38.8434L39.933 40.8442H43.198L43.5622 39.4736H39.4734L37.6641 46.2795H41.7528Z" fill="#E4E4E4"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M61.3095 46.2795L61.6724 44.9214H58.4001L59.8465 39.4736H59.0301L57.2207 46.2795H61.3095Z" fill="#E4E4E4"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M79.6836 42.2051H77.2351L77.598 40.8456H80.0466L79.6836 42.2051ZM79.4179 46.2795L79.7808 44.9213H76.5091L76.8721 43.5618H80.1444L81.2272 39.4736H77.1385L75.3291 46.2795H79.4179Z" fill="#E4E4E4"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M98.2519 46.2795L99.3334 42.2051H96.069L96.432 40.8442H99.697L100.061 39.4736H95.9725L94.8897 43.5618H98.1546L97.7984 44.9214H94.5261L94.1631 46.2795H98.2519Z" fill="#E4E4E4"/>
+				</svg>
+
+				<h2 class="text-6xl font-black italic text-white">Omrkni mašiny YETI</h2>
+				<a href="" class="btn btn-primary external">PŘEJÍT NA WEB</a>
+			</div>
+		</div>
+	</div>
+	<div class="flex flex-col gap-4 relative min-h-[750px]">
+		<div class="absolute w-full h-full after:bg-black after:w-full after:h-full after:z-20 z-10 after:opacity-10 after:absolute after:top-0 after:left-0">
+			<img src="./images/sections/1.webp" alt="" class="w-full h-full object-cover rounded-2xl" />
+		</div>
+		<div class="container relative z-20 py-36">
+			<div class="flex flex-col gap-12">
+				<svg width="111" height="49" viewBox="0 0 111 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M40.7921 23.3054L57.0992 23.2957L54.9077 31.3074H38.6075L40.7921 23.3054ZM43.947 11.7718H57.4843L55.379 19.6644L41.7851 19.6727L43.947 11.7718ZM63.4679 0.0193819L61.2174 8.22626L44.9098 8.23733L47.1553 0.0193819H63.4679ZM85.6534 11.7718L80.3625 31.3074H67.7985L73.0463 11.7718H85.6534ZM96.4985 0.0193819L94.3047 8.23733H63.69L65.9313 0.0193819H96.4985ZM102.288 31.3226L90.6324 31.3296L99.1969 0.0249198L110.74 0.0193819L102.288 31.3226ZM36.9993 31.2894L27.9346 31.2949L36.376 0.0193819H45.5176L36.9993 31.2894ZM24.3232 0.00415298L34.5273 0L19.826 19.2878L16.74 9.31857L24.3232 0.00415298ZM18.9517 21.9694L16.4386 31.3074L4.00802 31.3157L7.23116 19.2975L1.40625 0.0193819L12.1511 0.0110753L18.9517 21.9694Z" fill="#E4E4E4"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M4.08876 46.2795L4.45113 44.9214H1.17938L2.26832 40.8442H5.53392L5.89813 39.4736H1.80937L0 46.2795H4.08876Z" fill="#E4E4E4"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M22.9218 46.2795L24.7305 39.4736H23.9147L22.4684 44.9213H20.0124L21.4582 39.4736H20.6418L18.833 46.2795H20.4732L19.7466 48.9999H20.563L21.289 46.2795H22.9218Z" fill="#E4E4E4"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M41.7528 46.2795L42.1164 44.9214H38.8434L39.933 40.8442H43.198L43.5622 39.4736H39.4734L37.6641 46.2795H41.7528Z" fill="#E4E4E4"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M61.3095 46.2795L61.6724 44.9214H58.4001L59.8465 39.4736H59.0301L57.2207 46.2795H61.3095Z" fill="#E4E4E4"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M79.6836 42.2051H77.2351L77.598 40.8456H80.0466L79.6836 42.2051ZM79.4179 46.2795L79.7808 44.9213H76.5091L76.8721 43.5618H80.1444L81.2272 39.4736H77.1385L75.3291 46.2795H79.4179Z" fill="#E4E4E4"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M98.2519 46.2795L99.3334 42.2051H96.069L96.432 40.8442H99.697L100.061 39.4736H95.9725L94.8897 43.5618H98.1546L97.7984 44.9214H94.5261L94.1631 46.2795H98.2519Z" fill="#E4E4E4"/>
+				</svg>
+
+				<h2 class="text-6xl font-black italic text-white">Omrkni mašiny YETI</h2>
+				<p class="text-2xl text-white font-semibold max-w-[750px]">Nevíš si rady, který model je pro tebe ideální?
+					Chceš se před koupí na kole projet a osahat si ho na vlastní kůži? Projeď se na jednom z kol z naší testovací flotily, třeba u tebe na trailu.</p>
+				<a href="" class="btn btn-primary external">PŘEJÍT NA WEB</a>
+			</div>
+		</div>
+	</div>
+	<div class="flex flex-col gap-4 relative min-h-[750px]">
+		<div class="absolute w-full h-full after:bg-black after:w-full after:h-full after:z-20 z-10 after:opacity-10 after:absolute after:top-0 after:left-0">
+			<img src="./images/sections/1.webp" alt="" class="w-full h-full object-cover rounded-2xl" />
+		</div>
+		<div class="container relative z-20 py-36">
+			<div class="flex flex-col gap-12">
+				<svg width="111" height="49" viewBox="0 0 111 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M40.7921 23.3054L57.0992 23.2957L54.9077 31.3074H38.6075L40.7921 23.3054ZM43.947 11.7718H57.4843L55.379 19.6644L41.7851 19.6727L43.947 11.7718ZM63.4679 0.0193819L61.2174 8.22626L44.9098 8.23733L47.1553 0.0193819H63.4679ZM85.6534 11.7718L80.3625 31.3074H67.7985L73.0463 11.7718H85.6534ZM96.4985 0.0193819L94.3047 8.23733H63.69L65.9313 0.0193819H96.4985ZM102.288 31.3226L90.6324 31.3296L99.1969 0.0249198L110.74 0.0193819L102.288 31.3226ZM36.9993 31.2894L27.9346 31.2949L36.376 0.0193819H45.5176L36.9993 31.2894ZM24.3232 0.00415298L34.5273 0L19.826 19.2878L16.74 9.31857L24.3232 0.00415298ZM18.9517 21.9694L16.4386 31.3074L4.00802 31.3157L7.23116 19.2975L1.40625 0.0193819L12.1511 0.0110753L18.9517 21.9694Z" fill="#E4E4E4"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M4.08876 46.2795L4.45113 44.9214H1.17938L2.26832 40.8442H5.53392L5.89813 39.4736H1.80937L0 46.2795H4.08876Z" fill="#E4E4E4"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M22.9218 46.2795L24.7305 39.4736H23.9147L22.4684 44.9213H20.0124L21.4582 39.4736H20.6418L18.833 46.2795H20.4732L19.7466 48.9999H20.563L21.289 46.2795H22.9218Z" fill="#E4E4E4"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M41.7528 46.2795L42.1164 44.9214H38.8434L39.933 40.8442H43.198L43.5622 39.4736H39.4734L37.6641 46.2795H41.7528Z" fill="#E4E4E4"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M61.3095 46.2795L61.6724 44.9214H58.4001L59.8465 39.4736H59.0301L57.2207 46.2795H61.3095Z" fill="#E4E4E4"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M79.6836 42.2051H77.2351L77.598 40.8456H80.0466L79.6836 42.2051ZM79.4179 46.2795L79.7808 44.9213H76.5091L76.8721 43.5618H80.1444L81.2272 39.4736H77.1385L75.3291 46.2795H79.4179Z" fill="#E4E4E4"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M98.2519 46.2795L99.3334 42.2051H96.069L96.432 40.8442H99.697L100.061 39.4736H95.9725L94.8897 43.5618H98.1546L97.7984 44.9214H94.5261L94.1631 46.2795H98.2519Z" fill="#E4E4E4"/>
+				</svg>
+
+				<h2 class="text-6xl font-black italic text-white">Omrkni mašiny YETI</h2>
+				<p class="text-2xl text-white font-semibold max-w-[750px]">Nevíš si rady, který model je pro tebe ideální?
+					Chceš se před koupí na kole projet a osahat si ho na vlastní kůži? Projeď se na jednom z kol z naší testovací flotily, třeba u tebe na trailu.</p>
+				<a href="" class="btn btn-primary external">PŘEJÍT NA WEB</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="bg-primary500 py-32">
+	<div class="container">
+		<div class="flex flex-col gap-12 max-w-[1000px] mx-auto text-center items-center justify-center">
+			<h2 class="text-6xl font-black italic text-white">Naše značky</h2>
+			<p class="text-2xl text-white font-semibold max-w-[400px] mx-auto italic leading-10">Nabízíme pečlivý výběr značek, od legend po horké nováčky.</p>
+			<div class="flex flex-wrap gap-12 items-center justify-center ">
+				<a href="" class="duration-300 hover:-translate-y-1 flex items-center justify-center">
+					<img src="./images/brand/1.svg" alt="1" />
 				</a>
-				<a href="mailto:" title="" class="btn btn-whatsapp w-full items-center justify-center">
-					<svg xmlns="http://www.w3.org/2000/svg" width="29.828" height="29.971" viewBox="0 0 29.828 29.971">
-						<path id="whatsapp" d="M21.834,17.96c-.371-.186-2.2-1.082-2.535-1.207s-.588-.185-.837.187-.958,1.206-1.174,1.454-.433.279-.8.093A10.194,10.194,0,0,1,13.5,16.645a11.124,11.124,0,0,1-2.064-2.572c-.216-.371-.022-.572.162-.757.167-.167.372-.433.557-.649a2.568,2.568,0,0,0,.372-.621A.678.678,0,0,0,12.5,11.4c-.093-.186-.836-2.013-1.144-2.756-.3-.723-.608-.624-.836-.637s-.474-.014-.712-.012a1.36,1.36,0,0,0-.989.465,4.163,4.163,0,0,0-1.3,3.1,7.223,7.223,0,0,0,1.515,3.839,16.554,16.554,0,0,0,6.34,5.6,20.961,20.961,0,0,0,2.115.781,5.061,5.061,0,0,0,2.336.147,3.827,3.827,0,0,0,2.505-1.764,3.08,3.08,0,0,0,.216-1.764c-.092-.155-.34-.247-.712-.433m-6.77,9.245h0a12.326,12.326,0,0,1-6.283-1.721l-.45-.267L3.651,26.445,4.9,21.889,4.6,21.422a12.344,12.344,0,1,1,10.457,5.784M25.568,4.357A14.854,14.854,0,0,0,2.193,22.275l-2.107,7.7,7.873-2.066a14.838,14.838,0,0,0,7.1,1.808h.006A14.859,14.859,0,0,0,25.568,4.355Z" transform="translate(-0.086)" fill="#fff"/>
-					</svg>
-					<span>Napište nám hned</span>
+				<a href="" class="duration-300 hover:-translate-y-1 flex items-center justify-center">
+					<img src="./images/brand/2.svg" alt="1" />
+				</a>
+				<a href="" class=" duration-300 hover:-translate-y-1 flex items-center justify-center">
+					<img src="./images/brand/3.svg" alt="1" />
+				</a>
+				<a href="" class=" duration-300 hover:-translate-y-1 flex items-center justify-center">
+					<img src="./images/brand/4.svg" alt="1" />
+				</a>
+				<a href="" class=" duration-300 hover:-translate-y-1 flex items-center justify-center">
+					<img src="./images/brand/5.svg" alt="1" />
+				</a>
+				<a href="" class=" duration-300 hover:-translate-y-1 flex items-center justify-center">
+					<img src="./images/brand/6.svg" alt="1" />
+				</a>
+				<a href="" class=" duration-300 hover:-translate-y-1 flex items-center justify-center">
+					<img src="./images/brand/7.svg" alt="1" />
 				</a>
 			</div>
-		</div>
-
-		<div class="swiper swiper-logos swiper-right mt-16">
-			<div class="swiper-wrapper flex items-center justify-center">
-				<div class="swiper-slide ">
-					<a href="" class="grayscale hover:grayscale-0">
-						<img src="images/reference/1.png" class="max-h-[50px] max-w-[100px]"  />
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="" class="grayscale hover:grayscale-0">
-						<img src="images/reference/2.png" class="max-h-[50px] max-w-[100px]"  />
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="" class="grayscale hover:grayscale-0">
-						<img src="images/reference/3.png" class="max-h-[50px] max-w-[100px]"  />
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="" class="grayscale hover:grayscale-0">
-						<img src="images/reference/4.png" class="max-h-[50px] max-w-[100px]"  />
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="" class="grayscale hover:grayscale-0">
-						<img src="images/reference/5.png" class="max-h-[50px] max-w-[100px]"  />
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="" class="grayscale hover:grayscale-0">
-						<img src="images/reference/6.png" class="max-h-[50px] max-w-[100px]"  />
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="" class="grayscale hover:grayscale-0">
-						<img src="images/reference/7.png" class="max-h-[50px] max-w-[100px]"  />
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="" class="grayscale hover:grayscale-0">
-						<img src="images/reference/8.png" class="max-h-[50px] max-w-[100px]"  />
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="" class="grayscale hover:grayscale-0">
-						<img src="images/reference/9.png" class="max-h-[50px] max-w-[100px]"  />
-					</a>
-				</div>
-				<div class="swiper-slide ">
-					<a href="" class="grayscale hover:grayscale-0">
-						<img src="images/reference/1.png" class="max-h-[50px] max-w-[100px]"  />
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="" class="grayscale hover:grayscale-0">
-						<img src="images/reference/2.png" class="max-h-[50px] max-w-[100px]"  />
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="" class="grayscale hover:grayscale-0">
-						<img src="images/reference/3.png" class="max-h-[50px] max-w-[100px]"  />
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="" class="grayscale hover:grayscale-0">
-						<img src="images/reference/4.png" class="max-h-[50px] max-w-[100px]"  />
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="" class="grayscale hover:grayscale-0">
-						<img src="images/reference/5.png" class="max-h-[50px] max-w-[100px]"  />
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="" class="grayscale hover:grayscale-0">
-						<img src="images/reference/6.png" class="max-h-[50px] max-w-[100px]"  />
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="" class="grayscale hover:grayscale-0">
-						<img src="images/reference/7.png" class="max-h-[50px] max-w-[100px]"  />
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="" class="grayscale hover:grayscale-0">
-						<img src="images/reference/8.png" class="max-h-[50px] max-w-[100px]"  />
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="" class="grayscale hover:grayscale-0">
-						<img src="images/reference/9.png" class="max-h-[50px] max-w-[100px]"  />
-					</a>
-				</div>
-			</div>
-		</div>
-
-	</div>
-</div>
-<div class="bg-lightBackground md:py-32 py-24 bg-opacity-15 overflow-hidden">
-	<div class="container">
-		<div class="flex justify-between md:items-center items-start mb-14 md:flex-row flex-col gap-4">
-			<h2 class="text-4xl font-bold">Držte s námi krok</h2>
-			<a href="" class="btn btn-clear-arrow p-0">
-				<span>Zobrazit vše</span>
-				<svg enable-background="new 0 0 32 32"  id="Слой_1" version="1.1" viewBox="0 0 32 32"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#121313" fill-rule="evenodd" id="Arrow_Forward"/><g/><g/><g/><g/><g/><g/></svg>
-			</a>
-		</div>
-		<div>
-			<div class="swiper swiper-blog swiper-right">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="bg-white rounded-xl transition-transform duration-300 ease-in-out hover:shadow-card hover:-translate-y-2 overflow-hidden hover:translate-effect">
-							<div class="flex flex-col gap-4">
-								<a href="" class="overflow-hidden">
-									<img src="./images/mockup/news.png" class=" transition ease-in-out"/>
-								</a>
-								<div class="py-8 flex px-10 flex-col gap-4">
-									<div class="flex flex-row gap-4 items-center">
-										<a href="" class="bg-tag rounded-full px-4 py-2 text-white text-[12px]">Mobilní aplikace</a>
-										<span class="text-text text-[12px]">5. 7. 2023</span>
-									</div>
-									<a href="" class="font-bold text-2xl hover:underline">5 tipů, jak využít umělou inteligenci v mobilní aplikaci</a>
-									<p>Pokud se 10 lidí zeptáte, jaký je největší trend v oblasti mobilních aplikací, s největší pravděpodobností vám všichni odpoví stejně – umělá inteligence. Velká popularita AI chatů nebo aplikací pro tvorbu obrázků totiž rozvoji této technologie výrazně nahrává.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="bg-white rounded-xl transition-transform duration-300 ease-in-out hover:shadow-card hover:-translate-y-2 overflow-hidden hover:translate-effect">
-							<div class="flex flex-col gap-4">
-								<a href="" class="overflow-hidden">
-									<img src="./images/mockup/news.png" class=" transition ease-in-out"/>
-								</a>
-								<div class="py-8 flex px-10 flex-col gap-4">
-									<div class="flex flex-row gap-4 items-center">
-										<a href="" class="bg-tag rounded-full px-4 py-2 text-white text-[12px]">Mobilní aplikace</a>
-										<span class="text-text text-[12px]">5. 7. 2023</span>
-									</div>
-									<a href="" class="font-bold text-2xl hover:underline">5 tipů, jak využít umělou inteligenci v mobilní aplikaci</a>
-									<p>Pokud se 10 lidí zeptáte, jaký je největší trend v oblasti mobilních aplikací, s největší pravděpodobností vám všichni odpoví stejně – umělá inteligence. Velká popularita AI chatů nebo aplikací pro tvorbu obrázků totiž rozvoji této technologie výrazně nahrává.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="bg-white rounded-xl transition-transform duration-300 ease-in-out hover:shadow-card hover:-translate-y-2 overflow-hidden hover:translate-effect">
-							<div class="flex flex-col gap-4">
-								<div class="py-8 flex px-10 flex-col gap-4">
-									<div class="flex flex-row gap-4 items-center">
-										<a href="" class="bg-tag rounded-full px-4 py-2 text-white text-[12px]">Mobilní aplikace</a>
-										<span class="text-text text-[12px]">5. 7. 2023</span>
-									</div>
-									<a href="" class="font-bold text-2xl hover:underline">5 tipů, jak využít umělou inteligenci v mobilní aplikaci</a>
-									<p>Pokud se 10 lidí zeptáte, jaký je největší trend v oblasti mobilních aplikací, s největší pravděpodobností vám všichni odpoví stejně – umělá inteligence. Velká popularita AI chatů nebo aplikací pro tvorbu obrázků totiž rozvoji této technologie výrazně nahrává.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="bg-white rounded-xl transition-transform duration-300 ease-in-out hover:shadow-card hover:-translate-y-2 overflow-hidden hover:translate-effect">
-							<div class="flex flex-col gap-4">
-								<div class="py-8 flex px-10 flex-col gap-4">
-									<div class="flex flex-row gap-4 items-center">
-										<a href="" class="bg-tag rounded-full px-4 py-2 text-white text-[12px]">Mobilní aplikace</a>
-										<span class="text-text text-[12px]">5. 7. 2023</span>
-									</div>
-									<a href="" class="font-bold text-2xl hover:underline">5 tipů, jak využít umělou inteligenci v mobilní aplikaci</a>
-									<p>Pokud se 10 lidí zeptáte, jaký je největší trend v oblasti mobilních aplikací, s největší pravděpodobností vám všichni odpoví stejně – umělá inteligence. Velká popularita AI chatů nebo aplikací pro tvorbu obrázků totiž rozvoji této technologie výrazně nahrává.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="bg-white rounded-xl transition-transform duration-300 ease-in-out hover:shadow-card hover:-translate-y-2 overflow-hidden hover:translate-effect">
-							<div class="flex flex-col gap-4">
-								<div class="py-8 flex px-10 flex-col gap-4">
-									<div class="flex flex-row gap-4 items-center">
-										<a href="" class="bg-tag rounded-full px-4 py-2 text-white text-[12px]">Mobilní aplikace</a>
-										<span class="text-text text-[12px]">5. 7. 2023</span>
-									</div>
-									<a href="" class="font-bold text-2xl hover:underline">5 tipů, jak využít umělou inteligenci v mobilní aplikaci</a>
-									<p>Pokud se 10 lidí zeptáte, jaký je největší trend v oblasti mobilních aplikací, s největší pravděpodobností vám všichni odpoví stejně – umělá inteligence. Velká popularita AI chatů nebo aplikací pro tvorbu obrázků totiž rozvoji této technologie výrazně nahrává.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="bg-white rounded-xl transition-transform duration-300 ease-in-out hover:shadow-card hover:-translate-y-2 overflow-hidden hover:translate-effect">
-							<div class="flex flex-col gap-4">
-								<div class="py-8 flex px-10 flex-col gap-4">
-									<div class="flex flex-row gap-4 items-center">
-										<a href="" class="bg-tag rounded-full px-4 py-2 text-white text-[12px]">Mobilní aplikace</a>
-										<span class="text-text text-[12px]">5. 7. 2023</span>
-									</div>
-									<a href="" class="font-bold text-2xl hover:underline">5 tipů, jak využít umělou inteligenci v mobilní aplikaci</a>
-									<p>Pokud se 10 lidí zeptáte, jaký je největší trend v oblasti mobilních aplikací, s největší pravděpodobností vám všichni odpoví stejně – umělá inteligence. Velká popularita AI chatů nebo aplikací pro tvorbu obrázků totiž rozvoji této technologie výrazně nahrává.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="bg-white rounded-xl transition-transform duration-300 ease-in-out hover:shadow-card hover:-translate-y-2 overflow-hidden hover:translate-effect">
-							<div class="flex flex-col gap-4">
-								<div class="py-8 flex px-10 flex-col gap-4">
-									<div class="flex flex-row gap-4 items-center">
-										<a href="" class="bg-tag rounded-full px-4 py-2 text-white text-[12px]">Mobilní aplikace</a>
-										<span class="text-text text-[12px]">5. 7. 2023</span>
-									</div>
-									<a href="" class="font-bold text-2xl hover:underline">5 tipů, jak využít umělou inteligenci v mobilní aplikaci</a>
-									<p>Pokud se 10 lidí zeptáte, jaký je největší trend v oblasti mobilních aplikací, s největší pravděpodobností vám všichni odpoví stejně – umělá inteligence. Velká popularita AI chatů nebo aplikací pro tvorbu obrázků totiž rozvoji této technologie výrazně nahrává.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="bg-white rounded-xl transition-transform duration-300 ease-in-out hover:shadow-card hover:-translate-y-2 overflow-hidden hover:translate-effect">
-							<div class="flex flex-col gap-4">
-								<a href="" class="overflow-hidden">
-									<img src="./images/mockup/news.png" class=" transition ease-in-out"/>
-								</a>
-								<div class="py-8 flex px-10 flex-col gap-4">
-									<div class="flex flex-row gap-4 items-center">
-										<a href="" class="bg-tag rounded-full px-4 py-2 text-white text-[12px]">Mobilní aplikace</a>
-										<span class="text-text text-[12px]">5. 7. 2023</span>
-									</div>
-									<a href="" class="font-bold text-2xl hover:underline">5 tipů, jak využít umělou inteligenci v mobilní aplikaci</a>
-									<p>Pokud se 10 lidí zeptáte, jaký je největší trend v oblasti mobilních aplikací, s největší pravděpodobností vám všichni odpoví stejně – umělá inteligence. Velká popularita AI chatů nebo aplikací pro tvorbu obrázků totiž rozvoji této technologie výrazně nahrává.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="bg-white rounded-xl transition-transform duration-300 ease-in-out hover:shadow-card hover:-translate-y-2 overflow-hidden hover:translate-effect">
-							<div class="flex flex-col gap-4">
-								<a href="" class="overflow-hidden">
-									<img src="./images/mockup/news.png" class=" transition ease-in-out"/>
-								</a>
-								<div class="py-8 flex px-10 flex-col gap-4">
-									<div class="flex flex-row gap-4 items-center">
-										<a href="" class="bg-tag rounded-full px-4 py-2 text-white text-[12px]">Mobilní aplikace</a>
-										<span class="text-text text-[12px]">5. 7. 2023</span>
-									</div>
-									<a href="" class="font-bold text-2xl hover:underline">5 tipů, jak využít umělou inteligenci v mobilní aplikaci</a>
-									<p>Pokud se 10 lidí zeptáte, jaký je největší trend v oblasti mobilních aplikací, s největší pravděpodobností vám všichni odpoví stejně – umělá inteligence. Velká popularita AI chatů nebo aplikací pro tvorbu obrázků totiž rozvoji této technologie výrazně nahrává.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="swiper-button-prev">
-					<svg enable-background="new 0 0 32 32"  id="Слой_1" version="1.1" viewBox="0 0 32 32"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#121313" fill-rule="evenodd" id="Arrow_Forward"/><g/><g/><g/><g/><g/><g/></svg>
-				</div>
-				<div class="swiper-button-next">
-					<svg enable-background="new 0 0 32 32"  id="Слой_1" version="1.1" viewBox="0 0 32 32"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path clip-rule="evenodd" d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z" fill="#121313" fill-rule="evenodd" id="Arrow_Forward"/><g/><g/><g/><g/><g/><g/></svg>
-				</div>
-
-			</div>
+			<a href="" class="btn btn-primary">Zjistit víc</a>
 		</div>
 	</div>
 </div>
-<div class="bg-background py-32 relative overflow-hidden">
-	<div class="container">
-		<div class="z-20 mx-auto border-opacity-30 relative max-w-[950px] border border-text rounded-xl lg:p-24 md:p-12 md:px-24  p-12 lg:px-48 w-full flex items-center justify-center flex-col gap-8">
-			<div class="bg-gradientBlack absolute lg:-top-[58px] -top-[40px] opacity-background rounded-2xl overflow-hidden lg:w-[116px] lg:h-[116px] w-[80px] h-[80px] flex items-center justify-center">
-				<img src="icons/services/programovani.svg" height="51" width="42" class="lg:w-[42px] md:w-[20px] w-[40px]"/>
-			</div>
-			<span class="text-2xl text-white text-center">Novinky ze světa mobilních aplikací každý měsíc na vašem e-mailu.</span>
-			<div class="grid lg:grid-cols-2 lg:gap-4 gap-8 flex-1 w-full">
-				<div class="form-control newsletter">
-					<input type="text"  placeholder="E-mail pro odběr newsletteru"/>
-					<small>Vyplňte správný e-mail</small>
-				</div>
-					<button class="btn btn-primary w-full max-w-full justify-center">
-					<svg xmlns="http://www.w3.org/2000/svg" width="20.295" height="20.295" viewBox="0 0 20.295 20.295">
-						<g id="sunbscribe" transform="translate(-1060.222 -4618.972)">
-							<path id="Path_74" data-name="Path 74" d="M817.06,695.631l-15.19,5.988a1.537,1.537,0,0,0-.126,2.8l5.669,2.849,2.849,5.669a1.536,1.536,0,0,0,2.8-.126l5.989-15.19A1.536,1.536,0,0,0,817.06,695.631Z" transform="translate(260.325 3924.48)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-							<line id="Line_80" data-name="Line 80" y1="11.137" x2="11.137" transform="translate(1067.739 4620.614)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-						</g>
-					</svg>
-					<span class="">Odebírat newsletter</span>
-				</button>
-			</div>
-		</div>
-	</div>
-	<div class="bg-radialMarker z-10 absolute -bottom-[150px] left-1/2 -translate-x-1/2 w-full h-full"></div>
+<div class="border-black border-t-2 border-b-2 py-8 flex items-center justify-center bg-blackDark">
+	<ul class="flex md:flex-row flex-col gap-6 text-center">
+		<li>
+			<a href="" class="uppercase text-white italic text-sm font-semibold hover:text-primary-500">Domů</a>
+		</li>
+		<li>
+			<a href="" class="uppercase text-white italic text-sm font-semibold hover:text-primary-500">Značky</a>
+		</li>
+		<li>
+			<a href="" class="uppercase text-white italic text-sm font-semibold hover:text-primary-500">Stavby</a>
+		</li>
+		<li>
+			<a href="" class="uppercase text-white italic text-sm font-semibold hover:text-primary-500">Gravel</a>
+		</li>
+		<li>
+			<a href="" class="uppercase text-white italic text-sm font-semibold hover:text-primary-500">Kola skladem</a>
+		</li>
+		<li>
+			<a href="" class="uppercase text-white italic text-sm font-semibold hover:text-primary-500">O nás</a>
+		</li>
+		<li>
+			<a href="" class="uppercase text-white italic text-sm font-semibold hover:text-primary-500">Kontakt</a>
+		</li>
+	</ul>
 </div>
-<div class="bg-background pt-24 py-16">
+<footer class="bg-black py-16">
 	<div class="container">
-		<div class="flex lg:gap-32 gap-16 lg:flex-row flex-col">
-			<div class="flex flex-col lg:items-center justify-start gap-8">
+		<div class="grid grid-cols-5">
+			<div>
 				<a href="">
-					<img src="icons/logo/logo.png"  class="max-w-[160px]"/>
-				</a>
-				<a href="" title="" class="btn btn-whatsapp-borderer">
-					<svg xmlns="http://www.w3.org/2000/svg" width="29.828" height="29.971" viewBox="0 0 29.828 29.971">
-						<path id="whatsapp" d="M21.834,17.96c-.371-.186-2.2-1.082-2.535-1.207s-.588-.185-.837.187-.958,1.206-1.174,1.454-.433.279-.8.093A10.194,10.194,0,0,1,13.5,16.645a11.124,11.124,0,0,1-2.064-2.572c-.216-.371-.022-.572.162-.757.167-.167.372-.433.557-.649a2.568,2.568,0,0,0,.372-.621A.678.678,0,0,0,12.5,11.4c-.093-.186-.836-2.013-1.144-2.756-.3-.723-.608-.624-.836-.637s-.474-.014-.712-.012a1.36,1.36,0,0,0-.989.465,4.163,4.163,0,0,0-1.3,3.1,7.223,7.223,0,0,0,1.515,3.839,16.554,16.554,0,0,0,6.34,5.6,20.961,20.961,0,0,0,2.115.781,5.061,5.061,0,0,0,2.336.147,3.827,3.827,0,0,0,2.505-1.764,3.08,3.08,0,0,0,.216-1.764c-.092-.155-.34-.247-.712-.433m-6.77,9.245h0a12.326,12.326,0,0,1-6.283-1.721l-.45-.267L3.651,26.445,4.9,21.889,4.6,21.422a12.344,12.344,0,1,1,10.457,5.784M25.568,4.357A14.854,14.854,0,0,0,2.193,22.275l-2.107,7.7,7.873-2.066a14.838,14.838,0,0,0,7.1,1.808h.006A14.859,14.859,0,0,0,25.568,4.355Z" transform="translate(-0.086)" fill="#fff"/>
-					</svg>
-					<span>Napište nám hned</span>
+					<img src="./icons/logo/logo-white.svg" alt="" />
 				</a>
 			</div>
-			<div class="lg:flex grid grid-cols-2 gap-32 flex-1 w-full items-start justify-start text-left">
-				<div class="flex flex-col gap-6">
-					<span class="text-[15px] text-white font-bold">Naše služby</span>
-					<ul class="flex flex-col gap-4">
-						<li>
-							<a href="" class="text-sm text-text hover:text-white">Programování nové aplikace</a>
-						</li>
-						<li>
-							<a href="" class="text-sm text-text hover:text-white">Převzetí stávajícího projektu</a>
-						</li>
-						<li>
-							<a href="" class="text-sm text-text hover:text-white">Konzultace proveditelnosti</a>
-						</li>
-						<li>
-							<a href="" class="text-sm text-text hover:text-white">Rozvoj a servis</a>
-						</li>
-					</ul>
+			<div class="flex flex-col gap-20">
+				<div class="flex flex-col gap-8">
+					<span class="text-2xl italic font-bold text-opacity-50 text-white">Sociální sítě</span>
+					<div class="flex flex-wrap gap-4">
+						<a href="">
+							<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.9987 0.398438C7.83203 0.398438 0.332031 7.88177 0.332031 17.0984C0.332031 25.4318 6.43203 32.3484 14.3987 33.5984V21.9318H10.1654V17.0984H14.3987V13.4151C14.3987 9.23177 16.882 6.93177 20.6987 6.93177C22.5154 6.93177 24.4154 7.24844 24.4154 7.24844V11.3651H22.3154C20.2487 11.3651 19.5987 12.6484 19.5987 13.9651V17.0984H24.232L23.482 21.9318H19.5987V33.5984C23.5261 32.9782 27.1024 30.9743 29.6819 27.9485C32.2614 24.9228 33.6743 21.0745 33.6654 17.0984C33.6654 7.88177 26.1654 0.398438 16.9987 0.398438Z" fill="white"/>
+							</svg>
+
+						</a>
+						<a href="">
+							<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.9987 0.335938H23.9987C29.332 0.335938 33.6654 4.66927 33.6654 10.0026V24.0026C33.6654 26.5664 32.6469 29.0251 30.8341 30.838C29.0212 32.6508 26.5625 33.6693 23.9987 33.6693H9.9987C4.66536 33.6693 0.332031 29.3359 0.332031 24.0026V10.0026C0.332031 7.43884 1.35048 4.98009 3.16333 3.16724C4.97618 1.35439 7.43494 0.335938 9.9987 0.335938ZM9.66536 3.66927C8.07407 3.66927 6.54794 4.30141 5.42272 5.42663C4.29751 6.55185 3.66536 8.07797 3.66536 9.66927V24.3359C3.66536 27.6526 6.3487 30.3359 9.66536 30.3359H24.332C25.9233 30.3359 27.4495 29.7038 28.5747 28.5786C29.6999 27.4534 30.332 25.9272 30.332 24.3359V9.66927C30.332 6.3526 27.6487 3.66927 24.332 3.66927H9.66536ZM25.7487 6.16927C26.3012 6.16927 26.8311 6.38876 27.2218 6.77946C27.6125 7.17017 27.832 7.70007 27.832 8.2526C27.832 8.80514 27.6125 9.33504 27.2218 9.72574C26.8311 10.1164 26.3012 10.3359 25.7487 10.3359C25.1962 10.3359 24.6663 10.1164 24.2756 9.72574C23.8849 9.33504 23.6654 8.80514 23.6654 8.2526C23.6654 7.70007 23.8849 7.17017 24.2756 6.77946C24.6663 6.38876 25.1962 6.16927 25.7487 6.16927ZM16.9987 8.66927C19.2088 8.66927 21.3285 9.54724 22.8913 11.11C24.4541 12.6729 25.332 14.7925 25.332 17.0026C25.332 19.2127 24.4541 21.3324 22.8913 22.8952C21.3285 24.458 19.2088 25.3359 16.9987 25.3359C14.7886 25.3359 12.6689 24.458 11.1061 22.8952C9.54334 21.3324 8.66536 19.2127 8.66536 17.0026C8.66536 14.7925 9.54334 12.6729 11.1061 11.11C12.6689 9.54724 14.7886 8.66927 16.9987 8.66927ZM16.9987 12.0026C15.6726 12.0026 14.4008 12.5294 13.4632 13.4671C12.5255 14.4048 11.9987 15.6765 11.9987 17.0026C11.9987 18.3287 12.5255 19.6005 13.4632 20.5381C14.4008 21.4758 15.6726 22.0026 16.9987 22.0026C18.3248 22.0026 19.5965 21.4758 20.5342 20.5381C21.4719 19.6005 21.9987 18.3287 21.9987 17.0026C21.9987 15.6765 21.4719 14.4048 20.5342 13.4671C19.5965 12.5294 18.3248 12.0026 16.9987 12.0026Z" fill="white"/>
+							</svg>
+
+						</a>
+					</div>
 				</div>
-				<div class="flex flex-col gap-6">
-					<span class="text-[15px] text-white font-bold">O&nbsp;společnosti</span>
-					<ul class="flex flex-col gap-4">
-						<li>
-							<a href="" class="text-sm text-text hover:text-white">Reference</a>
-						</li>
-						<li>
-							<a href="" class="text-sm text-text hover:text-white">O nás</a>
-						</li>
-						<li>
-							<a href="" class="text-sm text-text hover:text-white">Kontakt</a>
-						</li>
-						<li>
-							<a href="" class="text-sm text-text hover:text-white">Blog</a>
-						</li>
-					</ul>
+				<div class="flex flex-col gap-8">
+					<span class="text-2xl italic font-bold text-opacity-50 text-white">Kontakt</span>
+					<div class="flex flex-col gap-2">
+						<a href="" class="text-white font-inter">info@wonderfullbikes.cz</a>
+						<a href="" class="text-white font-inter">+420 724  685 238</a>
+					</div>
 				</div>
 			</div>
-			<div class="flex flex-col gap-6">
-				<span class="text-[15px] text-white font-bold">Sledujte nás</span>
-				<div class="flex gap-8">
-					<a href="">
-						<svg id="linkedin" xmlns="http://www.w3.org/2000/svg" width="18.991" height="18.991" viewBox="0 0 18.991 18.991">
-							<circle id="Ellipse_22" data-name="Ellipse 22" cx="8" cy="8" r="8" transform="translate(1 2)" fill="#636973" opacity="0"/>
-							<path id="linkedin-rect" d="M3.728.009A3.733,3.733,0,0,0,.007,3.731V15.279A3.732,3.732,0,0,0,3.729,19H15.277A3.732,3.732,0,0,0,19,15.279V3.731A3.732,3.732,0,0,0,15.277.009Zm.936,3.134a1.5,1.5,0,1,1-.019,2.981H4.627a1.495,1.495,0,1,1,.037-2.981ZM13.121,7.1c1.887,0,3.3,1.233,3.3,3.884v4.948H13.554V11.317c0-1.16-.415-1.952-1.453-1.952a1.571,1.571,0,0,0-1.472,1.049,1.958,1.958,0,0,0-.094.7v4.819H7.667s.037-7.82,0-8.63h2.868V8.525A2.847,2.847,0,0,1,13.12,7.1Zm-9.909.2H6.079v8.629H3.212V7.3Z" transform="translate(-0.007 -0.009)" fill="#fff"/>
-						</svg>
-					</a>
-					<a href="">
-						<svg xmlns="http://www.w3.org/2000/svg" width="9.865" height="19" viewBox="0 0 9.865 19">
-							<path id="facebook" d="M10.536.137V3.152H8.743a1.678,1.678,0,0,0-1.325.411A1.892,1.892,0,0,0,7.076,4.8V6.954h3.345l-.445,3.38h-2.9V19H3.583V10.333H.671V6.953H3.583V4.464A4.417,4.417,0,0,1,4.77,1.17,4.307,4.307,0,0,1,7.932,0,18.867,18.867,0,0,1,10.536.137Z" transform="translate(-0.671)" fill="#fff"/>
-						</svg>
-					</a>
-					<svg xmlns="http://www.w3.org/2000/svg" width="18.999" height="15.832" viewBox="0 0 18.999 15.832">
-						<path id="twitter" d="M19,4.852a5.106,5.106,0,0,1-.709,1.016,5.237,5.237,0,0,1-1.281,1.08q.021.169.032.318a11.528,11.528,0,0,1-.815,4.416,11.629,11.629,0,0,1-4.628,5.75,12.168,12.168,0,0,1-7.244,1.324A8.318,8.318,0,0,1,0,17.073,8.111,8.111,0,0,0,5.8,15.4a4,4,0,0,1-3.685-2.732,2.478,2.478,0,0,0,.826.042,7.685,7.685,0,0,0,.932-.127,4.369,4.369,0,0,1-2.648-2.055A4.429,4.429,0,0,1,.784,8.58a3.721,3.721,0,0,0,1.758.529A4.542,4.542,0,0,1,.815,6.3a5.2,5.2,0,0,1,.477-2.531A13.312,13.312,0,0,0,5.814,7.16,9.368,9.368,0,0,0,9.362,7.9a4.741,4.741,0,0,1,.477-3.008,4.1,4.1,0,0,1,2.446-1.779,3.611,3.611,0,0,1,3.622,1.123,6.447,6.447,0,0,0,2.521-.932A3.824,3.824,0,0,1,16.69,5.55,11.013,11.013,0,0,0,19,4.852Z" transform="translate(0 -3)" fill="#fff"/>
-					</svg>
-				</div>
-			</div>
-		</div>
-		<hr class="mt-16 border-text border-opacity-25"/>
-		<div class="flex justify-between mt-8 md:flex-row flex-col gap-2">
-			<p class="text-grayBlue text-sm">
-				© 2023, Inited Solution&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<a href="" class="underline">Zpracování osobních údajů</a>
-			</p>
-			<p class="text-grayBlue text-sm">
-				Vytvořeno v <a href="" class="underline">Beneš & Michl</a>
-			</p>
 		</div>
 	</div>
-</div>
+</footer>
 <script src="js/script.js" async defer type="text/javascript"></script>
 <script type="module">
 	import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
-	new Swiper('.swiper-blog', {
-		direction: 'horizontal',
-		loop: false,
-		slidesPerView: 3,
-		spaceBetween: 30,
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-		breakpoints: {
-			320: { // for small screens
-				slidesPerView: 1,
-				spaceBetween: 10,
-			},
-			640: { // for medium screens
-				slidesPerView: 2,
-				spaceBetween: 20,
-			},
-			1024: { // for large screens
-				slidesPerView: 3,
-				spaceBetween: 30,
-			},
-		},
-	});
-
 	new Swiper('.swiper-logos', {
 		direction: 'horizontal',
-		loop: false,
+		loop: true,
+		//autoplay: {
+			//delay: 1000,
+		//},
 		slidesPerView: 7,
 		spaceBetween: 40,
 		breakpoints: {

@@ -7,7 +7,7 @@
   input {
     border-radius: 120px;
     font-size: 1rem;
-    color: $grayBlue;
+    color: $primary500;
     padding: 1rem 1.5rem;
     outline: none;
     border: 2px solid transparent;
@@ -17,7 +17,7 @@
   textarea {
     border-radius: 20px;
     font-size: 1rem;
-    color: $grayBlue;
+    color: $primary500;
     padding: 1rem 1.5rem;
     outline: none;
     border: 2px solid transparent;
@@ -25,7 +25,7 @@
     background: #e5eaf2;
   }
   label {
-    color: $grayBlue;
+    color: $primary500;
   }
   &.newsletter {
     input {
@@ -51,7 +51,7 @@
   }
   &.dark {
     label {
-      color: $text;
+      color: $primary500;
     }
   }
 }
