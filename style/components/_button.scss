@@ -32,7 +32,7 @@
     font-weight: 900;
     font-style: italic;
     text-transform: uppercase;
-    color: white;
+    color: $shadowWhite;
     border-radius: 50px;
     font-size: 0.875rem;
     transition: 0.25s ease-in-out all;
@@ -54,7 +54,7 @@
   }
 }
 .web {
-  color: white;
+  color: $shadowWhite;
   font-weight: bold;
   border: 1px solid $primary600;
   padding: 1rem;
@@ -106,7 +106,7 @@
       display: none;
     }
     .web-link {
-      color: white;
+      color: $shadowWhite;
     }
     svg path {
       fill: white;
