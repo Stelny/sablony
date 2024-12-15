@@ -53,3 +53,63 @@
     }
   }
 }
+.web {
+  color: white;
+  font-weight: bold;
+  border: 1px solid $primary600;
+  padding: 1rem;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+  transition: 0.25s ease-in-out all;
+  gap: 0.5rem;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 18px;
+    height: 18px;
+    background: url(./../icons/link/external-long-primary.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &:hover {
+    transform: translateY(-2px);
+  }
+  &-here {
+    font-weight: 700;
+    font-size: 14px;
+    color: $primary100;
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  svg {
+    max-height: 32px;
+    max-width: 100%;
+    path {
+      fill: $primary600;
+    }
+  }
+  &-link {
+    font-size: 13px;
+    color: $primary600;
+  }
+
+  &.active {
+    background: $primary500;
+    &:after {
+      display: none;
+    }
+    .web-link {
+      color: white;
+    }
+    svg path {
+      fill: white;
+    }
+  }
+}
