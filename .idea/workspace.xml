@@ -5,25 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f677876-b359-4c62-8ab9-fb8578862b7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/build-detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buildy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/product-detail/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/product-detail/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/product-detail/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/product-detail/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/product-detail/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/product-detail/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/product-detail/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/products/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/products/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/products/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/products/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/products/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/products/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/products/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/products/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nase-buildy-seznam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/link/internal-primary.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nase-buildy-seznam.html" beforeDir="false" afterPath="$PROJECT_DIR$/nase-buildy-seznam.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/components/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.css.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +114,7 @@
       <workItem from="1734285545358" duration="1215000" />
       <workItem from="1734288872915" duration="13388000" />
       <workItem from="1734334918783" duration="976000" />
-      <workItem from="1734351795578" duration="4701000" />
+      <workItem from="1734351795578" duration="7751000" />
     </task>
     <servers />
   </component>

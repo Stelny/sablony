@@ -501,6 +501,15 @@
   width: fit-content;
   transition: 0.5s ease-in-out box-shadow;
 }
+.btn.external:after {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background: url(./../icons/link/external-long.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .btn.loading {
   pointer-events: none;
 }
@@ -532,17 +541,43 @@
 .btn-primary:hover {
   transform: translateY(-2px);
 }
-.btn-primary.external:after {
+@media screen and (max-width: 1300px) {
+  .btn-primary {
+    font-size: 0.825rem;
+  }
+}
+.btn-clear {
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #009FAD;
+  font-size: 0.875rem;
+  transition: 0.25s ease-in-out all;
+  padding: 1rem 0;
+}
+.btn-clear:hover {
+  transform: translateY(-2px);
+}
+.btn-clear.internal:after {
+  content: "";
+  width: 22px;
+  height: 11px;
+  background: url(./../icons/link/internal-primary.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btn-clear.external:after {
   content: "";
   width: 17px;
   height: 17px;
-  background: url(./../icons/link/external-long.svg);
+  background: url(./../icons/link/external-long-primary.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 @media screen and (max-width: 1300px) {
-  .btn-primary {
+  .btn-clear {
     font-size: 0.825rem;
   }
 }
