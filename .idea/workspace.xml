@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f677876-b359-4c62-8ab9-fb8578862b7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/brands.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/additional/corner.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/mockup/bike.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style/components/_breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/preview.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/build-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +115,7 @@
       <workItem from="1734366959523" duration="470000" />
       <workItem from="1734374911704" duration="194000" />
       <workItem from="1734448425660" duration="602000" />
-      <workItem from="1734552590176" duration="3460000" />
+      <workItem from="1734552590176" duration="6279000" />
     </task>
     <servers />
   </component>

@@ -24,6 +24,31 @@
 	<link  rel="stylesheet" href="style/main.css" />
 </head>
 <body>
+<div class="lightbox fixed bg-[#0C0C0CCF] top-0 left-0 w-full h-screen backdrop-blur-md flex z-[9999999] flex-col justify-center  hidden">
+	<div class="flex items-center justify-end m-8">
+		<button class="lightbox-close duration-300 hover:-translate-y-0.5 w-[50px] h-[50px] flex items-center justify-center bg-primary-500/[0.12] rounded-full">
+			<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M1.5 1.5L9.5 9.5L1.5 17.5" stroke="white" stroke-width="4"/>
+				<path d="M17.5 1.5L9.5 9.5L17.5 17.5" stroke="white" stroke-width="4"/>
+			</svg>
+		</button>
+	</div>
+	<div class="flex items-center justify-center ">
+		<button class="lightbox-prev xl:mx-8 mx-2 duration-300 hover:-translate-y-0.5 w-[50px] h-[50px] flex items-center justify-center bg-primary-500/[0.12] rounded-full">
+			<svg xmlns="http://www.w3.org/2000/svg" width="13" height="19" viewBox="0 0 13 19" fill="none">
+				<path d="M11.5 1.5L3.5 9.5L11.5 17.5" stroke="white" stroke-width="4"/>
+			</svg>
+		</button>
+		<div class="flex-1 mb-8 flex justify-center items-center">
+			<img src="" alt="" class="max-h-[600px] object-scale-down"/>
+		</div>
+		<button class="lightbox-next xl:mx-8 mx-2 duration-300 hover:-translate-y-0.5 w-[50px] h-[50px] flex items-center justify-center bg-primary-500/[0.12] rounded-full">
+			<svg xmlns="http://www.w3.org/2000/svg" width="13" height="19" viewBox="0 0 13 19" fill="none">
+				<path d="M1.5 1.5L9.5 9.5L1.5 17.5" stroke="white" stroke-width="4"/>
+			</svg>
+		</button>
+	</div>
+</div>
 <header class="header">
 		<div class="header-top">
 			<img src="./icons/logo/logo-gray.svg" />
@@ -199,25 +224,25 @@
 		<p class="max-w-[750px] mx-auto text-[25px] text-white font-bold">Lorem ipsum dolor sit amet consectetur. Volutpat rhoncus sed metus felis. Dui morbi tempor proin purus at in vitae. Sit odio diam volutpat blandit amet vehicula facilisi elit. Mi egestas interdum eget cursus venenatis venenatis iaculis lorem ultrices. Mauris nibh nunc eget mi. Mi sit imperdiet aenean eget montes eu scelerisque pharetra augue. Quisque pellentesque eros lacus leo. </p>
 	</div>
 	<div class="grid md:grid-cols-2 gap-2">
-		<a href="" class="aspect-[615/462] w-full duration-300 hover:-translate-y-1">
-			<img src="./images/product-detail/1.png" alt="" class="w-full h-full object-center object-cover rounded-xl"/>
+		<a data-group="gallery" data-position="1" href="" class="aspect-[615/462] w-full duration-300 hover:-translate-y-1">
+			<img  src="./images/product-detail/1.png" alt="" class="w-full h-full object-center object-cover rounded-xl"/>
 		</a>
-		<a href="" class="aspect-[615/462] w-full duration-300 hover:-translate-y-1">
+		<a data-group="gallery" data-position="2" href="" class="aspect-[615/462] w-full duration-300 hover:-translate-y-1">
 			<img src="./images/product-detail/2.png" alt="" class="w-full h-full object-center object-cover rounded-xl"/>
 		</a>
-		<a href="" class="aspect-[615/462] w-full duration-300 hover:-translate-y-1">
+		<a data-group="gallery" data-position="3" href="" class="aspect-[615/462] w-full duration-300 hover:-translate-y-1">
 			<img src="./images/product-detail/3.png" alt="" class="w-full h-full object-center object-cover rounded-xl"/>
 		</a>
-		<a href="" class="aspect-[615/462] w-full duration-300 hover:-translate-y-1">
+		<a data-group="gallery" data-position="4" href="" class="aspect-[615/462] w-full duration-300 hover:-translate-y-1">
 			<img src="./images/product-detail/4.png" alt="" class="w-full h-full object-center object-cover rounded-xl"/>
 		</a>
-		<a href="" class="aspect-[615/462] w-full duration-300 hover:-translate-y-1">
+		<a data-group="gallery" data-position="5" href="" class="aspect-[615/462] w-full duration-300 hover:-translate-y-1">
 			<img src="./images/product-detail/5.png" alt="" class="w-full h-full object-center object-cover rounded-xl"/>
 		</a>
-		<a href="" class="aspect-[615/462] w-full duration-300 hover:-translate-y-1">
+		<a data-group="gallery" data-position="6" href="" class="aspect-[615/462] w-full duration-300 hover:-translate-y-1">
 			<img src="./images/product-detail/6.png" alt="" class="w-full h-full object-center object-cover rounded-xl"/>
 		</a>
-		<a href="" class="aspect-[615/462] w-full duration-300 hover:-translate-y-1">
+		<a data-group="gallery" data-position="7" href="" class="aspect-[615/462] w-full duration-300 hover:-translate-y-1">
 			<img src="./images/product-detail/7.png" alt="" class="w-full h-full object-center object-cover rounded-xl"/>
 		</a>
 	</div>
@@ -433,6 +458,7 @@
 		</div>
 	</div>
 </footer>
+<script src="js/preview.js" async defer type="text/javascript"></script>
 <script src="js/script.js" async defer type="text/javascript"></script>
 <script type="module">
 	import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
