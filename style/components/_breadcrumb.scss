@@ -1,0 +1,29 @@
+.breadcrumb {
+  background: $primary900;
+  padding: 1rem 0;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      font-weight: 900;
+      color: white;
+      margin-right: 1rem;
+      &:not(&:last-child):after {
+        margin-left: 1rem;
+        content: "/";
+        font-size: 1rem;
+        color: $primary500;
+        font-weight: 500;
+      }
+      a {
+
+        font-weight: 500;
+        color: $primary500;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

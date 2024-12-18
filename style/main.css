@@ -830,6 +830,35 @@
   transform: rotate(10deg);
 }
 
+.breadcrumb {
+  background: #0C3437;
+  padding: 1rem 0;
+}
+.breadcrumb ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.breadcrumb ul li {
+  font-weight: 900;
+  color: white;
+  margin-right: 1rem;
+}
+.breadcrumb ul li:not(.breadcrumb ul li:last-child):after {
+  margin-left: 1rem;
+  content: "/";
+  font-size: 1rem;
+  color: #009FAD;
+  font-weight: 500;
+}
+.breadcrumb ul li a {
+  font-weight: 500;
+  color: #009FAD;
+}
+.breadcrumb ul li a:hover {
+  text-decoration: underline;
+}
+
 body {
   font-family: "Red Hat Display", sans-serif;
   background: #0E2022;

@@ -19,6 +19,7 @@ tailwind.config = {
             backgroundImage: {
                 heroBike: "url('./images/hero/hero.webp')",
                 darkGradient: "linear-gradient(180deg, rgba(14, 32, 34, 0.00) 0%, #0E2022 100%)",
+                corner: "url('./icons/additional/corner.svg')",
             },
 
         },
