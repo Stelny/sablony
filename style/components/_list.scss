@@ -30,3 +30,16 @@
       }
   }
 }
+
+.pointed-item {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, rgb($primary300, 0.5), rgb($primary300 ,0%));
+  }
+}
