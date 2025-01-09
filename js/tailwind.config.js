@@ -4,6 +4,7 @@ tailwind.config = {
             colors: {
                 gray: '#4F4F4F',
                 primary: {
+                    50: "#E2F4F5",
                     100: '#B1E4E9',
                     300: '#3AB7C2',
                     500: '#009FAD',
