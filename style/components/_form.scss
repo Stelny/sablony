@@ -5,40 +5,27 @@
   gap: 0.5rem;
   width: 100%;
   input {
-    border-radius: 10px;
-    font-size: 1.125rem;
-    color: $primary300;
-    padding: .6rem 1rem;
-    outline: none;
-    border: 2px solid transparent;
-    width: 100%;
-    background: $primary950;
-    font-weight: bold;
+    border: 1px solid $purple;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    color: $customBlack;
+    outline-color: $purple;
     &::placeholder {
-      color: $primary500;
-      font-weight: 400;
+
     }
   }
   textarea {
-    border-radius: 10px;
-    font-size: 1.125rem;
-    color: $primary300;
-    padding: .6rem 1rem;
-    outline: none;
-    border: 2px solid transparent;
-    width: 100%;
-    background: $primary950;
-    font-weight: bold;
+    border: 1px solid $purple;
+    padding: 0.75rem 1.5rem;
+    border-radius: 16px;
+    color: $customBlack;
+    outline-color: $purple;
     &::placeholder {
-      color: $primary500;
-      font-weight: 400;
+
     }
   }
   label {
-    color: $shadowWhite;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: bold;
+
   }
   small {
     color: red;
@@ -48,7 +35,6 @@
     input {
       border-color: red;
       background: rgba(255, 0, 0, 0.1);
-      color: $shadowWhite;
       &::placeholder {
         color: rgba(255,0,0,0.5);
       }
@@ -65,7 +51,6 @@
   &-inner {
     label {
       font-size: 1.125rem;
-      color: $shadowWhite;
       position: relative;
       padding-left: 46px;
       display: flex;
@@ -79,8 +64,8 @@
         content: "";
         width: 32px;
         height: 32px;
-        background: $primary950;
-        border: 7px solid $primary950;
+        background: $purple;
+        border: 7px solid $purple;
         border-radius: 5px;
         position: absolute;
         left: 0;
@@ -107,8 +92,6 @@
       }
     }
   }
-  small   {
 
-  }
 }
 

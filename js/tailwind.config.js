@@ -1,27 +1,41 @@
+
 tailwind.config = {
     theme: {
         extend: {
-            colors: {
-                gray: '#4F4F4F',
-                primary: {
-                    50: "#E2F4F5",
-                    100: '#B1E4E9',
-                    300: '#3AB7C2',
-                    500: '#009FAD',
-                    600: '#0D7D87',
-                    800: '#1A4F54',
-                    900: '#0C3437',
-                    950: '#0E2022',
+            screens: {
+                xs: "350px",
+                sm: "640px",
+                md: "768px",
+                lg: "1024px",
+                xl: "1280px",
+                xxl: "1400px",
+                "2xl": "1536px",
+            },
+            container: {
+                center: true,
+                padding: "1.25rem",
+                screens: {
+                    xs: "350px",
+                    sm: "640px",
+                    md: "768px",
+                    lg: "1024px",
+                    xl: "1280px",
+                    xxl: "1400px",
+                    "2xl": "1536px",
                 },
-                shadowWhite: '#E4E4E4',
-                blackDark: '#1A1A1A',
-                black: '#121212',
+            },
+            colors: {
+                customBlack: "#393939",
+                purple: "#44008B",
+                cyan: "#8ff0ff",
+                tercia: "#17E0FF",
             },
             backgroundImage: {
-                heroBike: "url('./images/hero/hero.webp')",
-                darkGradient: "linear-gradient(180deg, rgba(14, 32, 34, 0.00) 0%, #0E2022 100%)",
-                corner: "url('./icons/additional/corner.svg')",
+
             },
+            boxShadow: {
+                card: "0px 0px 35px #0000000D"
+            }
 
         },
     },
