@@ -8,15 +8,6 @@
   width: fit-content;
   font-family: "Poppins", Serif;
   transition: 0.5s ease-in-out box-shadow;
-  &.external:after {
-    content: "";
-    width: 17px;
-    height: 17px;
-    background: url(./../icons/link/external-long.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
   &.loading {
     pointer-events: none;
     &:before {
@@ -41,6 +32,39 @@
     border-radius: 50px;
     font-size: 0.875rem;
     transition: 0.25s ease-in-out all;
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    @media screen and (max-width: $xl) {
+      font-size: 0.825rem;
+    }
+  }
+  &-tercia {
+    font-weight: 500;
+    color: white;
+    background: $tercia;
+    color: $purple;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    transition: 0.25s ease-in-out all;
+    padding: 0.75rem 3rem;
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    @media screen and (max-width: $xl) {
+      font-size: 0.825rem;
+    }
+  }
+  &-white {
+    font-weight: 500;
+    background: $purple;
+    color: white;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    transition: 0.25s ease-in-out all;
+    padding: 0.75rem 3rem;
     &:hover {
       transform: translateY(-2px);
     }

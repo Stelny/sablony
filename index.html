@@ -24,20 +24,75 @@
 	<link  rel="stylesheet" href="style/main.css" />
 </head>
 <body class="bg-white">
-<header>
+<div class="fixed top-0 left-0 w-full h-screen bg-purple bg-opacity-95 z-[999999] flex items-center justify-center flex-col gap-8">
+	<svg xmlns="http://www.w3.org/2000/svg" width="233.055" height="167.975" viewBox="0 0 233.055 167.975">
+		<path id="Icon_feather-check" data-name="Icon feather-check" d="M192.386,9,64.246,137.14,6,78.895" transform="translate(17.335 14.335)" fill="none" stroke="#17e0ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="33"/>
+	</svg>
 
+	<span class="font-poppins font-black text-white text-[35px] lg:text-[60px]">Vaše zpráva byla odeslána</span>
+</div>
+<div>
+
+</div>
+<header class="header">
+	<div class="container">
+		<div class="header-content">
+			<a href="" class="header-content-logo">
+				<img src="/images/logo/logo.png" alt="Logo" />
+			</a>
+			<div class="header-content-menu">
+				<ul>
+					<li>
+						<a href="" title="">
+							O nás
+						</a>
+					</li>
+					<li>
+						<a href="" title="">
+							Informace a ceník
+						</a>
+					</li>
+					<li>
+						<a href="" title="">
+							Workshopy
+						</a>
+					</li>
+					<li>
+						<a href="" title="">
+							Kontakt
+						</a>
+					</li>
+				</ul>
+			</div>
+			<button class="header-content-toggle" id="header-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</div>
 </header>
-<div class="">
-
+<div class="py-36 relative h-[680px] lg:h-[90vh] flex flex-col items-end justify-end">
+	<img src="/images/hero/bg.png" alt="bg" class="absolute left-0 top-0 w-full h-full object-cover"/>
+	<div class="w-full h-full absolute left-0 top-0 z-20 bg-gradientHero"></div>
+	<div class="container">
+		<div class="flex flex-col gap-8 z-50 relative">
+			<h1 class="lg:text-8xl  text-6xl text-white font-black">Posílíme<br/>tvoje tělo a mysl</h1>
+			<div class="flex lg:flex-row flex-col gap-4">
+				<a href="" class="btn btn-tercia text-xl lg:w-fit w-full flex items-center justify-center" >Chci vědět více</a>
+				<a href="" class="btn btn-white text-xl lg:w-fit w-full flex items-center justify-center" >Sjednat schůzku</a>
+			</div>
+		</div>
+	</div>
 </div>
 <div class="py-24">
 	<div class="container">
 		<div class="flex flex-col gap-16">
 			<h2 class="font-poppins text-purple font-bold text-6xl text-center mb-12">Přijď na workshop</h2>
-			<div class="grid grid-cols-2 gap-8 max-w-[1025px] mx-auto">
+			<div class="grid lg:grid-cols-2 gap-8 max-w-[1025px] mx-auto">
 				<div class="bg-white shadow-card rounded-2xl flex flex-col text-customBlack max-w-[500px] overflow-hidden lg:text-left text-center">
 					<div class="p-8 flex flex-col gap-4">
-						<span class="text-xl lg:text-2xl font-bold">Jakou roli hraje dech v našem životě</span>
+						<span class="text-xl lg:text-2xl font-bold lg:max-w-[80%]">Jakou roli hraje dech v našem životě</span>
 						<p class="text-xs lg:text-base">Dech hraje v našem životě klíčovou roli. Je základním procesem pro udržení života. Je též významný v regulaci nervového systému a emocí. Dechová cvičení nebo meditace zlepšují psychickou pohodu a pomáhají nám lépe zvládat stresové situace. Správná dechová technika při cvičení nebo sportu pomáhá zvýšit fyzickou výkonnost a vytrvalost. Dýchání je automatický proces, ale je také nástrojem pro zlepšení zdraví, pohody a výkonu. Na kurzu se dozvíte a hlavně prakticky natrénujete správné dýchání (nádech/výdech). Vysvětlíme si termín Zablokovaná bránice a jak na ni. Povíme si o různých stylech použití dechu.</p>
 						<div class="flex flex-row gap-x-4 gap-y-2 flex-wrap">
 							<div class="flex flex-row gap-2">
@@ -74,7 +129,7 @@
 				</div>
 				<div class="bg-white shadow-card rounded-2xl flex flex-col text-customBlack max-w-[500px] overflow-hidden text-left">
 					<div class="p-8 flex flex-col gap-4">
-						<span class="text-xl lg:text-2xl font-bold">Jakou roli hraje dech v našem životě</span>
+						<span class="text-xl lg:text-2xl font-bold lg:max-w-[80%]">Jakou roli hraje dech v našem životě</span>
 						<p class="text-xs lg:text-base">Dech hraje v našem životě klíčovou roli. Je základním procesem pro udržení života. Je též významný v regulaci nervového systému a emocí. Dechová cvičení nebo meditace zlepšují psychickou pohodu a pomáhají nám lépe zvládat stresové situace. Správná dechová technika při cvičení nebo sportu pomáhá zvýšit fyzickou výkonnost a vytrvalost. Dýchání je automatický proces, ale je také nástrojem pro zlepšení zdraví, pohody a výkonu. Na kurzu se dozvíte a hlavně prakticky natrénujete správné dýchání (nádech/výdech). Vysvětlíme si termín Zablokovaná bránice a jak na ni. Povíme si o různých stylech použití dechu.</p>
 						<div class="flex flex-row gap-x-4 gap-y-2 flex-wrap">
 							<div class="flex flex-row gap-2">
@@ -116,11 +171,11 @@
 		</div>
 	</div>
 </div>
-<div class="py-24">
+<div class="py-24 border-t border-cyan">
 	<div class="container">
 		<div class="flex flex-col gap-16">
 			<h2 class="font-poppins text-purple font-bold text-6xl text-center mb-12">Poznejme se</h2>
-			<div class="grid grid-cols-2 gap-8">
+			<div class="grid lg:grid-cols-2 gap-8">
 				<div class="bg-purple grid grid-cols-5 rounded-3xl">
 					<div class="col-span-2 relative">
 						<img src="./images/marta.png" class="h-[300px] absolute bottom-0 left-1/2 -translate-x-1/2" alt="Marta" />
@@ -186,7 +241,7 @@
 	<div class="container">
 		<div class="flex flex-col gap-24">
 			<h2 class="font-poppins text-white font-bold text-6xl text-center">Děláme práci srdcem</h2>
-			<div class="grid grid-cols-3 gap-8">
+			<div class="grid lg:grid-cols-3 gap-8">
 				<div class="shadow-card bg-white rounded-2xl py-8 px-4 flex justify-center items-center flex-col gap-4 text-center">
 					<div class="flex items-center gap-2 justify-center h-[30px]">
 						<img src="./icons/star/star.svg" alt="star" />
@@ -257,7 +312,7 @@
 </div>
 <footer>
 	<div class="container">
-		<div class="grid gap-12 grid-cols-4 py-16 border-t border-cyan">
+		<div class="grid gap-12 lg:grid-cols-4 py-16 border-t border-cyan">
 			<div class="flex flex-col gap-6">
 				<span class="font-poppins text-3xl font-bold text-customBlack">Marta Morávková</span>
 				<p class="text-purple text-lg">Sportovní koučka, instruktorka Pilates, terapeutka</p>

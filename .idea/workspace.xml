@@ -5,153 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f677876-b359-4c62-8ab9-fb8578862b7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-Black.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-Black.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-BlackItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-BlackItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-BoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-BoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-Heavy.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-Heavy.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-HeavyItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-HeavyItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-Italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-Italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-LightItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-LightItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-MediumItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-MediumItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-Roman.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-Roman.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-Thin.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-Thin.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-ThinItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-ThinItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-UltraLight.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-UltraLight.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-UltraLightItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/helvetica-neue/HelveticaNeue-UltraLightItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-Black.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-Black.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-BlackItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-BlackItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-BoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-BoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-ExtraBold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-ExtraBold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-ExtraBoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-ExtraBoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-ExtraLight.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-ExtraLight.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-ExtraLightItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-ExtraLightItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-Italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-Italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-LightItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-LightItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-MediumItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-MediumItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-SemiBold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-SemiBold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-SemiBoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-SemiBoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-Thin.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-Thin.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-ThinItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/poppins/Poppins-ThinItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/mail.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/phone.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/star/star.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/marta.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/petra.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style/font/_helvetica-neue.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style/font/_poppins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/hero/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/hero/gradient.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brand-detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/brands.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/additional/corner.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/arrow/check.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/link/external-long-primary.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/link/external-long.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/link/external.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/link/internal-primary.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/brand/1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/brand/2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/brand/3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/brand/4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/brand/5.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/brand/6.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/brand/7.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/hero/hero.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/mockup/bike.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/mockup/subpage.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/mockup/subpage2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/mockup/subpage3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/product-detail/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/product-detail/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/product-detail/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/product-detail/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/product-detail/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/product-detail/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/product-detail/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/product-detail/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/products/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sections/1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sections/2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sections/3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sections/4.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sections/5.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sections/6.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sections/7.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sections/8.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sections/bike-parts.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/variants/dust.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/variants/loch.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/variants/raw.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/variants/turq.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nase-buildy-seznam.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/o-nas.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/style/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/_mixins.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/components/_breadcrumb.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/components/_breadcrumb.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/components/_button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/components/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/components/_form.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/components/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/components/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/components/_list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/components/_swiper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/components/_swiper.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/font/_inter.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/font/_redhat.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subpage.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,22 +41,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;bodymindreset&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jakubstellner/Desktop/projects/sablony/fonts/poppins&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.index.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "bodymindreset",
+    "ignore_missing_gitignore": "true",
+    "last_opened_file_path": "/Users/jakubstellner/Desktop/projects/sablony/fonts/poppins",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "watcher.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/fonts/poppins" />
@@ -198,11 +67,11 @@
       <recent name="$PROJECT_DIR$/icons/link" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/logo" />
+      <recent name="$PROJECT_DIR$/images/hero" />
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/icons" />
       <recent name="$PROJECT_DIR$/icons/star" />
-      <recent name="$PROJECT_DIR$/images/logo" />
-      <recent name="$PROJECT_DIR$/images/variants" />
     </key>
   </component>
   <component name="RunManager">
@@ -271,7 +140,8 @@
       <workItem from="1737199059613" duration="16000" />
       <workItem from="1739203137131" duration="109000" />
       <workItem from="1739955232178" duration="2909000" />
-      <workItem from="1739965441249" duration="4598000" />
+      <workItem from="1739965441249" duration="4691000" />
+      <workItem from="1740084092458" duration="3836000" />
     </task>
     <servers />
   </component>
