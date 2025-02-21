@@ -9,7 +9,9 @@ tailwind.config = {
                 tercia: "#17E0FF",
             },
             backgroundImage: {
-                gradientHero: "url(/images/hero/gradient.svg)"
+                gradientHero: "url(/images/hero/gradient.svg)",
+                gradientUser: "url(/images/user-gradient.svg)"
+
             },
             boxShadow: {
                 card: "0px 0px 35px #0000000D"

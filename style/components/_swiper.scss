@@ -35,3 +35,12 @@
     }
   }
 }
+
+.swiper-pagination {
+  bottom: -30px!important;
+  span {
+    height: 17px;
+    width: 17px;
+    background: $cyan;
+  }
+}

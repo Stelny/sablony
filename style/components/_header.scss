@@ -50,6 +50,7 @@
               transition: 0.25s ease-in-out all;
             }
             &.active, &:hover {
+              color: $purple;
               &:after {
                 width: 100%;
               }

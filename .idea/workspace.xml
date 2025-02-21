@@ -5,19 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f677876-b359-4c62-8ab9-fb8578862b7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/images/hero/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/hero/gradient.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cenik.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/marta-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/petra-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/user-gradient.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/user-gradient.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/vybaveni/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/vybaveni/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/vybaveni/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/vybaveni/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/vybaveni/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workshop-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workshop.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/components/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/components/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/components/_form.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/components/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/font/_inter.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/font/_redhat.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/components/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/components/_list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/components/_swiper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/components/_swiper.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.css.map" afterDir="false" />
     </list>
@@ -48,7 +57,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "bodymindreset",
     "ignore_missing_gitignore": "true",
-    "last_opened_file_path": "/Users/jakubstellner/Desktop/projects/sablony/fonts/poppins",
+    "last_opened_file_path": "/Users/jakubstellner/Desktop/projects/sablony",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,18 +69,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/fonts/poppins" />
       <recent name="$PROJECT_DIR$/fonts/helvetica-neue" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/style" />
-      <recent name="$PROJECT_DIR$/icons/link" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/vybaveni" />
+      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/images/logo" />
       <recent name="$PROJECT_DIR$/images/hero" />
-      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/icons" />
-      <recent name="$PROJECT_DIR$/icons/star" />
     </key>
   </component>
   <component name="RunManager">
@@ -141,7 +150,9 @@
       <workItem from="1739203137131" duration="109000" />
       <workItem from="1739955232178" duration="2909000" />
       <workItem from="1739965441249" duration="4691000" />
-      <workItem from="1740084092458" duration="3836000" />
+      <workItem from="1740084092458" duration="3878000" />
+      <workItem from="1740120901434" duration="2058000" />
+      <workItem from="1740127651711" duration="10766000" />
     </task>
     <servers />
   </component>

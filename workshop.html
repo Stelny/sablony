@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <title>Inited Solutions</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="xxx">
+    <meta name="Description" content="xxx">
+    <meta name="Author" content="xxx">
+    <meta name="copyright" content="xxx">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <meta name="category" content="xxx">
+    <meta name="webmaster" content="All: xxx">
+
+    <!-- Style -->
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./js/tailwind.config.js"></script>
+    <link  rel="stylesheet" href="style/main.css" />
+</head>
+<body class="bg-white">
+<!--
+<div class="fixed top-0 left-0 w-full h-screen bg-purple bg-opacity-95 z-[999999] flex items-center justify-center flex-col gap-8">
+	<svg xmlns="http://www.w3.org/2000/svg" width="233.055" height="167.975" viewBox="0 0 233.055 167.975">
+		<path id="Icon_feather-check" data-name="Icon feather-check" d="M192.386,9,64.246,137.14,6,78.895" transform="translate(17.335 14.335)" fill="none" stroke="#17e0ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="33"/>
+	</svg>
+
+	<span class="font-poppins font-black text-white text-[35px] lg:text-[60px]">Vaše zpráva byla odeslána</span>
+</div>-->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <a href="" class="header-content-logo">
+                <img src="/images/logo/logo.png" alt="Logo" />
+            </a>
+            <div class="header-content-menu">
+                <ul>
+                    <li>
+                        <a href="" title="">
+                            O nás
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" title="">
+                            Informace a ceník
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" title="">
+                            Workshopy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" title="">
+                            Kontakt
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button class="header-content-toggle" id="header-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+<div class="py-36 relative h-[680px] lg:h-[90vh] flex flex-col items-end justify-end">
+    <img src="/images/hero/bg.png" alt="bg" class="absolute left-0 top-0 w-full h-full object-cover"/>
+    <div class="w-full h-full absolute left-0 top-0 z-20 bg-gradientHero"></div>
+    <div class="container">
+        <div class="flex flex-col gap-8 z-50 relative">
+            <h1 class="lg:text-8xl  text-6xl text-white font-black">Posílíme<br/>tvoje tělo a mysl</h1>
+            <div class="flex lg:flex-row flex-col gap-4">
+                <a href="" class="btn btn-tercia text-xl lg:w-fit w-full flex items-center justify-center" >Chci vědět více</a>
+                <a href="" class="btn btn-white text-xl lg:w-fit w-full flex items-center justify-center" >Sjednat schůzku</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="py-24">
+    <div class="container">
+        <div class="flex flex-col gap-16 max-w-[1025px] mx-auto">
+            <h2 class="font-poppins text-purple font-bold text-6xl text-center mb-12">Přijď na workshop</h2>
+            <div class="relative">
+                <div class="swiper tarif-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="mx-auto lg:m-4 bg-white shadow-card rounded-3xl flex flex-col text-customBlack max-w-[500px] overflow-hidden lg:text-left text-center">
+                                <div class="p-8 flex flex-col gap-4 text-left">
+                                    <span class="text-xl lg:text-2xl font-bold lg:max-w-[80%]">Jakou roli hraje dech v našem životě</span>
+                                    <p class="lg:inline-block hidden text-xs lg:text-base tarif-mobile">Dech hraje v našem životě klíčovou roli. Je základním procesem pro udržení života. Je též významný v regulaci nervového systému a emocí. Dechová cvičení nebo meditace zlepšují psychickou pohodu a pomáhají nám lépe zvládat stresové situace. Správná dechová technika při cvičení nebo sportu pomáhá zvýšit fyzickou výkonnost a vytrvalost. Dýchání je automatický proces, ale je také nástrojem pro zlepšení zdraví, pohody a výkonu. Na kurzu se dozvíte a hlavně prakticky natrénujete správné dýchání (nádech/výdech). Vysvětlíme si termín Zablokovaná bránice a jak na ni. Povíme si o různých stylech použití dechu.</p>
+                                    <button class="lg:hidden flex justify-between items-center gap-2 text-sm text-purple toggle-tarif-mobile">
+                                        <span>Zobrazit více informací</span>
+                                        <svg class="duration-300" xmlns="http://www.w3.org/2000/svg" width="17.49" height="10" viewBox="0 0 17.49 10">
+                                            <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M14.936,18.232l6.613-6.618a1.245,1.245,0,0,1,1.765,0,1.26,1.26,0,0,1,0,1.77l-7.493,7.5a1.248,1.248,0,0,1-1.724.036l-7.545-7.53a1.25,1.25,0,1,1,1.765-1.77Z" transform="translate(-6.188 -11.246)" fill="#44008b"/>
+                                        </svg>
+                                    </button>
+                                    <div class="flex flex-col lg:flex-row gap-x-4 gap-y-2 flex-wrap">
+                                        <div class="flex flex-row gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.75" height="21" viewBox="0 0 15.75 21">
+                                                <path id="Icon_awesome-map-marker-alt" data-name="Icon awesome-map-marker-alt" d="M7.066,20.576C1.106,11.937,0,11.05,0,7.875a7.875,7.875,0,1,1,15.75,0c0,3.175-1.106,4.062-7.066,12.7a.985.985,0,0,1-1.619,0Zm.809-9.42A3.281,3.281,0,1,0,4.594,7.875,3.281,3.281,0,0,0,7.875,11.156Z" fill="#44008b"/>
+                                            </svg>
+                                            <span class="text-customBlack text-lg">14. června 2025</span>
+                                        </div>
+                                        <div class="flex flex-row gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.75" height="21" viewBox="0 0 15.75 21">
+                                                <path id="Icon_awesome-map-marker-alt" data-name="Icon awesome-map-marker-alt" d="M7.066,20.576C1.106,11.937,0,11.05,0,7.875a7.875,7.875,0,1,1,15.75,0c0,3.175-1.106,4.062-7.066,12.7a.985.985,0,0,1-1.619,0Zm.809-9.42A3.281,3.281,0,1,0,4.594,7.875,3.281,3.281,0,0,0,7.875,11.156Z" fill="#44008b"/>
+                                            </svg>
+                                            <span class="text-customBlack text-lg">14. června 2025</span>
+                                        </div>
+                                        <div class="flex flex-row gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.75" height="21" viewBox="0 0 15.75 21">
+                                                <path id="Icon_awesome-map-marker-alt" data-name="Icon awesome-map-marker-alt" d="M7.066,20.576C1.106,11.937,0,11.05,0,7.875a7.875,7.875,0,1,1,15.75,0c0,3.175-1.106,4.062-7.066,12.7a.985.985,0,0,1-1.619,0Zm.809-9.42A3.281,3.281,0,1,0,4.594,7.875,3.281,3.281,0,0,0,7.875,11.156Z" fill="#44008b"/>
+                                            </svg>
+                                            <span class="text-customBlack text-lg">14. června 2025</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex lg:flex-row flex-col justify-between lg:items-end items-start gap-4">
+                                        <a href="" class="order-2 lg:order-1 bg-tercia text-purple text-lg lg:text-xl font-medium rounded-full px-8 py-2 duration-300 hover:-translate-y-0.5 lg:w-auto w-full text-center">Chci na workshop</a>
+                                        <div class="flex text-purple flex-col gap-0 text-left lg:text-right order-1 lg:order-2">
+                                            <span class="text-sm lg:text-md">Cena</span>
+                                            <span class="font-bold text-2xl lg:text-4xl">2 490 Kč</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-8 py-4 bg-purple text-center gap-1">
+                                    <span class="uppercase text-lg text-tercia font-bold">Zvýhodněná cena:</span>
+                                    <p class="text-md text-white">V případě zájmu o workshopy „Dech v životě“ a „Strečink“ zaplatíte celkem jen 4.500 Kč. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mx-auto lg:m-4 bg-white shadow-card rounded-3xl flex flex-col text-customBlack max-w-[500px] overflow-hidden lg:text-left text-center">
+                                <div class="p-8 flex flex-col gap-4 text-left">
+                                    <span class="text-xl lg:text-2xl font-bold lg:max-w-[80%]">Jakou roli hraje dech v našem životě</span>
+                                    <p class="lg:inline-block hidden text-xs lg:text-base tarif-mobile">Dech hraje v našem životě klíčovou roli. Je základním procesem pro udržení života. Je též významný v regulaci nervového systému a emocí. Dechová cvičení nebo meditace zlepšují psychickou pohodu a pomáhají nám lépe zvládat stresové situace. Správná dechová technika při cvičení nebo sportu pomáhá zvýšit fyzickou výkonnost a vytrvalost. Dýchání je automatický proces, ale je také nástrojem pro zlepšení zdraví, pohody a výkonu. Na kurzu se dozvíte a hlavně prakticky natrénujete správné dýchání (nádech/výdech). Vysvětlíme si termín Zablokovaná bránice a jak na ni. Povíme si o různých stylech použití dechu.</p>
+                                    <button class="lg:hidden flex justify-between items-center gap-2 text-sm text-purple toggle-tarif-mobile">
+                                        <span>Zobrazit více informací</span>
+                                        <svg class="duration-300" xmlns="http://www.w3.org/2000/svg" width="17.49" height="10" viewBox="0 0 17.49 10">
+                                            <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M14.936,18.232l6.613-6.618a1.245,1.245,0,0,1,1.765,0,1.26,1.26,0,0,1,0,1.77l-7.493,7.5a1.248,1.248,0,0,1-1.724.036l-7.545-7.53a1.25,1.25,0,1,1,1.765-1.77Z" transform="translate(-6.188 -11.246)" fill="#44008b"/>
+                                        </svg>
+                                    </button>
+                                    <div class="flex flex-col lg:flex-row gap-x-4 gap-y-2 flex-wrap">
+                                        <div class="flex flex-row gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.75" height="21" viewBox="0 0 15.75 21">
+                                                <path id="Icon_awesome-map-marker-alt" data-name="Icon awesome-map-marker-alt" d="M7.066,20.576C1.106,11.937,0,11.05,0,7.875a7.875,7.875,0,1,1,15.75,0c0,3.175-1.106,4.062-7.066,12.7a.985.985,0,0,1-1.619,0Zm.809-9.42A3.281,3.281,0,1,0,4.594,7.875,3.281,3.281,0,0,0,7.875,11.156Z" fill="#44008b"/>
+                                            </svg>
+                                            <span class="text-customBlack text-lg">14. června 2025</span>
+                                        </div>
+                                        <div class="flex flex-row gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.75" height="21" viewBox="0 0 15.75 21">
+                                                <path id="Icon_awesome-map-marker-alt" data-name="Icon awesome-map-marker-alt" d="M7.066,20.576C1.106,11.937,0,11.05,0,7.875a7.875,7.875,0,1,1,15.75,0c0,3.175-1.106,4.062-7.066,12.7a.985.985,0,0,1-1.619,0Zm.809-9.42A3.281,3.281,0,1,0,4.594,7.875,3.281,3.281,0,0,0,7.875,11.156Z" fill="#44008b"/>
+                                            </svg>
+                                            <span class="text-customBlack text-lg">14. června 2025</span>
+                                        </div>
+                                        <div class="flex flex-row gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.75" height="21" viewBox="0 0 15.75 21">
+                                                <path id="Icon_awesome-map-marker-alt" data-name="Icon awesome-map-marker-alt" d="M7.066,20.576C1.106,11.937,0,11.05,0,7.875a7.875,7.875,0,1,1,15.75,0c0,3.175-1.106,4.062-7.066,12.7a.985.985,0,0,1-1.619,0Zm.809-9.42A3.281,3.281,0,1,0,4.594,7.875,3.281,3.281,0,0,0,7.875,11.156Z" fill="#44008b"/>
+                                            </svg>
+                                            <span class="text-customBlack text-lg">14. června 2025</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex lg:flex-row flex-col justify-between lg:items-end items-start gap-4">
+                                        <a href="" class="order-2 lg:order-1 bg-tercia text-purple text-lg lg:text-xl font-medium rounded-full px-8 py-2 duration-300 hover:-translate-y-0.5 lg:w-auto w-full text-center">Chci na workshop</a>
+                                        <div class="flex text-purple flex-col gap-0 text-left lg:text-right order-1 lg:order-2">
+                                            <span class="text-sm lg:text-md">Cena</span>
+                                            <span class="font-bold text-2xl lg:text-4xl">2 490 Kč</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-8 py-4 bg-purple text-center gap-1">
+                                    <span class="uppercase text-lg text-tercia font-bold">Zvýhodněná cena:</span>
+                                    <p class="text-md text-white">V případě zájmu o workshopy „Dech v životě“ a „Strečink“ zaplatíte celkem jen 4.500 Kč. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-tarif-pagination swiper-pagination"></div>
+
+            </div>
+            <div class="flex items-center justify-center">
+                <a href="" class="btn btn-primary">Více informací</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="py-24 border-t border-cyan">
+    <div class="container">
+        <div class="flex flex-col gap-16">
+            <h2 class="font-poppins text-purple font-bold text-6xl text-center mb-12">Poznejme se</h2>
+            <div class="grid xl:grid-cols-2 xl:gap-8 lg:gap-24 gap-24">
+                <div class="bg-purple flex-col lg:flex-row flex lg:gap-4 rounded-3xl relative px-8">
+                    <div class="lg:max-w-[150px] w-full relative lg:h-auto h-[190px]">
+                        <img src="/images/petra-2.png" alt="marta" class="absolute max-w-[150px] bottom-0 left-1/2 lg:translate-y-0 translate-y-[60px] -translate-x-1/2 lg:translate-x-0 lg:left-0" />
+                    </div>
+                    <div class="lg:hidden flex left-0 bottom-[15px] absolute w-full h-[100%] bg-gradientUser bg-contain bg-repeat"></div>
+                    <div class="flex flex-col gap-4 flex-1 lg:text-left text-center lg:py-8 pb-8 relative z-50">
+                        <span class="font-poppins text-2xl lg:text-3xl font-bold text-white">Marta Morávková</span>
+                        <p class="text-tercia text-base lg:text-lg">Sportovní koučka, instruktorka Pilates, terapeutka</p>
+                        <ul class="text-customBlack flex flex-col gap-4">
+                            <li class="text-tercia flex lg:flex-row flex-col  items-center lg:gap-4 gap-2">
+								<span class="w-[30px]">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="23.571" viewBox="0 0 30 23.571">
+										<path id="Icon_ionic-md-mail" data-name="Icon ionic-md-mail" d="M29.393,5.625H5.107A2.865,2.865,0,0,0,2.25,8.482V26.339A2.865,2.865,0,0,0,5.107,29.2H29.393a2.865,2.865,0,0,0,2.857-2.857V8.482A2.865,2.865,0,0,0,29.393,5.625ZM29.036,11.7,17.25,19.554,5.464,11.7V8.839L17.25,16.7,29.036,8.839Z" transform="translate(-2.25 -5.625)" fill="currentColor"/>
+									</svg>
+								</span>
+                                <a class="text-white text-lg" href="mailto: moravkova@bodymindrestart.cz" title="">moravkova@bodymindrestart.cz</a>
+                            </li>
+                            <li class="text-tercia flex lg:flex-row flex-col  items-center lg:gap-4 gap-2">
+								<span class="w-[30px]">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+										<path id="Icon_awesome-phone-alt" data-name="Icon awesome-phone-alt" d="M29.144,21.2l-6.563-2.813a1.406,1.406,0,0,0-1.641.4l-2.906,3.551A21.719,21.719,0,0,1,7.652,11.96L11.2,9.054a1.4,1.4,0,0,0,.4-1.641L8.8.85A1.416,1.416,0,0,0,7.184.036L1.09,1.442A1.406,1.406,0,0,0,0,2.813,27.185,27.185,0,0,0,27.188,30a1.406,1.406,0,0,0,1.371-1.09l1.406-6.094a1.423,1.423,0,0,0-.821-1.617Z" transform="translate(0 0)" fill="currentColor"/>
+									</svg>
+								</span>
+                                <a class="text-white text-lg" href="tel:+420777939903" title="">+420 777 939 903</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-purple flex-col lg:flex-row flex lg:gap-4 rounded-3xl relative px-8">
+                    <div class="lg:max-w-[150px] w-full relative lg:h-auto h-[190px]">
+                        <img src="/images/petra-2.png" alt="marta" class="absolute max-w-[150px] bottom-0 left-1/2 lg:translate-y-0 translate-y-[60px] -translate-x-1/2 lg:translate-x-0 lg:left-0" />
+                    </div>
+                    <div class="lg:hidden flex left-0 bottom-[15px] absolute w-full h-[100%] bg-gradientUser bg-contain bg-repeat"></div>
+                    <div class="flex flex-col gap-4 flex-1 lg:text-left text-center lg:py-8 pb-8 relative z-50">
+                        <span class="font-poppins text-2xl lg:text-3xl font-bold text-white">Marta Morávková</span>
+                        <p class="text-tercia text-base lg:text-lg">Sportovní koučka, instruktorka Pilates, terapeutka</p>
+                        <ul class="text-customBlack flex flex-col gap-4">
+                            <li class="text-tercia flex lg:flex-row flex-col  items-center lg:gap-4 gap-2">
+								<span class="w-[30px]">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="23.571" viewBox="0 0 30 23.571">
+										<path id="Icon_ionic-md-mail" data-name="Icon ionic-md-mail" d="M29.393,5.625H5.107A2.865,2.865,0,0,0,2.25,8.482V26.339A2.865,2.865,0,0,0,5.107,29.2H29.393a2.865,2.865,0,0,0,2.857-2.857V8.482A2.865,2.865,0,0,0,29.393,5.625ZM29.036,11.7,17.25,19.554,5.464,11.7V8.839L17.25,16.7,29.036,8.839Z" transform="translate(-2.25 -5.625)" fill="currentColor"/>
+									</svg>
+								</span>
+                                <a class="text-white text-lg" href="mailto: moravkova@bodymindrestart.cz" title="">moravkova@bodymindrestart.cz</a>
+                            </li>
+                            <li class="text-tercia flex lg:flex-row flex-col  items-center lg:gap-4 gap-2">
+								<span class="w-[30px]">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+										<path id="Icon_awesome-phone-alt" data-name="Icon awesome-phone-alt" d="M29.144,21.2l-6.563-2.813a1.406,1.406,0,0,0-1.641.4l-2.906,3.551A21.719,21.719,0,0,1,7.652,11.96L11.2,9.054a1.4,1.4,0,0,0,.4-1.641L8.8.85A1.416,1.416,0,0,0,7.184.036L1.09,1.442A1.406,1.406,0,0,0,0,2.813,27.185,27.185,0,0,0,27.188,30a1.406,1.406,0,0,0,1.371-1.09l1.406-6.094a1.423,1.423,0,0,0-.821-1.617Z" transform="translate(0 0)" fill="currentColor"/>
+									</svg>
+								</span>
+                                <a class="text-white text-lg" href="tel:+420777939903" title="">+420 777 939 903</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center">
+                <a href="" class="btn btn-primary">Více informací</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="py-24 bg-purple">
+    <div class="container">
+        <div class="flex flex-col gap-24">
+            <h2 class="font-poppins text-white font-bold text-6xl text-center">Děláme práci srdcem</h2>
+            <div class="relative">
+                <div class="swiper rating-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide shadow-card bg-white rounded-2xl py-8 px-4 flex justify-center items-center flex-col gap-4 text-center">
+                            <div class="flex items-center gap-2 justify-center h-[30px]">
+                                <img src="./icons/star/star.svg" alt="star" />
+                                <img src="./icons/star/star.svg" alt="star" />
+                                <img src="./icons/star/star.svg" alt="star" />
+                                <img src="./icons/star/star.svg" alt="star" />
+                                <img src="./icons/star/star.svg" alt="star" />
+                            </div>
+                            <span class="font-poppins text-center text-customBlack text-2xl font-bold">Martin Bílek</span>
+                            <p>Cvičení je skvělé pro zlepšení mé fyzické kondice, ale i mé mysli. Každá lekce mi přináší možnost pracovat na síle a flexibilitě a zároveň mi pomáhá uvolnit stres a zlepšit náladu.</p>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide shadow-card bg-white rounded-2xl py-8 px-4 flex justify-center items-center flex-col gap-4 text-center">
+                            <div class="flex items-center gap-2 justify-center h-[30px]">
+                                <img src="./icons/star/star.svg" alt="star" />
+                                <img src="./icons/star/star.svg" alt="star" />
+                                <img src="./icons/star/star.svg" alt="star" />
+                                <img src="./icons/star/star.svg" alt="star" />
+                                <img src="./icons/star/star.svg" alt="star" />
+                            </div>
+                            <span class="font-poppins text-center text-customBlack text-2xl font-bold">Martin Bílek</span>
+                            <p>Cvičení je skvělé pro zlepšení mé fyzické kondice, ale i mé mysli. Každá lekce mi přináší možnost pracovat na síle a flexibilitě a zároveň mi pomáhá uvolnit stres a zlepšit náladu.</p>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide shadow-card bg-white rounded-2xl py-8 px-4 flex justify-center items-center flex-col gap-4 text-center">
+                            <div class="flex items-center gap-2 justify-center h-[30px]">
+                                <img src="./icons/star/star.svg" alt="star" />
+                                <img src="./icons/star/star.svg" alt="star" />
+                                <img src="./icons/star/star.svg" alt="star" />
+                                <img src="./icons/star/star.svg" alt="star" />
+                                <img src="./icons/star/star.svg" alt="star" />
+                            </div>
+                            <span class="font-poppins text-center text-customBlack text-2xl font-bold">Martin Bílek</span>
+                            <p>Cvičení je skvělé pro zlepšení mé fyzické kondice, ale i mé mysli. Každá lekce mi přináší možnost pracovat na síle a flexibilitě a zároveň mi pomáhá uvolnit stres a zlepšit náladu.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="swiper-rating-pagination swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="py-16 border-t border-cyan">
+    <div class="container">
+        <div class="flex flex-col max-w-[1240px] mx-auto gap-24 font-poppins">
+            <h2 class="text-purple text-6xl font-bold text-center">Napiš nám</h2>
+            <form class="flex flex-col gap-4 max-w-[1100px] w-full mx-auto">
+                <div class="grid lg:grid-cols-3 gap-4">
+                    <div class="form-control">
+                        <input type="text" placeholder="Jméno"/>
+                        <small>Pole je povinné</small>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" placeholder="E-mail"/>
+                        <small>Pole je povinné</small>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" placeholder="Telefon" />
+                        <small>Pole je povinné</small>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-12">
+                    <div class="form-control">
+                        <textarea rows="4" type="text" placeholder="Napiš nám svůj dotaz a my se ti obratem ozveme…"></textarea>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <button class="btn btn-primary">Odeslat zprávu</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="grid gap-12 xl:grid-cols-4 lg:grid-cols-2 lg:text-left text-center py-16 border-t border-cyan">
+            <div class="flex flex-col lg:gap-6 gap-2">
+                <span class="font-poppins text-2xl font-bold text-customBlack">Marta Morávková</span>
+                <p class="text-purple text-lg">Sportovní koučka, instruktorka Pilates, terapeutka</p>
+                <ul class="text-customBlack flex flex-col lg:items-start items-center gap-4 lg:mt-0 mt-6">
+                    <li class="text-purple flex lg:flex-row flex-col items-center gap-4">
+						<span class="w-[30px]">
+							<svg class="w-[25px]" xmlns="http://www.w3.org/2000/svg" width="30" height="23.571" viewBox="0 0 30 23.571">
+								<path id="Icon_ionic-md-mail" data-name="Icon ionic-md-mail" d="M29.393,5.625H5.107A2.865,2.865,0,0,0,2.25,8.482V26.339A2.865,2.865,0,0,0,5.107,29.2H29.393a2.865,2.865,0,0,0,2.857-2.857V8.482A2.865,2.865,0,0,0,29.393,5.625ZM29.036,11.7,17.25,19.554,5.464,11.7V8.839L17.25,16.7,29.036,8.839Z" transform="translate(-2.25 -5.625)" fill="currentColor"/>
+							</svg>
+						</span>
+                        <a class="text-customBlack text-base" href="mailto: moravkova@bodymindrestart.cz" title="">moravkova@bodymindrestart.cz</a>
+                    </li>
+                    <li class="text-purple flex lg:flex-row flex-col items-center gap-4">
+						<span class="w-[30px]">
+							<svg class="w-[25px]" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+								<path id="Icon_awesome-phone-alt" data-name="Icon awesome-phone-alt" d="M29.144,21.2l-6.563-2.813a1.406,1.406,0,0,0-1.641.4l-2.906,3.551A21.719,21.719,0,0,1,7.652,11.96L11.2,9.054a1.4,1.4,0,0,0,.4-1.641L8.8.85A1.416,1.416,0,0,0,7.184.036L1.09,1.442A1.406,1.406,0,0,0,0,2.813,27.185,27.185,0,0,0,27.188,30a1.406,1.406,0,0,0,1.371-1.09l1.406-6.094a1.423,1.423,0,0,0-.821-1.617Z" transform="translate(0 0)" fill="currentColor"/>
+							</svg>
+						</span>
+                        <a class="text-customBlack text-base" href="tel:+420777939903" title="">+420 777 939 903</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-col lg:gap-6 gap-2">
+                <span class="font-poppins text-2xl font-bold text-customBlack">Petra Sojková</span>
+                <p class="text-purple text-lg">Instruktorka Pilates, terapeutka</p>
+                <ul class="text-customBlack flex flex-col lg:items-start items-center gap-4 lg:mt-0 mt-6">
+                    <li class="text-purple flex lg:flex-row flex-col items-center gap-4">
+						<span class="w-[30px]">
+							<svg class="w-[25px]" xmlns="http://www.w3.org/2000/svg" width="30" height="23.571" viewBox="0 0 30 23.571">
+								<path id="Icon_ionic-md-mail" data-name="Icon ionic-md-mail" d="M29.393,5.625H5.107A2.865,2.865,0,0,0,2.25,8.482V26.339A2.865,2.865,0,0,0,5.107,29.2H29.393a2.865,2.865,0,0,0,2.857-2.857V8.482A2.865,2.865,0,0,0,29.393,5.625ZM29.036,11.7,17.25,19.554,5.464,11.7V8.839L17.25,16.7,29.036,8.839Z" transform="translate(-2.25 -5.625)" fill="currentColor"/>
+							</svg>
+						</span>
+                        <a class="text-customBlack text-base" href="mailto: sojkova@bodymindrestart.cz" title="">sojkova@bodymindrestart.cz</a>
+                    </li>
+                    <li class="text-purple flex lg:flex-row flex-col items-center gap-4">
+						<span class="w-[30px]">
+							<svg class="w-[25px]" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+								<path id="Icon_awesome-phone-alt" data-name="Icon awesome-phone-alt" d="M29.144,21.2l-6.563-2.813a1.406,1.406,0,0,0-1.641.4l-2.906,3.551A21.719,21.719,0,0,1,7.652,11.96L11.2,9.054a1.4,1.4,0,0,0,.4-1.641L8.8.85A1.416,1.416,0,0,0,7.184.036L1.09,1.442A1.406,1.406,0,0,0,0,2.813,27.185,27.185,0,0,0,27.188,30a1.406,1.406,0,0,0,1.371-1.09l1.406-6.094a1.423,1.423,0,0,0-.821-1.617Z" transform="translate(0 0)" fill="currentColor"/>
+							</svg>
+						</span>
+                        <a class="text-customBlack text-base" href="tel:+420 777 051 269" title="">+420 777 051 269</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-col lg:gap-6 gap-2">
+                <span class="font-poppins text-2xl font-bold text-customBlack">Fakturační údaje</span>
+                <p class="text-purple text-lg">Body Mind Restart</p>
+                <ul class="text-customBlack flex flex-col lg:items-start items-center gap-4 lg:mt-0 mt-6">
+                    <li class="text-purple flex lg:flex-row flex-col items-center gap-4">
+						<span class="w-[30px]">
+							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+							  <path id="Icon_metro-info" data-name="Icon metro-info" d="M15.7,10.834A1.41,1.41,0,0,1,17.1,9.428h.937a1.41,1.41,0,0,1,1.406,1.406v.937a1.41,1.41,0,0,1-1.406,1.406H17.1A1.41,1.41,0,0,1,15.7,11.772Zm5.625,13.594h-7.5V22.553H15.7V16.928H13.821V15.053h5.625v7.5h1.875Zm-3.75-22.5a15,15,0,1,0,15,15,15,15,0,0,0-15-15Zm0,27.187A12.187,12.187,0,1,1,29.758,16.928,12.188,12.188,0,0,1,17.571,29.116Z" transform="translate(-2.571 -1.928)" fill="#44008b"/>
+							</svg>
+
+						</span>
+                        <span class="text-customBlack text-base">IČ: 00000000 &nbsp; DIČ: 00000000</span>
+                    </li>
+                    <li class="text-purple flex lg:flex-row flex-col items-center gap-4">
+						<span class="w-[30px]">
+							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="27.217" viewBox="0 0 30 27.217">
+							  <path id="Icon_metro-home" data-name="Icon metro-home" d="M32.571,19.252l-15-11.643-15,11.643V14.5l15-11.643,15,11.643Zm-3.75-.423v11.25h-7.5v-7.5h-7.5v7.5h-7.5V18.829l11.25-8.437Z" transform="translate(-2.571 -2.861)" fill="#44008b"/>
+							</svg>
+						</span>
+                        <span class="text-customBlack text-base">+Vinohradská 20, Praha 3 - 130 00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-end h-full justify-end">
+                <img src="./images/logo/logo.png" alt="Logo" height="50"  width="168"/>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/script.js" async defer type="text/javascript"></script>
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+    new Swiper('.rating-slider', {
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 40,
+        pagination: {
+            el: '.swiper-rating-pagination',  // Selector for pagination element
+            clickable: true,  // Enables clicking on pagination bullets
+            dynamicBullets: true, // Optional: Makes the bullets more dynamic
+        },
+        breakpoints: {
+            320: { // for small screens
+                slidesPerView: 1,
+                spaceBetween: 10,
+                center: true,
+            },
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+        },
+    });
+
+    new Swiper('.tarif-slider', {
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 5,
+        pagination: {
+            el: '.swiper-tarif-pagination',  // Selector for pagination element
+            clickable: true,  // Enables clicking on pagination bullets
+            dynamicBullets: true, // Optional: Makes the bullets more dynamic
+        },
+        breakpoints: {
+            320: { // for small screens
+                slidesPerView: 1,
+                spaceBetween: 10,
+                center: true,
+            },
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 5,
+            },
+        },
+    });
+</script>
+</body>
+</html>
+
+
