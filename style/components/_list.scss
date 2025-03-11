@@ -1,38 +1,24 @@
-.number-list {
+.list-custom {
   display: flex;
   flex-direction: column;
   gap: .5rem;
   counter-reset: list-counter;
   @media screen and (max-width: $md) {
-    gap: 1.5rem;
+    gap: .5rem;
   }
-    li {
+  li {
     display: flex;
-    align-items: center;
-    counter-increment: list-counter;
-    @media screen and (max-width: $md) {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
+    align-items: flex-start;
     &:before {
-      content: counter(list-counter); // Display the incremented counter
-      font-family: "Helvetica Neue", sans-serif;
-      font-size: 20px;
-      color: white;
+      content: '';
+      display: block;
       width: 100%;
-      max-width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: $purple;
+      max-width: 9px;
+      height: 9px;
+      background: $blue;
+      border: 1px solid $white;
       border-radius: 50px;
-      margin-right: 0.75rem;
-        @media screen and (max-width: $md) {
-          margin-bottom: 1rem;
-        }
-      }
+      margin: 7px 10px 7px 0;
+    }
   }
 }

@@ -4,32 +4,55 @@
   flex-direction: column;
   gap: 0.5rem;
   width: 100%;
+  height: 100%;
+  input, select, textarea {
+    background: $black;
+    color: $white;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    @media screen and (max-width: $lg) {
+      font-size: 18px;
+    }
+  }
+  input, select {
+    padding: .425rem .5rem;
+    border-bottom: 2px solid $blue;
+    border-radius: 0;
+  }
+  input, textarea {
+    &::placeholder, &:placeholder-shown {
+      font-weight: 500;
+      color: $gray;
+    }
+  }
   input {
-    border: 1px solid $purple;
-    padding: 0.75rem 1.5rem;
-    border-radius: 50px;
-    color: $customBlack;
-    outline-color: $purple;
-    &::placeholder {
-
+    @media screen and (max-width: $lg) {
+      text-align: center;
+    }
+  }
+  select {
+    appearance: none;
+    background-image: url("../icons/arrow-dropdown.svg");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    &:has(option:disabled:checked[hidden]) {
+      font-weight: 500;
+      color: $gray;
+    }
+    &::-ms-expand {
+      display: none;
     }
   }
   textarea {
-    border: 1px solid $purple;
-    padding: 0.75rem 1.5rem;
-    border-radius: 16px;
-    color: $customBlack;
-    outline-color: $purple;
-    &::placeholder {
-
+    padding: 1rem 1.5rem;
+    border: 2px solid $blue;
+    border-radius: 10px;
+    height: 100%;
+    resize: none;
+    @media screen and (max-width: $lg) {
+      min-height: 400px;
     }
-  }
-  label {
-
-  }
-  small {
-    color: red;
-    display: none;
   }
   &.error {
     input {
@@ -40,141 +63,6 @@
       }
     }
     small {
-      display: block;
-    }
-  }
-}
-
-.form-checkbox {
-  display: flex;
-  flex-direction: column;
-  &-inner {
-    label {
-      font-size: 1.125rem;
-      position: relative;
-      padding-left: 46px;
-      display: flex;
-      align-items: flex-start;
-      cursor: pointer;
-      padding-top: 2px;
-      a {
-        text-decoration: underline;
-      }
-      &:before {
-        content: "";
-        width: 32px;
-        height: 32px;
-        background: $purple;
-        border: 7px solid $purple;
-        border-radius: 5px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-    input {
-      opacity: 0;
-      height: 0;
-      width: 0;
-      position: absolute;
-      &:checked {
-        ~ label {
-          &:before {
-            background-image: url(./../icons/arrow/check.svg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-          }
-        }
-      }
-    }
-  }
-
-}
-
-.custom-select {
-  position: relative;
-  width: 100%;
-  font-family: "Helvetica Neue", sans-serif;
-
-  .select-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.75rem 1.5rem;
-    border: 1px solid $purple;
-    border-radius: 50px;
-    cursor: pointer;
-    color: gray;
-    font-size: 1rem;
-    background: white;
-    position: relative;
-    &.active {
-      border-bottom: 0;
-      border-top-right-radius: 24px;
-      border-top-left-radius: 24px;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-
-    &:after {
-      content: "";
-      width: 20px;
-      height: 12px;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20.988' height='12' viewBox='0 0 20.988 12'%3E%3Cpath id='Icon_ionic-ios-arrow-down' d='M16.685,19.629l7.936-7.942a1.493,1.493,0,0,1,2.118,0,1.512,1.512,0,0,1,0,2.125l-8.992,9a1.5,1.5,0,0,1-2.068.044L6.625,13.818a1.5,1.5,0,0,1,2.118-2.125Z' transform='translate(27.175 23.246) rotate(180)' fill='%2344008b'/%3E%3C/svg%3E");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      transition: transform 0.3s ease;
-      display: inline-block;
-      transform: rotate(180deg);
-
-    }
-
-    &.active:after {
-      transform: rotate(0deg);
-    }
-  }
-
-  .select-dropdown {
-    position: absolute;
-    width: 100%;
-    top: 100%;
-    left: 0;
-    background: white;
-    border: 1px solid $purple;
-    border-top: none;
-    border-radius: 0 0 16px 16px;
-    display: none;
-    z-index: 10;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-    .option {
-      padding: 0.75rem 1.5rem;
-      cursor: pointer;
-      font-size: 1rem;
-      color: $customBlack;
-      transition: background 0.2s;
-
-      &:hover {
-        background: rgba($purple, 0.1);
-      }
-
-      &:not(:last-child) {
-        border-bottom: 1px solid rgba($purple, 0.3);
-      }
-
-      &.selected {
-        font-weight: bold;
-      }
-    }
-  }
-
-  &.open {
-    .select-dropdown {
       display: block;
     }
   }

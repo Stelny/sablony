@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="980" viewBox="0 0 1920 980">
-  <defs>
-    <linearGradient id="linear-gradient" x1="0.01" y1="0.883" x2="0.629" y2="0.314" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#44008b"/>
-      <stop offset="1" stop-color="#17e0ff" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
-  <rect id="Landing_Page" data-name="Landing Page" width="1920" height="980" fill="url(#linear-gradient)"/>
-</svg>

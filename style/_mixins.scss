@@ -37,8 +37,13 @@
     max-width: 1440px;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1650px) {
   .container {
-    max-width: 1540px;
+    max-width: 1580px !important;
+  }
+}
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1720px !important;
   }
 }

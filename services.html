@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<title>MNDST</title>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Keywords" content="xxx">
+	<meta name="Description" content="xxx">
+	<meta name="Author" content="xxx">
+	<meta name="copyright" content="xxx">
+	<meta name="robots" content="index,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+	<meta name="category" content="xxx">
+	<meta name="webmaster" content="All: xxx">
+	<!-- Style -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script type="module" src="./js/tailwind.config.js"></script>
+	<link rel="stylesheet" href="style/main.css" />
+</head>
+<body class="bg-black">
+	<header class="header">
+		<div class="container">
+			<div class="header-content">
+				<a href="index.html" class="header-content-logo">
+					<img src="/images/logo/logo.svg" alt="Logo" >
+				</a>
+				<div class="header-content-menu">
+					<ul>
+						<li>
+							<a href="aboutme.html" class="menu-item">
+								Kdo jsem
+							</a>
+						</li>
+						<li>
+							<a href="services.html" class="menu-item active">
+								Moje služby
+							</a>
+						</li>
+						<li>
+							<a href="#" class="button-default">
+								Napiš mi
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com" target="_blank">
+								<img src="icons/icon-ig.svg" alt="instagram" class="hidden lg:block">
+								<span class="lg:hidden">Instagram</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<button class="header-content-toggle" id="header-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="py-14 lg:py-28 border-b-2 border-blue">
+			<div class="container grid 2xl:items-start lg:grid-cols-2 2xl:grid-cols-4 gap-14 lg:gap-4 mb-8 lg:mb-12">
+				<div class="lg:border-2 lg:border-blue lg:rounded-box relative overflow-hidden">
+					<div class="relative overflow-hidden aspect-[3/2] xl:aspect-[2.5/2] border-2 border-blue rounded-box lg:rounded-none lg:border-0 mb-6 lg:mb-0">
+						<img src="images/services/services-individual.png" alt="individual" class="w-full h-full object-cover">
+						<div class="absolute top-0 left-0 w-full h-full flex items-end p-6 min-[1850px]:p-7 bg-gradient-to-t from-blue to-transparent to-50%">
+							<h3 class="text-[22px] lg:text-[27px] min-[1850px]:text-[30px] font-bold leading-tight">Individuální koučink pro&nbsp;sportovce</h3>
+						</div>
+					</div>
+					<div class="moreInfo group lg:p-8 lg:pb-10">
+						<button class="moreInfo-button flex w-full justify-between gap-4 lg:hidden mb-6 lg:mb-0">
+							<span class="text-lg font-medium text-left">Zobrazit více informací</span>
+							<img src="icons/arrow-dropdown.svg" alt="arrow" class="w-7 block transition duration-300 group-[.active]:rotate-180">
+						</button>
+						<div class="moreInfo-content transition-all duration-300 ease-in-out overflow-hidden h-0 lg:h-auto">
+							<div class="moreInfo-content-inner">
+								<ul class="pb-6 lg:pb-8 list-custom">
+									<li>úvodní nezávazná schůzka zdarma</li>
+									<li>poznání se a vyjasnění si očekávání obou stran</li>
+									<li>vytvoření individuálního plánu</li>
+									<li>pravidelná hodinová sezení nad daným tématem</li>
+									<li>vyberte si místo, kde se budete cítit nejlépe</li>
+									<li>bezpečné, uvolněné a respektující prostředí</li>
+								</ul>
+							</div>
+						</div>
+						<div class="flex gap-4">
+							<a href="#" class="w-2/5 sm:w-1/2 button-default min-w-px px-3">
+								Ceník
+							</a>
+							<a href="#" class="w-3/5 sm:w-1/2 button-white min-w-px px-3">
+								Mám zájem
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="lg:border-2 lg:border-blue lg:rounded-box relative overflow-hidden">
+					<div class="relative overflow-hidden aspect-[3/2] xl:aspect-[2.5/2] border-2 border-blue rounded-box lg:rounded-none lg:border-0 mb-6 lg:mb-0">
+						<img src="images/services/services-team.png" alt="team" class="w-full h-full object-cover">
+						<div class="absolute top-0 left-0 w-full h-full flex items-end p-6 min-[1850px]:p-7 bg-gradient-to-t from-blue to-transparent to-50%">
+							<h3 class="text-[22px] lg:text-[27px] min-[1850px]:text-[30px] font-bold leading-tight">Přednášky pro týmy</h3>
+						</div>
+					</div>
+					<div class="moreInfo group lg:p-8 lg:pb-10">
+						<button class="moreInfo-button flex w-full justify-between gap-4 lg:hidden mb-6 lg:mb-0">
+							<span class="text-lg font-medium text-left">Zobrazit více informací</span>
+							<img src="icons/arrow-dropdown.svg" alt="arrow" class="w-7 block transition duration-300 group-[.active]:rotate-180">
+						</button>
+						<div class="moreInfo-content transition-all duration-300 ease-in-out overflow-hidden h-0 lg:h-auto">
+							<div class="moreInfo-content-inner">
+								<ul class="pb-6 lg:pb-8 list-custom">
+									<li>formou workshopů</li>
+									<li>týmová kultura - otevřená komunikace, vzájemná důvěra, uznání a respekt</li>
+									<li>motivace a dosahování cílů - osobní motivace hráče a společné cíle, akční plány, sledování pokroku, zpětná vazba</li>
+									<li>řešení konfliktů v kolektivu</li>
+								</ul>
+							</div>
+						</div>
+						<div class="flex gap-4">
+							<a href="#" class="w-2/5 sm:w-1/2 button-default min-w-px px-3">
+								Ceník
+							</a>
+							<a href="#" class="w-3/5 sm:w-1/2 button-white min-w-px px-3">
+								Mám zájem
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="lg:border-2 lg:border-blue lg:rounded-box relative overflow-hidden">
+					<div class="relative overflow-hidden aspect-[3/2] xl:aspect-[2.5/2] border-2 border-blue rounded-box lg:rounded-none lg:border-0 mb-6 lg:mb-0">
+						<img src="images/services/services-coach.png" alt="coach" class="w-full h-full object-cover">
+						<div class="absolute top-0 left-0 w-full h-full flex items-end p-6 min-[1850px]:p-7 bg-gradient-to-t from-blue to-transparent to-50%">
+							<h3 class="text-[22px] lg:text-[27px] min-[1850px]:text-[30px] font-bold leading-tight">Přednášky pro trenéry</h3>
+						</div>
+					</div>
+					<div class="moreInfo group lg:p-8 lg:pb-10">
+						<button class="moreInfo-button flex w-full justify-between gap-4 lg:hidden mb-6 lg:mb-0">
+							<span class="text-lg font-medium text-left">Zobrazit více informací</span>
+							<img src="icons/arrow-dropdown.svg" alt="arrow" class="w-7 block transition duration-300 group-[.active]:rotate-180">
+						</button>
+						<div class="moreInfo-content transition-all duration-300 ease-in-out overflow-hidden h-0 lg:h-auto">
+							<div class="moreInfo-content-inner">
+								<ul class="pb-6 lg:pb-8 list-custom">
+									<li>jak se sportovcem mluvit a neublížit mu</li>
+									<li>zvýšení efektivity tréninků</li>
+									<li>podpora psychické odolnosti hráčů</li>
+									<li>rozvoj komunikace</li>
+									<li>prevence vyhoření</li>
+									<li>osobní růst trenéra</li>
+									<li>zlepšení týmové dynamiky</li>
+								</ul>
+							</div>
+						</div>
+						<div class="flex gap-4">
+							<a href="#" class="w-2/5 sm:w-1/2 button-default min-w-px px-3">
+								Ceník
+							</a>
+							<a href="#" class="w-3/5 sm:w-1/2 button-white min-w-px px-3">
+								Mám zájem
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="lg:border-2 lg:border-blue lg:rounded-box relative overflow-hidden">
+					<div class="relative overflow-hidden aspect-[3/2] xl:aspect-[2.5/2] border-2 border-blue rounded-box lg:rounded-none lg:border-0 mb-6 lg:mb-0">
+						<img src="images/services/services-family.png" alt="family" class="w-full h-full object-cover">
+						<div class="absolute top-0 left-0 w-full h-full flex items-end p-6 min-[1850px]:p-7 bg-gradient-to-t from-blue to-transparent to-50%">
+							<h3 class="text-[22px] lg:text-[27px] min-[1850px]:text-[30px] font-bold leading-tight">Přednášky pro rodiče</h3>
+						</div>
+					</div>
+					<div class="moreInfo group lg:p-8 lg:pb-10">
+						<button class="moreInfo-button flex w-full justify-between gap-4 lg:hidden mb-6 lg:mb-0">
+							<span class="text-lg font-medium text-left">Zobrazit více informací</span>
+							<img src="icons/arrow-dropdown.svg" alt="arrow" class="w-7 block transition duration-300 group-[.active]:rotate-180">
+						</button>
+						<div class="moreInfo-content transition-all duration-300 ease-in-out overflow-hidden h-0 lg:h-auto">
+							<div class="moreInfo-content-inner">
+								<ul class="pb-6 lg:pb-8 list-custom">
+									<li>jak se (ne)chovat k dítěti</li>
+									<li>proč jsem přihlásil dítě na sport a co od toho čekám</li>
+									<li>jste vzorem za každých podmínek</li>
+									<li>porovnání se sebou samotným, ne nikým jiným</li>
+									<li>hledání vnitřní motivace dítěte</li>
+									<li>jak dávat zpětnou vazbu</li>
+									<li>vztah s trenérem</li>
+								</ul>
+							</div>
+						</div>
+						<div class="flex gap-4">
+							<a href="#" class="w-2/5 sm:w-1/2 button-default min-w-px px-3">
+								Ceník
+							</a>
+							<a href="#" class="w-3/5 sm:w-1/2 button-white min-w-px px-3">
+								Mám zájem
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="py-14 lg:py-28">
+			<div class="container">
+				<h2 class="text-5xl lg:text-8xl font-bold leading-tight lg:leading-tight text-center mb-9 lg:mb-16">Napiš mi zprávu</h2>
+				<div class="flex flex-wrap mb-8 lg:mb-12 max-w-[1200px] mx-auto gap-y-8">
+					<div class="w-full lg:w-4/12 flex flex-col gap-4">
+						<label class="form-control">
+							<input type="text" placeholder="Jméno">
+						</label>
+						<label class="form-control">
+							<input type="text" placeholder="E-mail">
+						</label>
+						<label class="form-control">
+							<input type="text" placeholder="Telefon">
+						</label>
+						<label class="form-control">
+							<select>
+								<option disabled selected hidden>Téma zprávy (nepovinné)</option>
+								<option>Možnost 1</option>
+								<option>Možnost 2</option>
+								<option>Možnost 3</option>
+							</select>
+						</label>
+					</div>
+					<div class="w-full lg:w-8/12 lg:pl-14">
+						<label class="form-control">
+							<textarea placeholder="Zde napište zprávu…"></textarea>
+						</label>
+					</div>
+				</div>
+				<a href="#" class="button-default mx-auto">
+					Odeslat
+					<img src="icons/icon-send.svg" alt="send">
+				</a>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="border-t-2 border-blue py-14">
+				<div class="flex flex-wrap flex-col lg:flex-row items-center justify-center gap-y-5 gap-x-14 mb-12">
+					<div class="flex items-center gap-4">
+						<img src="icons/icon-person.svg" alt="person" class="shrink-0">
+						<span class="text-lg leading-tight">Josef Pluhař</span>
+					</div>
+					<a href="tel:+420 776 614 842" class="flex items-center gap-4 group">
+						<img src="icons/icon-phone.svg" alt="phone" class="shrink-0">
+						<span class="text-lg leading-tight transition duration-100 group-hover:text-blue">+420 776 614 842</span>
+					</a>
+					<a href="mailto:info@mndst.cz" class="flex items-center gap-4 group">
+						<img src="icons/icon-mail.svg" alt="mail" class="shrink-0">
+						<span class="text-lg leading-tight transition duration-100 group-hover:text-blue">info@mndst.cz</span>
+					</a>
+					<a href="https://www.google.com/maps/search/Václava Klementa 819, Mladá Boleslav - 293 01/" target="_blank" class="flex items-center gap-4 group">
+						<img src="icons/icon-pin.svg" alt="pin" class="shrink-0">
+						<span class="text-lg leading-tight transition duration-100 group-hover:text-blue max-w-52 lg:max-w-fit">Václava Klementa 819, Mladá Boleslav - 293 01</span>
+					</a>
+					<div class="flex items-center gap-4">
+						<img src="icons/icon-info.svg" alt="info" class="shrink-0">
+						<span class="text-lg leading-tight">IČ: 88762734</span>
+					</div>
+				</div>
+				<a href="index.html" class="block w-fit mx-auto">
+					<img src="images/logo/logo.svg" alt="logo" class="h-[30px] lg:h-10">
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/script.js" async defer type="text/javascript"></script>
+
+</body>
+</html>
+
+

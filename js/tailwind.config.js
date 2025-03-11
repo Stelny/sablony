@@ -3,20 +3,22 @@ tailwind.config = {
     theme: {
         extend: {
             colors: {
-                customBlack: "#393939",
-                purple: "#44008B",
-                cyan: "#8ff0ff",
-                tercia: "#17E0FF",
+                white: "#fff",
+                black: "#000",
+                blue: "#3533CD",
+            },
+            height: {
+              'heroVideo': 'calc(100dvh - 104px)',
+            },
+            borderRadius: {
+                'box': '10px',
             },
             backgroundImage: {
-                gradientHero: "url(/images/hero/gradient.svg)",
-                gradientUser: "url(/images/user-gradient.svg)"
-
+                'letterM': 'url("/images/aboutme/aboutme-letter-bg.svg")',
             },
-            boxShadow: {
-                card: "0px 0px 35px #0000000D"
+            borderWidth: {
+                '3':'3px',
             }
-
         },
     },
 };

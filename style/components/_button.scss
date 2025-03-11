@@ -1,76 +1,31 @@
-.btn {
-  padding: 0.75rem 2rem;
-  text-decoration: none;
-  outline: none;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  width: fit-content;
-  font-family: "Poppins", Serif;
-  transition: 0.5s ease-in-out box-shadow;
-  &.loading {
-    pointer-events: none;
-    &:before {
-      content: "";
-      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="200" height="200" style="shape-rendering: auto; display: block; background: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle stroke-dasharray="164.93361431346415 56.97787143782138" r="35" stroke-width="10" stroke="%23ffffff" fill="none" cy="50" cx="50"><animateTransform keyTimes="0;1" values="0 50 50;360 50 50" dur="1s" repeatCount="indefinite" type="rotate" attributeName="transform"></animateTransform></circle><g></g></g></svg>');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 20px;
-      height: 20px;
-      display: block;
-    }
-    svg {
-      display: none;
-    }
-  }
-
-  &-primary {
+.button {
+  &-default, &-white {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
     font-weight: 500;
-    color: white;
-    background: $purple;
-    border-radius: 50px;
-    font-size: 0.875rem;
+    border-radius: 10px;
+    font-size: 20px;
     transition: 0.25s ease-in-out all;
+    padding: 0.625rem 2rem;
+    gap: 1rem;
+    text-align: center;
+    width: fit-content;
     &:hover {
       transform: translateY(-2px);
+      box-shadow: 0px 0px 10px 5px rgba($blue, .5);
     }
-
     @media screen and (max-width: $xl) {
-      font-size: 0.825rem;
+      
     }
   }
-  &-tercia {
-    font-weight: 500;
-    color: white;
-    background: $tercia;
-    color: $purple;
-    border-radius: 50px;
-    font-size: 0.875rem;
-    transition: 0.25s ease-in-out all;
-    padding: 0.75rem 3rem;
-    &:hover {
-      transform: translateY(-2px);
-    }
-
-    @media screen and (max-width: $xl) {
-      font-size: 0.825rem;
-    }
+  &-default {
+    background: $blue;
+    color: $white;
   }
   &-white {
-    font-weight: 500;
-    background: $purple;
-    color: white;
-    border-radius: 50px;
-    font-size: 0.875rem;
-    transition: 0.25s ease-in-out all;
-    padding: 0.75rem 3rem;
-    &:hover {
-      transform: translateY(-2px);
-    }
-
-    @media screen and (max-width: $xl) {
-      font-size: 0.825rem;
-    }
+    background: $white;
+    color: $blue;
   }
 }

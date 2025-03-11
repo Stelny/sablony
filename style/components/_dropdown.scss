@@ -1,0 +1,10 @@
+.dropdown {
+    &-content {
+        transition: 0.25s ease-in-out all;
+        overflow: hidden;
+        height: 0;
+        @media screen and (max-width: $lg) {
+            height: auto;
+        }
+    }
+}

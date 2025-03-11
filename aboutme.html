@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<title>MNDST</title>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Keywords" content="xxx">
+	<meta name="Description" content="xxx">
+	<meta name="Author" content="xxx">
+	<meta name="copyright" content="xxx">
+	<meta name="robots" content="index,follow">
+	<meta name="googlebot" content="index,follow,snippet,archive">
+	<meta name="category" content="xxx">
+	<meta name="webmaster" content="All: xxx">
+	<!-- Style -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script type="module" src="./js/tailwind.config.js"></script>
+	<link rel="stylesheet" href="style/main.css" />
+</head>
+<body class="bg-black">
+	<header class="header">
+		<div class="container">
+			<div class="header-content">
+				<a href="index.html" class="header-content-logo">
+					<img src="/images/logo/logo.svg" alt="Logo" >
+				</a>
+				<div class="header-content-menu">
+					<ul>
+						<li>
+							<a href="aboutme.html" class="menu-item active">
+								Kdo jsem
+							</a>
+						</li>
+						<li>
+							<a href="services.html" class="menu-item">
+								Moje služby
+							</a>
+						</li>
+						<li>
+							<a href="#" class="button-default">
+								Napiš mi
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com" target="_blank">
+								<img src="icons/icon-ig.svg" alt="instagram" class="hidden lg:block">
+								<span class="lg:hidden">Instagram</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<button class="header-content-toggle" id="header-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="py-14 lg:py-28 border-b-2 border-blue">
+			<div class="container flex flex-wrap items-stretch gap-y-8">
+				<div class="w-max 2xl:w-[64%]">
+					<div class="border-3 border-blue rounded-box p-7 lg:p-12 flex items-center lg:items-stretch flex-col lg:flex-row gap-6 lg:gap-12">
+						<div class="border-b border-blue w-full lg:-mb-12">
+							<img src="images/aboutme/aboutme-image2.png" alt="Josef Pluhař" class="max-w-full lg:max-w-80 max-h-[440px] object-scale-down object-bottom h-full mx-auto">
+						</div>
+						<div class="flex flex-col justify-center 2xl:justify-start">
+							<h2 class="text-[40px] leading-tight font-bold mb-4 lg:mb-7">Josef Pluhař</h2>
+							<p>Jsem celoživotní sportovec, který se dlouhodobě věnuje nejen vlastnímu rozvoji, ale i předávání získaných zkušeností ostatním. Vyrůstal jsem v prostředí fotbalu, které mi poskytlo pevné základy disciplíny, týmové spolupráce a schopnosti prosadit se v kolektivu. Následně jsem se zaměřil na squash, sport, kde je úspěch závislý pouze na individuálním výkonu, což mi umožnilo pochopit dynamiku individuálního sportu. Tato zkušenost, spolu s emocí, které jsem zažil během sportovní kariéry, mě formovala a pomáhá mi porozumět potřebám individuálních sportovců. K tomu jsem přidal florbal, který mě provází po celý život a kde jsem dosáhl svých největších sportovních úspěchů. Radost z vítězství, ale i zklamání z prohraných finálových zápasů či okamžiky, kdy mě trenér posadil na lavičku během zápasu, jsou součástí zkušeností, které mi umožňují se lépe vcítit do poznání sportovců a najít společnou cestu k jejich úspěchu.</p>
+						</div>
+					</div>
+				</div>
+				<div class="w-max 2xl:w-[36%] 2xl:pl-4">
+					<div class="bg-blue h-full rounded-box p-7 lg:p-12 bg-letterM bg-no-repeat bg-[right_-3.5rem_bottom] lg:bg-[right_3rem_bottom]">
+						<h2 class="text-[40px] leading-tight font-bold mb-4 lg:mb-7">Projekt MNDST</h2>
+						<p>Projekt MNDST má za cíl šířit povědomí o psychické odolnosti a jejím významu pro širokou veřejnost. Uvědomujeme si důležitost tohoto tématu a chceme o něm otevřeně mluvit. Naším primárním zaměřením jsou aktivní sportovci, kterým pomáháme zlepšit jejich výkon a dosáhnout stanovených cílů. Tento proces probíhá formou individuálního koučinku během pravidelných hodinových sezení. Kromě toho se věnujeme i osvětě prostřednictvím přednášek, kde se zaměřujeme na šíření znalostí o mentálním koučinku, zejména před rodiči a trenéry.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="py-14 lg:py-28">
+			<div class="container">
+				<h2 class="text-5xl lg:text-8xl font-bold leading-tight lg:leading-tight text-center mb-9 lg:mb-16">Napiš mi zprávu</h2>
+				<div class="flex flex-wrap mb-8 lg:mb-12 max-w-[1200px] mx-auto gap-y-8">
+					<div class="w-full lg:w-4/12 flex flex-col gap-4">
+						<label class="form-control">
+							<input type="text" placeholder="Jméno">
+						</label>
+						<label class="form-control">
+							<input type="text" placeholder="E-mail">
+						</label>
+						<label class="form-control">
+							<input type="text" placeholder="Telefon">
+						</label>
+						<label class="form-control">
+							<select>
+								<option disabled selected hidden>Téma zprávy (nepovinné)</option>
+								<option>Možnost 1</option>
+								<option>Možnost 2</option>
+								<option>Možnost 3</option>
+							</select>
+						</label>
+					</div>
+					<div class="w-full lg:w-8/12 lg:pl-14">
+						<label class="form-control">
+							<textarea placeholder="Zde napište zprávu…"></textarea>
+						</label>
+					</div>
+				</div>
+				<a href="#" class="button-default mx-auto">
+					Odeslat
+					<img src="icons/icon-send.svg" alt="send">
+				</a>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="border-t-2 border-blue py-14">
+				<div class="flex flex-wrap flex-col lg:flex-row items-center justify-center gap-y-5 gap-x-14 mb-12">
+					<div class="flex items-center gap-4">
+						<img src="icons/icon-person.svg" alt="person" class="shrink-0">
+						<span class="text-lg leading-tight">Josef Pluhař</span>
+					</div>
+					<a href="tel:+420 776 614 842" class="flex items-center gap-4 group">
+						<img src="icons/icon-phone.svg" alt="phone" class="shrink-0">
+						<span class="text-lg leading-tight transition duration-100 group-hover:text-blue">+420 776 614 842</span>
+					</a>
+					<a href="mailto:info@mndst.cz" class="flex items-center gap-4 group">
+						<img src="icons/icon-mail.svg" alt="mail" class="shrink-0">
+						<span class="text-lg leading-tight transition duration-100 group-hover:text-blue">info@mndst.cz</span>
+					</a>
+					<a href="https://www.google.com/maps/search/Václava Klementa 819, Mladá Boleslav - 293 01/" target="_blank" class="flex items-center gap-4 group">
+						<img src="icons/icon-pin.svg" alt="pin" class="shrink-0">
+						<span class="text-lg leading-tight transition duration-100 group-hover:text-blue max-w-52 lg:max-w-fit">Václava Klementa 819, Mladá Boleslav - 293 01</span>
+					</a>
+					<div class="flex items-center gap-4">
+						<img src="icons/icon-info.svg" alt="info" class="shrink-0">
+						<span class="text-lg leading-tight">IČ: 88762734</span>
+					</div>
+				</div>
+				<a href="index.html" class="block w-fit mx-auto">
+					<img src="images/logo/logo.svg" alt="logo" class="h-[30px] lg:h-10">
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/script.js" async defer type="text/javascript"></script>
+
+</body>
+</html>
+
+
