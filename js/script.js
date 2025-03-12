@@ -1,10 +1,17 @@
 function handleHeader() {
     const header = document.querySelector(".header");
     const headerToggle = document.getElementById("header-toggle");
+    const menu = document.querySelector('.header-content-menu');
 
     headerToggle.addEventListener("click", () => {
         header.classList.toggle("active");
     })
+
+    menu.querySelectorAll('.header-content-menu a').forEach(item => {
+        item.addEventListener('click', function () {
+            header.classList.remove('active');
+        });
+    });
 }
 
 const heroVideoPlayer = () => {
@@ -89,15 +96,31 @@ const moreInfoInteractivity = () => {
 }
 
 const handlePopups = () => {
-    document.querySelectorAll('.popup').forEach( item => {
-        item.querySelectorAll('.popup-button').forEach( btn => {
-            btn.onclick = function () {
-                let content = item.querySelector('.popup-content');
+    document.querySelectorAll('.popup').forEach(item => {
+        const content = item.querySelector('.popup-content');
+        const innerContent = item.querySelector('.popup-content-inner');
+
+        item.querySelectorAll('.popup-button').forEach(btn => {
+            btn.onclick = function (event) {
+                event.stopPropagation();
                 content.classList.toggle("active");
-            }
+
+                document.removeEventListener('click', outsideClickListener);
+                document.addEventListener('click', outsideClickListener);
+            };
         });
+
+        const outsideClickListener = function (e) {
+            if (innerContent && !innerContent.contains(e.target)) {
+                content.classList.remove("active");
+                document.removeEventListener('click', outsideClickListener);
+            }
+        };
     });
 }
+
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
