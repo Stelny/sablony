@@ -32,17 +32,19 @@ const heroVideoPlayer = () => {
 
 const dropdownInteractivity = () => {
     document.querySelectorAll('.dropdown').forEach( item => {
+        let growDiv = item.querySelector('.dropdown-content');
         item.onclick = function () {
-            if (window.innerWidth < 1024) {
-                return;
-            }
-            var growDiv = item.querySelector('.dropdown-content');
+            item.classList.toggle("active");
             if (growDiv.clientHeight) {
                 growDiv.style.height = 0;
             } else {
-                var wrapper = item.querySelector('.dropdown-content-inner');
+                let wrapper = item.querySelector('.dropdown-content-inner');
                 growDiv.style.height = wrapper.clientHeight + "px";
             }
+        }
+        if (window.innerWidth < 1024) {
+            growDiv.style.height = '';
+            item.classList.remove("active");
         }
     });
 }
@@ -62,23 +64,41 @@ const faqHeightOptimalization = () => {
     });
 
     dropdownHeaders.forEach(header => {
-        header.style.height = `${maxHeight}px`;
+        if (window.innerWidth < 1024) {
+            header.style.height = '';
+        } else {
+            header.style.height = `${maxHeight}px`;
+        }
     });
+    
 }
+
 const moreInfoInteractivity = () => {
     document.querySelectorAll('.moreInfo').forEach( item => {
         item.querySelector('.moreInfo-button').onclick = function () {
-            var growDiv = item.querySelector('.moreInfo-content');
+            let growDiv = item.querySelector('.moreInfo-content');
             item.classList.toggle("active");
             if (growDiv.clientHeight) {
                 growDiv.style.height = 0;
             } else {
-                var wrapper = item.querySelector('.moreInfo-content-inner');
+                let wrapper = item.querySelector('.moreInfo-content-inner');
                 growDiv.style.height = wrapper.clientHeight + "px";
             }
         }
     });
 }
+
+const handlePopups = () => {
+    document.querySelectorAll('.popup').forEach( item => {
+        item.querySelectorAll('.popup-button').forEach( btn => {
+            btn.onclick = function () {
+                let content = item.querySelector('.popup-content');
+                content.classList.toggle("active");
+            }
+        });
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
     handleHeader();
@@ -86,6 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
     dropdownInteractivity();
     faqHeightOptimalization();
     moreInfoInteractivity();
+    handlePopups();
 
     window.onresize = function(event) {
 

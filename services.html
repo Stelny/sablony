@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="style/main.css" />
 </head>
 <body class="bg-black">
-	<header class="header">
+	<header class="header z-[1000]">
 		<div class="container">
 			<div class="header-content">
 				<a href="index.html" class="header-content-logo">
@@ -62,7 +62,7 @@
 	<main>
 		<section class="py-14 lg:py-28 border-b-2 border-blue">
 			<div class="container grid 2xl:items-start lg:grid-cols-2 2xl:grid-cols-4 gap-14 lg:gap-4 mb-8 lg:mb-12">
-				<div class="lg:border-2 lg:border-blue lg:rounded-box relative overflow-hidden">
+				<div class="popup lg:border-2 lg:border-blue lg:rounded-box relative overflow-hidden">
 					<div class="relative overflow-hidden aspect-[3/2] xl:aspect-[2.5/2] border-2 border-blue rounded-box lg:rounded-none lg:border-0 mb-6 lg:mb-0">
 						<img src="images/services/services-individual.png" alt="individual" class="w-full h-full object-cover">
 						<div class="absolute top-0 left-0 w-full h-full flex items-end p-6 min-[1850px]:p-7 bg-gradient-to-t from-blue to-transparent to-50%">
@@ -74,7 +74,7 @@
 							<span class="text-lg font-medium text-left">Zobrazit více informací</span>
 							<img src="icons/arrow-dropdown.svg" alt="arrow" class="w-7 block transition duration-300 group-[.active]:rotate-180">
 						</button>
-						<div class="moreInfo-content transition-all duration-300 ease-in-out overflow-hidden h-0 lg:h-auto">
+						<div class="moreInfo-content transition-all duration-300 ease-in-out overflow-hidden h-0">
 							<div class="moreInfo-content-inner">
 								<ul class="pb-6 lg:pb-8 list-custom">
 									<li>úvodní nezávazná schůzka zdarma</li>
@@ -87,16 +87,62 @@
 							</div>
 						</div>
 						<div class="flex gap-4">
-							<a href="#" class="w-2/5 sm:w-1/2 button-default min-w-px px-3">
+							<button class="popup-button w-2/5 sm:w-1/2 button-default min-w-px px-3">
 								Ceník
-							</a>
+							</button>
 							<a href="#" class="w-3/5 sm:w-1/2 button-white min-w-px px-3">
 								Mám zájem
 							</a>
 						</div>
+						<div class="popup-content [&.active]:flex [&:not(.active)]:hidden fixed top-[80px] lg:top-[104px] bottom-0 left-0 w-full h-auto bg-black bg-opacity-90 z-[999] items-center justify-center flex-col gap-7 lg:gap-8">
+							<div class="bg-blue p-[30px] lg:p-12 lg:pb-10 lg:rounded-box h-full lg:h-auto max-w-full lg:max-w-[800px] w-full relative overflow-y-auto">
+								<button class="popup-button absolute top-[30px] right-[30px]">
+									<img src="icons/icon-close.svg" alt="close" class="w-5 h-5 object-scale-down">
+								</button>
+								<span class="block text-[22px] lg:text-[40px] leading-tight font-bold mb-8 lg:mb-10 pr-8">Individuální koučink pro&nbsp;sportovce</span>
+								<form class="border-b-2 border-black pb-8 lg:pb-10 mb-8 grid grid-cols-1 gap-8">
+									<div class="flex flex-col">
+										<div class="shrink-0 custom-radio">
+											<input type="radio" id="4-1" name="parents">
+											<label for="4-1">Cenový balíček START</label>
+										</div>
+										<div class="flex justify-between items-end">
+											<span class="lg:pl-7 block text-[13px] font-light">1x přednáška</span>
+											<span class="text-lg leading-tight shrink-0">3 000 Kč</span>
+										</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="shrink-0 custom-radio">
+											<input type="radio" id="4-2" name="parents">
+											<label for="4-2">Cenový balíček PROGRES</label>
+										</div>
+										<div class="flex justify-between items-end">
+											<span class="lg:pl-7 block text-[13px] font-light">3x přednáška</span>
+											<span class="text-lg leading-tight shrink-0">8 000 Kč</span>
+										</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="shrink-0 custom-radio">
+											<input type="radio" id="4-3" name="parents">
+											<label for="4-3">Cenový balíček STANDARD</label>
+										</div>
+										<div class="flex justify-between items-end">
+											<span class="lg:pl-7 block text-[13px] font-light">5x přednáška</span>
+											<span class="text-lg leading-tight shrink-0">12 000 Kč</span>
+										</div>
+									</div>
+								</form>
+								<ul class="list-custom">
+									<li>ke každému balíčku navíc zdarma nezávazná úvodní schůzka</li>
+									<li>1 sezení = 60 minut</li>
+									<li>preferované místo schůzky můžete uvést do formuláře</li>
+									<li>balíčky nejsou časově omezeny</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="lg:border-2 lg:border-blue lg:rounded-box relative overflow-hidden">
+				<div class="popup lg:border-2 lg:border-blue lg:rounded-box relative overflow-hidden">
 					<div class="relative overflow-hidden aspect-[3/2] xl:aspect-[2.5/2] border-2 border-blue rounded-box lg:rounded-none lg:border-0 mb-6 lg:mb-0">
 						<img src="images/services/services-team.png" alt="team" class="w-full h-full object-cover">
 						<div class="absolute top-0 left-0 w-full h-full flex items-end p-6 min-[1850px]:p-7 bg-gradient-to-t from-blue to-transparent to-50%">
@@ -119,16 +165,63 @@
 							</div>
 						</div>
 						<div class="flex gap-4">
-							<a href="#" class="w-2/5 sm:w-1/2 button-default min-w-px px-3">
+							<button class="popup-button w-2/5 sm:w-1/2 button-default min-w-px px-3">
 								Ceník
-							</a>
+							</button>
 							<a href="#" class="w-3/5 sm:w-1/2 button-white min-w-px px-3">
 								Mám zájem
 							</a>
 						</div>
+						<div class="popup-content [&.active]:flex [&:not(.active)]:hidden fixed top-[80px] lg:top-[104px] bottom-0 left-0 w-full h-auto bg-black bg-opacity-90 z-[999] items-center justify-center flex-col gap-7 lg:gap-8">
+							<div class="bg-blue p-[30px] lg:p-12 lg:pb-10 lg:rounded-box h-full lg:h-auto max-w-full lg:max-w-[800px] w-full relative overflow-y-auto">
+								<button class="popup-button absolute top-[30px] right-[30px]">
+									<img src="icons/icon-close.svg" alt="close" class="w-5 h-5 object-scale-down">
+								</button>
+								<span class="block text-[22px] lg:text-[40px] leading-tight font-bold mb-8 lg:mb-10 pr-8">Přednášky pro týmy</span>
+								<form class="border-b-2 border-black pb-8 lg:pb-10 mb-8 grid grid-cols-1 gap-8">
+									<div class="flex flex-col">
+										<div class="shrink-0 custom-radio">
+											<input type="radio" id="4-1" name="parents">
+											<label for="4-1">Cenový balíček START</label>
+										</div>
+										<div class="flex justify-between items-end">
+											<span class="lg:pl-7 block text-[13px] font-light">1x přednáška</span>
+											<span class="text-lg leading-tight shrink-0">3 000 Kč</span>
+										</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="shrink-0 custom-radio">
+											<input type="radio" id="4-2" name="parents">
+											<label for="4-2">Cenový balíček PROGRES</label>
+										</div>
+										<div class="flex justify-between items-end">
+											<span class="lg:pl-7 block text-[13px] font-light">3x přednáška</span>
+											<span class="text-lg leading-tight shrink-0">8 000 Kč</span>
+										</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="shrink-0 custom-radio">
+											<input type="radio" id="4-3" name="parents">
+											<label for="4-3">Cenový balíček STANDARD</label>
+										</div>
+										<div class="flex justify-between items-end">
+											<span class="lg:pl-7 block text-[13px] font-light">5x přednáška</span>
+											<span class="text-lg leading-tight shrink-0">12 000 Kč</span>
+										</div>
+									</div>
+								</form>
+								<ul class="list-custom">
+									<li>1 přednáška = 45 minut teorie + následná diskuze</li>
+									<li>sazba za dopravu je na vzájemné domluvě</li>
+									<li>přednášku vedeme ve dvou</li>
+									<li>místo přednášky uvádějte do formuláře</li>
+									<li>balíčky nejsou časově omezeny</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="lg:border-2 lg:border-blue lg:rounded-box relative overflow-hidden">
+				<div class="popup lg:border-2 lg:border-blue lg:rounded-box relative overflow-hidden">
 					<div class="relative overflow-hidden aspect-[3/2] xl:aspect-[2.5/2] border-2 border-blue rounded-box lg:rounded-none lg:border-0 mb-6 lg:mb-0">
 						<img src="images/services/services-coach.png" alt="coach" class="w-full h-full object-cover">
 						<div class="absolute top-0 left-0 w-full h-full flex items-end p-6 min-[1850px]:p-7 bg-gradient-to-t from-blue to-transparent to-50%">
@@ -154,16 +247,63 @@
 							</div>
 						</div>
 						<div class="flex gap-4">
-							<a href="#" class="w-2/5 sm:w-1/2 button-default min-w-px px-3">
+							<button class="popup-button w-2/5 sm:w-1/2 button-default min-w-px px-3">
 								Ceník
-							</a>
+							</button>
 							<a href="#" class="w-3/5 sm:w-1/2 button-white min-w-px px-3">
 								Mám zájem
 							</a>
 						</div>
+						<div class="popup-content [&.active]:flex [&:not(.active)]:hidden fixed top-[80px] lg:top-[104px] bottom-0 left-0 w-full h-auto bg-black bg-opacity-90 z-[999] items-center justify-center flex-col gap-7 lg:gap-8">
+							<div class="bg-blue p-[30px] lg:p-12 lg:pb-10 lg:rounded-box h-full lg:h-auto max-w-full lg:max-w-[800px] w-full relative overflow-y-auto">
+								<button class="popup-button absolute top-[30px] right-[30px]">
+									<img src="icons/icon-close.svg" alt="close" class="w-5 h-5 object-scale-down">
+								</button>
+								<span class="block text-[22px] lg:text-[40px] leading-tight font-bold mb-8 lg:mb-10 pr-8">Přednášky pro trenéry</span>
+								<form class="border-b-2 border-black pb-8 lg:pb-10 mb-8 grid grid-cols-1 gap-8">
+									<div class="flex flex-col">
+										<div class="shrink-0 custom-radio">
+											<input type="radio" id="4-1" name="parents">
+											<label for="4-1">Cenový balíček START</label>
+										</div>
+										<div class="flex justify-between items-end">
+											<span class="lg:pl-7 block text-[13px] font-light">1x přednáška</span>
+											<span class="text-lg leading-tight shrink-0">3 000 Kč</span>
+										</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="shrink-0 custom-radio">
+											<input type="radio" id="4-2" name="parents">
+											<label for="4-2">Cenový balíček PROGRES</label>
+										</div>
+										<div class="flex justify-between items-end">
+											<span class="lg:pl-7 block text-[13px] font-light">3x přednáška</span>
+											<span class="text-lg leading-tight shrink-0">8 000 Kč</span>
+										</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="shrink-0 custom-radio">
+											<input type="radio" id="4-3" name="parents">
+											<label for="4-3">Cenový balíček STANDARD</label>
+										</div>
+										<div class="flex justify-between items-end">
+											<span class="lg:pl-7 block text-[13px] font-light">5x přednáška</span>
+											<span class="text-lg leading-tight shrink-0">12 000 Kč</span>
+										</div>
+									</div>
+								</form>
+								<ul class="list-custom">
+									<li>1 přednáška = 45 minut teorie + následná diskuze</li>
+									<li>sazba za dopravu je na vzájemné domluvě</li>
+									<li>přednášku vedeme ve dvou</li>
+									<li>místo přednášky uvádějte do formuláře</li>
+									<li>balíčky nejsou časově omezeny</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="lg:border-2 lg:border-blue lg:rounded-box relative overflow-hidden">
+				<div class="popup lg:border-2 lg:border-blue lg:rounded-box relative overflow-hidden">
 					<div class="relative overflow-hidden aspect-[3/2] xl:aspect-[2.5/2] border-2 border-blue rounded-box lg:rounded-none lg:border-0 mb-6 lg:mb-0">
 						<img src="images/services/services-family.png" alt="family" class="w-full h-full object-cover">
 						<div class="absolute top-0 left-0 w-full h-full flex items-end p-6 min-[1850px]:p-7 bg-gradient-to-t from-blue to-transparent to-50%">
@@ -189,12 +329,59 @@
 							</div>
 						</div>
 						<div class="flex gap-4">
-							<a href="#" class="w-2/5 sm:w-1/2 button-default min-w-px px-3">
+							<button class="popup-button w-2/5 sm:w-1/2 button-default min-w-px px-3">
 								Ceník
-							</a>
+							</button>
 							<a href="#" class="w-3/5 sm:w-1/2 button-white min-w-px px-3">
 								Mám zájem
 							</a>
+						</div>
+					</div>
+					<div class="popup-content [&.active]:flex [&:not(.active)]:hidden fixed top-[80px] lg:top-[104px] bottom-0 left-0 w-full h-auto bg-black bg-opacity-90 z-[999] items-center justify-center flex-col gap-7 lg:gap-8">
+						<div class="bg-blue p-[30px] lg:p-12 lg:pb-10 lg:rounded-box h-full lg:h-auto max-w-full lg:max-w-[800px] w-full relative overflow-y-auto">
+							<button class="popup-button absolute top-[30px] right-[30px]">
+								<img src="icons/icon-close.svg" alt="close" class="w-5 h-5 object-scale-down">
+							</button>
+							<span class="block text-[22px] lg:text-[40px] leading-tight font-bold mb-8 lg:mb-10 pr-8">Přednášky pro rodiče</span>
+							<form class="border-b-2 border-black pb-8 lg:pb-10 mb-8 grid grid-cols-1 gap-8">
+								<div class="flex flex-col">
+									<div class="shrink-0 custom-radio">
+										<input type="radio" id="4-1" name="parents">
+										<label for="4-1">Cenový balíček START</label>
+									</div>
+									<div class="flex justify-between items-end">
+										<span class="lg:pl-7 block text-[13px] font-light">1x přednáška</span>
+										<span class="text-lg leading-tight shrink-0">1 500 Kč</span>
+									</div>
+								</div>
+								<div class="flex flex-col">
+									<div class="shrink-0 custom-radio">
+										<input type="radio" id="4-2" name="parents">
+										<label for="4-2">Cenový balíček PROGRES</label>
+									</div>
+									<div class="flex justify-between items-end">
+										<span class="lg:pl-7 block text-[13px] font-light">3x přednáška</span>
+										<span class="text-lg leading-tight shrink-0">4 200 Kč</span>
+									</div>
+								</div>
+								<div class="flex flex-col">
+									<div class="shrink-0 custom-radio">
+										<input type="radio" id="4-3" name="parents">
+										<label for="4-3">Cenový balíček STANDARD</label>
+									</div>
+									<div class="flex justify-between items-end">
+										<span class="lg:pl-7 block text-[13px] font-light">5x přednáška</span>
+										<span class="text-lg leading-tight shrink-0">7 000 Kč</span>
+									</div>
+								</div>
+							</form>
+							<ul class="list-custom">
+								<li>1 přednáška = 45 minut teorie + následná diskuze</li>
+								<li>sazba za dopravu je na vzájemné domluvě</li>
+								<li>přednášku vedeme ve dvou</li>
+								<li>místo přednášky uvádějte do formuláře</li>
+								<li>balíčky nejsou časově omezeny</li>
+							</ul>
 						</div>
 					</div>
 				</div>
